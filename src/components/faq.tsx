@@ -1,51 +1,84 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function FAQ() {
     return (
-        <section id="faq" className="container mx-auto py-16 px-4 rounded-2xl">
-            <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-                <p className="text-gray-300 max-w-2xl mx-auto">
-                    Find answers to common questions about DexSpace and crypto trading.
-                </p>
-            </div>
-            <div className="max-w-3xl mx-auto">
-                <Accordion type="single" collapsible className="space-y-4">
-                    <AccordionItem value="item-1" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">
-                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-[#3A4357]">
+        <section className="p-20 bg-background-tertiary">
+            <div className="container mx-auto space-y-12 ">
+                <div className="text-center space-y-4">
+                    <h2 className="text-4xl md:text-5xl font-bold ">
+                        Frequently Asked Questions
+                    </h2>
+                    <p className="text-secondary-foreground text-sm mx-auto">
+                        Find answers to common questions about DexSpace and how you can make the most of our platform.
+                    </p>
+                </div>
+
+                <Accordion type="single" collapsible className="space-y-2 max-w-3xl mx-auto">
+                    <AccordionItem
+                        value="item-1"
+                        className="bg-card rounded-lg border border-border data-[state=open]:bg-accent"
+                    >
+                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             What is DexSpace?
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-gray-300">
-                            DexSpace is a decentralized exchange that allows you to trade cryptocurrencies with ease.
+                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                            DexSpace is a next-gen DeFi analytics platform that provides real-time token prices, market trends, and advanced
+                            trading insights for decentralized exchanges.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-2" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">
-                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-[#3A4357]">
-                            What cryptocurrencies can I trade on DexSpace?
+
+                    <AccordionItem
+                        value="item-2"
+                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                    >
+                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
+                            How does DexSpace track token prices?
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-gray-300">
-                            DexSpace supports a wide range of cryptocurrencies including Bitcoin, Ethereum, Solana, Cardano, and many more. We regularly add new tokens based on market demand and after thorough security audits.
+                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                            DexSpace utilizes advanced blockchain indexing technology to monitor on-chain transactions and liquidity pools across multiple networks. We aggregate data from decentralized exchanges and provide real-time price updates with minimal latency, ensuring you always have the most current market information.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-3" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">
-                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-[#3A4357]">
-                            How secure is DexSpace for trading?
+
+                    <AccordionItem
+                        value="item-3"
+                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                    >
+                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
+                            Do I need to connect my wallet to use DexSpace?
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-gray-300">
-                            DexSpace employs industry-leading security measures including end-to-end encryption, cold storage for the majority of assets, regular security audits, and optional two-factor authentication. We prioritize the security of your assets and personal information.
+                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                            No, you don&apos;t need to connect your wallet to access basic features like token price tracking, market trends, and analytics. However, connecting your wallet enables personalized features such as portfolio tracking, trading directly from our platform, and receiving customized alerts based on your holdings.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-4" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">
-                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-[#3A4357]">
-                            What are the trading fees on DexSpace?
+
+                    <AccordionItem
+                        value="item-4"
+                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                    >
+                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
+                            Is DexSpace free to use?
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-gray-300">
-                            DexSpace offers competitive trading fees starting at 0.25% per transaction. Fee discounts are available based on trading volume and for holders of our native token. For a detailed fee structure, please visit our fees page in the app.
+                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                            Yes, DexSpace offers a free tier that provides access to essential features including token price tracking, basic market analytics, and trading insights. We also offer premium subscription plans with advanced features like real-time alerts, enhanced data visualization, API access, and priority customer support for professional traders and developers.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem
+                        value="item-5"
+                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent  "
+                    >
+                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
+                            How can I list a token on DexSpace?
+                        </AccordionTrigger>
+                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                            To list your token on DexSpace, you can submit a listing request through our Token Submission portal. We require basic information about your project, including contract address, website, social media links, and tokenomics details. Our team reviews all submissions to ensure they meet our security and quality standards before adding them to our platform.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
+                <div className="flex justify-center items-center text-sm ">
+                    Still have questions? Contact Support.
+                </div>
             </div>
         </section>
-
-    )
+    );
 }
