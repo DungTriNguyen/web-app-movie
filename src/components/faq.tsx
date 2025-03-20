@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 export default function FAQ() {
     return (
-        <section id="faq" className="container mx-auto py-16 px-4 bg-[#1A2030] rounded-2xl">
+        <section id="faq" className="container mx-auto py-16 px-4 rounded-2xl">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
                 <p className="text-gray-300 max-w-2xl mx-auto">
@@ -13,10 +13,10 @@ export default function FAQ() {
                 <Accordion type="single" collapsible className="space-y-4">
                     <AccordionItem value="item-1" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-[#3A4357]">
-                            How do I create an account on DexSpace?
+                            What is DexSpace?
                         </AccordionTrigger>
                         <AccordionContent className="px-6 py-4 text-gray-300">
-                            To create an account, click on the &ldquo;Launch App&rdquo; button and follow the registration process. You&rsquo;ll need to provide an email address and create a secure password. For enhanced security, we recommend enabling two-factor authentication.
+                            DexSpace is a decentralized exchange that allows you to trade cryptocurrencies with ease.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2" className="bg-[#2A3246] rounded-xl overflow-hidden border-none">

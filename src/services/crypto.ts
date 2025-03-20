@@ -17,7 +17,7 @@ function useCrypto() {
                 pair: "USDT",
                 icon: "🦅",
                 price: "0.0₵1657",
-                change: "+4.6%",
+                change: "4.6%",
                 isPositive: true
             },
             {
@@ -35,7 +35,7 @@ function useCrypto() {
                 pair: "USDT",
                 icon: "⭕",
                 price: "0.0₵1657",
-                change: "+3.6%",
+                change: "3.6%",
                 isPositive: true
             },
             {

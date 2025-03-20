@@ -23,15 +23,16 @@ export default function Hero() {
                             Get real-time market updates and insights for making informed decisions. Trade with confidence on our secure platform.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button className="bg-primary text-white px-8 py-6 rounded-lg text-base">
+                            <Button variant="outline" className="border-muted text-secondary-foreground px-8 py-6 rounded-lg text-base">
+
                                 Explore Market Trends
                             </Button>
-                            <Button variant="outline" className="border-primary text-primary px-8 py-6 rounded-lg text-base">
+                            <Button className="bg-primary text-white px-8 py-6 rounded-lg text-base">
                                 Start Trading Now
                             </Button>
                         </div>
                     </div>
-                    <Tabs defaultValue="trending" className="relative w-full h-full bg-[#1A2030]/90 backdrop-blur-sm rounded-lg p-4 shadow-xl">
+                    <Tabs defaultValue="trending" className="relative max-w-[480px] w-full h-full aspect-square bg-background rounded-2xl p-9 gap-9">
                         <div className="flex justify-between items-center mb-4">
                             <TabsList className="bg-[#1E2535]">
                                 <TabsTrigger value="trending" className="data-[state=active]:bg-[#F59E0B]/20 data-[state=active]:text-[#F59E0B]">TRENDING</TabsTrigger>
