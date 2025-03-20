@@ -1,17 +1,13 @@
-import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#161B27] py-12 px-4">
+        <footer className="bg-accent py-12 px-4">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
-                        <Image
-                            src="/images/dexspace-logo.svg"
-                            alt="DexSpace Logo"
-                            width={150}
-                            height={32}
-                        />
+                        <h1 className="text-2xl font-bold">
+                            DexSpace
+                        </h1>
                         <p className="text-gray-400 mt-4">
                             The next dimension of secure crypto trading.
                         </p>
