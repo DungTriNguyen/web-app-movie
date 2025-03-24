@@ -13,7 +13,7 @@ export default function FAQ() {
                     </p>
                 </div>
 
-                <Accordion type="single" collapsible className="space-y-2 max-w-3xl mx-auto">
+                <Accordion type="single" collapsible className="space-y-2 max-w-3xl mx-auto transition-all duration-300">
                     <AccordionItem
                         value="item-1"
                         className="bg-card rounded-lg border border-border data-[state=open]:bg-accent"
