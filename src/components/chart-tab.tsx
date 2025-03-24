@@ -27,8 +27,8 @@ export default function ChartTab() {
 
 
     return (
-        <Tabs defaultValue="trending" className=" max-w-[480px] w-full h-full shadow-[20px_20px_0px_0px_rgba(17,24,39,0.8)] bg-background rounded-2xl p-9 gap-9 justify-center items-center ">
-            <div className="flex w-full items-center justify-between gap-4 self-stretch border-b-2 border-border">
+        <Tabs defaultValue="trending" className=" max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(17,24,39,0.8)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center border-[16px] border-background ">
+            <div className="flex flex-1 w-full items-center justify-between gap-4 self-stretch border-b-2 border-border">
                 <TabsList className="bg-background gap-4 p-0 flex">
                     <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">TRENDING</TabsTrigger>
                     <TabsTrigger value="new-pair" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">NEW PAIRS</TabsTrigger>
@@ -62,7 +62,7 @@ export default function ChartTab() {
                     ))}
                 </div>
             </TabsContent>
-            <TabsContent value="new-pair">
+            <TabsContent value="new-pair" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
                     <div className="flex-1">Token</div>
                     <div className=" min-w-[160px] text-right">Price (USDT)</div>

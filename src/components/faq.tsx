@@ -2,18 +2,18 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function FAQ() {
     return (
-        <section className="p-20 bg-background-tertiary">
-            <div className="container mx-auto space-y-12 ">
-                <div className="text-center space-y-4">
-                    <h2 className="text-4xl md:text-5xl font-bold ">
+        <section className="md:p-20 bg-background-tertiary px-4 py-10">
+            <div className="container mx-auto gap-12 flex flex-col items-center justify-center ">
+                <div className="text-center gap-12 flex flex-col items-center justify-center">
+                    <h2 className="text-4xl md:text-5xl font-bold">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-secondary-foreground text-sm mx-auto">
+                    <p className="text-secondary-foreground text-sm ">
                         Find answers to common questions about DexSpace and how you can make the most of our platform.
                     </p>
                 </div>
 
-                <Accordion type="single" collapsible className="space-y-2 max-w-3xl mx-auto transition-all duration-300">
+                <Accordion type="single" collapsible className="gap-2 flex flex-col  w-full max-w-3xl transition-all duration-300">
                     <AccordionItem
                         value="item-1"
                         className="bg-card rounded-lg border border-border data-[state=open]:bg-accent"
