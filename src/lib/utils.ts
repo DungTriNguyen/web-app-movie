@@ -11,3 +11,5 @@ export const formatNumber = (number: number, minimumFractionDigits: number = 2, 
     maximumFractionDigits,
   })
 }
+
+export const IS_BROWSER = typeof window !== 'undefined';

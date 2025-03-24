@@ -27,6 +27,7 @@ export interface TokenItem {
     symbol: string
     total_supply: number
     updatedAt: string
+    logo: string
 }
 
 export interface N1h {
