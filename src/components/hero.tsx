@@ -1,3 +1,5 @@
+'use client'
+
 import ChartTab from "./chart-tab";
 import { Button } from "./ui/button";
 
@@ -26,10 +28,16 @@ export default function Hero() {
                 <ChartTab />
             </div>
             <div className="flex justify-center items-start self-stretch md:hidden flex-row gap-4">
-                <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base">
+                <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base" onClick={() => {
+                    console.log('clicked');
+
+                }}>
                     Explore Market Trends
                 </Button>
-                <Button className="bg-primary text-white px-3 md:px-8 py-6 rounded-lg text-base">
+                <Button className="bg-primary text-white px-3 md:px-8 py-6 rounded-lg text-base" onClick={() => {
+                    console.log('clicked');
+
+                }}>
                     Start Trading Now
                 </Button>
             </div>
