@@ -6,6 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const formatNumber = (number: number, minimumFractionDigits: number = 2, maximumFractionDigits: number = 2) => {
+  if (!number) return '0.00'
+
   return number.toLocaleString('en-US', {
     minimumFractionDigits,
     maximumFractionDigits,
