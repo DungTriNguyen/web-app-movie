@@ -1,9 +1,30 @@
+'use client'
 import { Button } from "./ui/button"
 import Image from "next/image"
-import { Menu } from "lucide-react"
+import { Menu, Globe } from "lucide-react"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "./ui/dropdown-menu"
+import { useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 
 const Header = () => {
+    const router = useRouter()
+    const pathname = usePathname()
+
+    const languages = [
+        { code: 'en', label: 'English' },
+        { code: 'vi', label: 'Tiếng Việt' }
+    ]
+
+    const handleLanguageChange = (locale: string) => {
+        const newPath = pathname.replace(/^\/[a-z]{2}/, `/${locale}`)
+        router.push(newPath)
+    }
 
     return (
         <header className="absolute top-0 z-50 w-full justify-between items-center ">
@@ -14,7 +35,7 @@ const Header = () => {
                     width={180}
                     height={40}
                     priority
-                    className="w-[180px]  justify-center items-center "
+                    className="w-[180px] justify-center items-center"
                 />
 
                 {/* Desktop Navigation */}
@@ -27,6 +48,25 @@ const Header = () => {
                 </nav>
 
                 <div className="flex items-center gap-2">
+                    {/* Language Switcher */}
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button variant="ghost" size="icon" className="hidden md:flex">
+                                <Globe className="h-5 w-5" />
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end">
+                            {languages.map((lang) => (
+                                <DropdownMenuItem
+                                    key={lang.code}
+                                    onClick={() => handleLanguageChange(lang.code)}
+                                >
+                                    {lang.label}
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+
                     <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12" size="sm" variant="default">
                         Get Started
                     </Button>
@@ -46,6 +86,20 @@ const Header = () => {
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Pricing</a>
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Blog</a>
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Community</a>
+
+                            {/* Language Switcher in Mobile Menu */}
+                            <div className="flex gap-2 w-full justify-center">
+                                {languages.map((lang) => (
+                                    <Button
+                                        key={lang.code}
+                                        variant="outline"
+                                        size="sm"
+                                        onClick={() => handleLanguageChange(lang.code)}
+                                    >
+                                        {lang.label}
+                                    </Button>
+                                ))}
+                            </div>
                         </nav>
                         <Button className="bg-primary w-full mt-2">
                             Get Started
@@ -53,7 +107,6 @@ const Header = () => {
                     </SheetContent>
                 </Sheet>
             </div>
-
         </header>
     )
 }

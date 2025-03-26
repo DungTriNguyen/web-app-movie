@@ -1,0 +1,87 @@
+{
+    "home": {
+        "hero": {
+            "title": "Thế Hệ Mới Của Giao Dịch Crypto An Toàn",
+            "description": "Dẫn đầu thị trường với cập nhật giá tức thì về các token mới và xu hướng hot nhất. Nhanh chóng, đáng tin cậy và được xây dựng dành cho trader DeFi.",
+            "button": {
+                "explore": "Khám Phá Xu Hướng Thị Trường",
+                "start": "Bắt Đầu Giao Dịch Ngay"
+            }
+        },
+        "feature": {
+            "title": "Tính Năng",
+            "description": "Nền tảng tốt nhất để giao dịch và quản lý tài sản crypto của bạn."
+        },
+        "advance": {
+            "title": "Nâng Cao",
+            "description": "Nền tảng tốt nhất để giao dịch và quản lý tài sản crypto của bạn."
+        }
+    },
+    "scroll": "Cuộn Xuống",
+    "feature": {
+        "title": "Tại Sao Chọn DexSpace",
+        "real-time-data": "Dữ Liệu Thời Gian Thực",
+        "real-time-data-description": "Cập nhật tức thì với phân tích tốc độ cao giúp đưa ra quyết định giao dịch chính xác.",
+        "seamless-trading": "Giao Dịch Mượt Mà",
+        "seamless-trading-description": "Giao dịch trực tiếp từ nền tảng với độ trượt giá tối thiểu và hiệu suất tối đa.",
+        "user-friendly-interface": "Giao Diện Thân Thiện",
+        "user-friendly-interface-description": "Thiết kế đơn giản, phù hợp cho cả người mới và trader chuyên nghiệp.",
+        "multi-chain-support": "Hỗ Trợ Đa Chuỗi",
+        "multi-chain-support-description": "Theo dõi token trên nhiều blockchain trong một nền tảng thống nhất."
+    },
+    "advance": {
+        "title": "Phân Tích Nâng Cao Trong Tầm Tay",
+        "description": "Theo dõi biến động thị trường, phân tích xu hướng và đưa ra quyết định chính xác với bộ công cụ phân tích mạnh mẽ của chúng tôi.",
+        "real-time-price-updates": "Cập Nhật Giá Theo Thời Gian Thực",
+        "custom-chart-indicators": "Chỉ Báo Biểu Đồ Tùy Chỉnh",
+        "market-depth-analysis": "Phân Tích Độ Sâu Thị Trường"
+    },
+    "ready": {
+        "title": "Sẵn Sàng Nâng Tầm Giao Dịch DeFi Của Bạn?",
+        "description": "Tham gia DexSpace ngay hôm nay và kiểm soát hoàn toàn trải nghiệm giao dịch của bạn.",
+        "button": "Bắt Đầu Ngay"
+    },
+    "faq": {
+        "title": "Câu Hỏi Thường Gặp",
+        "description": "Tìm câu trả lời cho những thắc mắc phổ biến về DexSpace và cách tối ưu hóa trải nghiệm trên nền tảng của chúng tôi.",
+        "accordion": {
+            "item-1": {
+                "title": "DexSpace là gì?",
+                "description": "DexSpace là nền tảng phân tích DeFi thế hệ mới cung cấp giá token theo thời gian thực, xu hướng thị trường và thông tin giao dịch nâng cao cho các sàn giao dịch phi tập trung."
+            },
+            "item-2": {
+                "title": "DexSpace theo dõi giá token như thế nào?",
+                "description": "DexSpace sử dụng công nghệ lập chỉ mục blockchain tiên tiến để giám sát các giao dịch trên chuỗi và các pool thanh khoản trên nhiều mạng lưới. Chúng tôi tổng hợp dữ liệu từ các sàn giao dịch phi tập trung và cung cấp cập nhật giá theo thời gian thực với độ trễ tối thiểu, đảm bảo bạn luôn có thông tin thị trường mới nhất."
+            },
+            "item-3": {
+                "title": "Tôi có cần kết nối ví để sử dụng DexSpace không?",
+                "description": "Không, bạn không cần kết nối ví để truy cập các tính năng cơ bản như theo dõi giá token, xu hướng thị trường và phân tích dữ liệu. Tuy nhiên, kết nối ví sẽ mở khóa các tính năng cá nhân hóa như theo dõi danh mục đầu tư, giao dịch trực tiếp từ nền tảng và nhận thông báo tùy chỉnh dựa trên tài sản của bạn."
+            },
+            "item-4": {
+                "title": "DexSpace có miễn phí không?",
+                "description": "Có, DexSpace cung cấp gói miễn phí với quyền truy cập vào các tính năng cơ bản như theo dõi giá token, phân tích thị trường cơ bản và thông tin giao dịch. Chúng tôi cũng có các gói đăng ký cao cấp với các tính năng nâng cao như cảnh báo thời gian thực, trực quan hóa dữ liệu mở rộng, truy cập API và hỗ trợ khách hàng ưu tiên dành cho trader và nhà phát triển chuyên nghiệp."
+            },
+            "item-5": {
+                "title": "Làm thế nào để niêm yết một token trên DexSpace?",
+                "description": "Để niêm yết token trên DexSpace, bạn có thể gửi yêu cầu thông qua cổng Đệ Trình Token của chúng tôi. Chúng tôi yêu cầu thông tin cơ bản về dự án của bạn, bao gồm địa chỉ hợp đồng, trang web, liên kết mạng xã hội và chi tiết tokenomics. Đội ngũ của chúng tôi sẽ xem xét tất cả các yêu cầu để đảm bảo đáp ứng tiêu chuẩn an toàn và chất lượng trước khi thêm vào nền tảng."
+            }
+        },
+        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ."
+    },
+    "footer": {
+        "description": "Nền tảng phân tích token crypto tiên tiến dành cho trader hiện đại.",
+        "product": "Sản Phẩm",
+        "company": "Công Ty",
+        "support": "Hỗ Trợ",
+        "terms": "Điều Khoản",
+        "privacy": "Chính Sách",
+        "contact": "Liên Hệ",
+        "about": "Giới Thiệu",
+        "blog": "Blog",
+        "careers": "Tuyển Dụng",
+        "connect": "Kết Nối",
+        "features": "Tính Năng",
+        "analytics": "Phân Tích",
+        "trading": "Giao Dịch"
+    }
+}

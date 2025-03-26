@@ -1,0 +1,87 @@
+{
+    "home": {
+        "hero": {
+            "title": "The Next Dimension of Secure Crypto Trading",
+            "description": "Stay ahead of the market with instant price updates on the most trending and newly launched tokens. Fast, reliable, and built for DeFi traders.",
+            "button": {
+                "explore": "Explore Market Trends",
+                "start": "Start Trading Now"
+            }
+        },
+        "feature": {
+            "title": "Features",
+            "description": "The best place to trade and manage your crypto assets."
+        },
+        "advance": {
+            "title": "Advance",
+            "description": "The best place to trade and manage your crypto assets."
+        }
+    },
+    "scroll": "Scroll",
+    "feature": {
+        "title": "Why Choose DexSpace",
+        "real-time-data": "Real-Time Data",
+        "real-time-data-description": "Instant updates with high speed analytics for informed trading decisions.",
+        "seamless-trading": "Seamless Trading",
+        "seamless-trading-description": "Trade directly from the platform with minimal slippage and maximum efficiency.",
+        "user-friendly-interface": "User-Friendly Interface",
+        "user-friendly-interface-description": "Simplified design that caters to both beginners and expert traders.",
+        "multi-chain-support": "Multi-Chain Support",
+        "multi-chain-support-description": "Track tokens across multiple blockchains in one unified platform."
+    },
+    "advance": {
+        "title": "Advanced Analytics at Your Fingertips",
+        "description": "Track market movements, analyze trends, and make informed decisions with our powerful analytics suite.",
+        "real-time-price-updates": "Real-Time Price Updates",
+        "custom-chart-indicators": "Custom Chart Indicators",
+        "market-depth-analysis": "Market Depth Analysis"
+    },
+    "ready": {
+        "title": "Ready to Elevate Your Defi Trading?",
+        "description": "Join DexSpace today and take full control of your trading experience.",
+        "button": "Get Started Now"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to common questions about DexSpace and how you can make the most of our platform.",
+        "accordion": {
+            "item-1": {
+                "title": "What is DexSpace?",
+                "description": "DexSpace is a next-gen DeFi analytics platform that provides real-time token prices, market trends, and advanced trading insights for decentralized exchanges."
+            },
+            "item-2": {
+                "title": "How does DexSpace track token prices?",
+                "description": "DexSpace utilizes advanced blockchain indexing technology to monitor on-chain transactions and liquidity pools across multiple networks. We aggregate data from decentralized exchanges and provide real-time price updates with minimal latency, ensuring you always have the most current market information."
+            },
+            "item-3": {
+                "title": "Do I need to connect my wallet to use DexSpace?",
+                "description": "No, you don&apos;t need to connect your wallet to access basic features like token price tracking, market trends, and analytics. However, connecting your wallet enables personalized features such as portfolio tracking, trading directly from our platform, and receiving customized alerts based on your holdings."
+            },
+            "item-4": {
+                "title": "Is DexSpace free to use?",
+                "description": "Yes, DexSpace offers a free tier that provides access to essential features including token price tracking, basic market analytics, and trading insights. We also offer premium subscription plans with advanced features like real-time alerts, enhanced data visualization, API access, and priority customer support for professional traders and developers."
+            },
+            "item-5": {
+                "title": "How can I list a token on DexSpace?",
+                "description": "To list your token on DexSpace, you can submit a listing request through our Token Submission portal. We require basic information about your project, including contract address, website, social media links, and tokenomics details. Our team reviews all submissions to ensure they meet our security and quality standards before adding them to our platform."
+            }
+        },
+        "support": "Still have questions? Contact Support."
+    },
+    "footer": {
+        "description": "Advanced crypto token analytics platform for modern traders.",
+        "product": "Product",
+        "company": "Company",
+        "support": "Support",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "contact": "Contact",
+        "about": "About",
+        "blog": "Blog",
+        "careers": "Careers",
+        "connect": "Connect",
+        "features": "Features",
+        "analytics": "Analytics",
+        "trading": "Trading"
+    }
+}
