@@ -11,6 +11,8 @@ import {
 } from "./ui/dropdown-menu"
 import { useRouter } from "next/navigation"
 import { usePathname } from "next/navigation"
+import Link from "next/link"
+import { NEXT_PUBLIC_APP_URL } from "@/configs/env"
 
 const Header = () => {
     const router = useRouter()
@@ -40,11 +42,11 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-4 lg:gap-8 flex-1 justify-center">
-                    <a href="#features" className="text-sm font-medium transition-colors hover:text-primary">Features</a>
+                    {/* <a href="#features" className="text-sm font-medium transition-colors hover:text-primary">Features</a>
                     <a href="#trending" className="text-sm font-medium transition-colors hover:text-primary">Why Us</a>
                     <a href="#faq" className="text-sm font-medium transition-colors hover:text-primary">Pricing</a>
                     <a href="#faq" className="text-sm font-medium transition-colors hover:text-primary">Blog</a>
-                    <a href="#faq" className="text-sm font-medium transition-colors hover:text-primary">Community</a>
+                    <a href="#faq" className="text-sm font-medium transition-colors hover:text-primary">Community</a> */}
                 </nav>
 
                 <div className="flex items-center gap-2">
@@ -67,9 +69,11 @@ const Header = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
 
-                    <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12" size="sm" variant="default">
-                        Get Started
-                    </Button>
+                    <a href={NEXT_PUBLIC_APP_URL} target="_blank">
+                        <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12" size="sm" variant="default">
+                            Get Started
+                        </Button>
+                    </a>
                 </div>
 
                 <Sheet>
@@ -81,11 +85,11 @@ const Header = () => {
                     <SheetContent side="bottom" className="flex flex-col gap-4 p-4 justify-center items-center">
                         <SheetTitle className="text-2xl font-bold text-secondary">Menu</SheetTitle>
                         <nav className="flex flex-col gap-4 w-full justify-center items-center">
-                            <a href="#features" className="text-sm font-medium py-2 hover:text-primary">Features</a>
+                            {/* <a href="#features" className="text-sm font-medium py-2 hover:text-primary">Features</a>
                             <a href="#trending" className="text-sm font-medium py-2 hover:text-primary">Why Us</a>
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Pricing</a>
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Blog</a>
-                            <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Community</a>
+                            <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Community</a> */}
 
                             {/* Language Switcher in Mobile Menu */}
                             <div className="flex gap-2 w-full justify-center">
@@ -101,9 +105,11 @@ const Header = () => {
                                 ))}
                             </div>
                         </nav>
-                        <Button className="bg-primary w-full mt-2">
-                            Get Started
-                        </Button>
+                        <a href={NEXT_PUBLIC_APP_URL} target="_blank">
+                            <Button className="bg-primary w-full mt-2">
+                                Get Started
+                            </Button>
+                        </a>
                     </SheetContent>
                 </Sheet>
             </div>

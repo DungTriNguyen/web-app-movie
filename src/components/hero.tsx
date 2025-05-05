@@ -1,8 +1,10 @@
 'use client'
 
+import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
 import ChartTab from "./chart-tab";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Hero() {
     const t = useTranslations('home.hero');
@@ -21,9 +23,11 @@ export default function Hero() {
 
                         {t('button.explore')}
                     </Button>
-                    <Button className="bg-primary text-white px-8 py-6 rounded-lg text-base">
-                        {t('button.start')}
-                    </Button>
+                    <a href={NEXT_PUBLIC_APP_URL} target="_blank">
+                        <Button className="bg-primary text-white px-8 py-6 rounded-lg text-base">
+                            {t('button.start')}
+                        </Button>
+                    </a>
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-16 flex-1">
@@ -33,9 +37,11 @@ export default function Hero() {
                 <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base" >
                     {t('button.explore')}
                 </Button>
-                <Button className="bg-primary text-white px-3 md:px-8 py-6 rounded-lg text-base">
-                    {t('button.start')}
-                </Button>
+                <a href={NEXT_PUBLIC_APP_URL} target="_blank">
+                    <Button className="bg-primary text-white px-3 md:px-8 py-6 rounded-lg text-base">
+                        {t('button.start')}
+                    </Button>
+                </a>
             </div>
         </section>
     )
