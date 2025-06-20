@@ -4,6 +4,8 @@ import { useTokens } from "@/hooks/use-tokens";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { TokenItem } from "@/services/token";
 import { formatNumber } from "@/lib/utils";
+import Link from "next/link";
+import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
 // import { useEffect } from "react";
 
 export default function ChartTab() {
@@ -24,12 +26,12 @@ export default function ChartTab() {
                     <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">TRENDING</TabsTrigger>
                     <TabsTrigger value="new-pair" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">NEW PAIRS</TabsTrigger>
                 </TabsList>
-                <a href="#" className="text-sm text-gray-400 hover:text-white flex items-center justify-center gap-1 min-w-5">
+                <Link href={`${NEXT_PUBLIC_APP_URL}/dashboard`} className="text-sm text-gray-400 hover:text-white flex items-center justify-center gap-1 min-w-5">
                     More
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
-                </a>
+                </Link>
             </div>
             <TabsContent value="trending" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
@@ -39,7 +41,7 @@ export default function ChartTab() {
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {trendingTokens?.data.data.map((token: TokenItem) => (
-                        <div key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
+                        <Link href={`${NEXT_PUBLIC_APP_URL}/${token.contract_address}`} key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
                             <div className="flex flex-1 gap-1 items-center font-medium text-sm">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <div className="rounded-full"  ><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
@@ -49,7 +51,7 @@ export default function ChartTab() {
                             <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} flex-1 font-medium text-sm text-right min-w-28 max-w-40`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </TabsContent>
@@ -61,7 +63,7 @@ export default function ChartTab() {
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {newPairs?.data.data.map((token: TokenItem) => (
-                        <div key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
+                        <Link href={`${NEXT_PUBLIC_APP_URL}/${token.contract_address}`} key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
                             <div className="flex flex-1 gap-1 items-center font-medium text-sm">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <div className="rounded-full"  ><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
@@ -71,7 +73,7 @@ export default function ChartTab() {
                             <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} flex-1 font-medium text-sm text-right min-w-28 max-w-40`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </TabsContent>
