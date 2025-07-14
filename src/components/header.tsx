@@ -20,7 +20,14 @@ const Header = () => {
 
     const languages = [
         { code: 'en', label: 'English' },
-        { code: 'vi', label: 'Tiếng Việt' }
+        { code: 'zh', label: '中文' },
+        { code: 'es', label: 'Español' },
+        { code: 'fr', label: 'Français' },
+        { code: 'de', label: 'Deutsch' },
+        { code: 'ru', label: 'Русский' },
+        { code: 'jp', label: '日本語' },
+        { code: 'kr', label: '한국어' },
+        { code: 'vi', label: 'Tiếng Việt' },
     ]
 
     const handleLanguageChange = (locale: string) => {
@@ -31,14 +38,16 @@ const Header = () => {
     return (
         <header className="absolute top-0 z-50 w-full justify-between items-center ">
             <div className="min-h-20 md:py-6 px-4 md:px-20 flex gap-2.5 justify-between items-center ">
-                <Image
-                    src="/dex-space.svg"
-                    alt="DexSpace Logo"
-                    width={180}
-                    height={40}
-                    priority
-                    className="w-[180px] justify-center items-center"
-                />
+                <a href="/">
+                    <Image
+                        src="/dex-space.svg"
+                        alt="DexSpace Logo"
+                        width={180}
+                        height={40}
+                        priority
+                        className="w-[180px] justify-center items-center"
+                    />
+                </a>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-4 lg:gap-8 flex-1 justify-center">
@@ -92,13 +101,14 @@ const Header = () => {
                             <a href="#faq" className="text-sm font-medium py-2 hover:text-primary">Community</a> */}
 
                             {/* Language Switcher in Mobile Menu */}
-                            <div className="flex gap-2 w-full justify-center">
+                            <div className="w-full text-center">
                                 {languages.map((lang) => (
                                     <Button
                                         key={lang.code}
                                         variant="outline"
                                         size="sm"
                                         onClick={() => handleLanguageChange(lang.code)}
+                                        className="mr-2 mb-2"
                                     >
                                         {lang.label}
                                     </Button>

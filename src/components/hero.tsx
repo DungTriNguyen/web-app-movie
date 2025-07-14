@@ -33,10 +33,10 @@ export default function Hero() {
                     {t('description')}
                 </p>
                 <div className="flex flex-col max-md:hidden sm:flex-row gap-4">
-                    <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg text-base">
+                    {/* <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg text-base">
 
                         {t('button.explore')}
-                    </Button>
+                    </Button> */}
                     <Button
                         className="bg-primary text-white px-8 py-6 rounded-lg text-base"
                         onClick={handleClick}
@@ -57,9 +57,9 @@ export default function Hero() {
                 <ChartTab />
             </div>
             <div className="flex justify-center items-start self-stretch md:hidden flex-row gap-4">
-                <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base" >
+                {/* <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base" >
                     {t('button.explore')}
-                </Button>
+                </Button> */}
                 <Button
                     className="bg-primary text-white px-8 py-6 rounded-lg text-base"
                     onClick={handleClick}

@@ -66,12 +66,13 @@
                 "description": "To list your token on DexSpace, you can submit a listing request through our Token Submission portal. We require basic information about your project, including contract address, website, social media links, and tokenomics details. Our team reviews all submissions to ensure they meet our security and quality standards before adding them to our platform."
             }
         },
-        "support": "Still have questions? Contact Support."
+        "support": "Still have questions? Contact Support. contact@dexspace.io"
     },
     "footer": {
         "description": "Advanced crypto token analytics platform for modern traders.",
         "product": "Product",
         "company": "Company",
+        "legal": "Legal",
         "support": "Support",
         "terms": "Terms",
         "privacy": "Privacy",
@@ -83,5 +84,96 @@
         "features": "Features",
         "analytics": "Analytics",
         "trading": "Trading"
+    },
+    "policy": {
+        "title": "Privacy Policy",
+        "introduction": {
+            "title": "1. Introduction",
+            "content": "DexSpace (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our decentralized exchange analytics platform. By using DexSpace, you consent to the data practices described in this policy."
+        },
+        "information-collection": {
+            "title": "2. Information We Collect",
+            "provided": {
+                "title": "2.1 Information You Provide",
+                "item1": "Wallet addresses when you connect your wallet",
+                "item2": "Email addresses (if you choose to provide them for authentication)",
+                "item3": "Communication preferences and settings",
+                "item4": "Feedback and support requests"
+            },
+            "automatic": {
+                "title": "2.2 Automatically Collected Information",
+                "item1": "IP addresses and device information",
+                "item2": "Browser type and version",
+                "item3": "Usage patterns and analytics data",
+                "item4": "Cookies and similar tracking technologies",
+                "item5": "Public blockchain transaction data"
+            }
+        },
+        "usage": {
+            "title": "3. How We Use Your Information",
+            "item1": "Provide and maintain our platform services",
+            "item2": "Analyze usage patterns to improve user experience",
+            "item3": "Detect and prevent fraud or security threats",
+            "item4": "Comply with legal and regulatory requirements",
+            "item5": "Send important updates and notifications",
+            "item6": "Provide customer support and respond to inquiries"
+        },
+        "sharing": {
+            "title": "4. Information Sharing and Disclosure",
+            "intro": "We do not sell, trade, or rent your personal information to third parties. We may share information in the following circumstances:",
+            "item1": "Legal Requirements: When required by law or to protect our rights",
+            "item2": "Service Providers: With trusted third-party service providers who assist in platform operations",
+            "item3": "Security: To prevent fraud, abuse, or security threats",
+            "item4": "Consent: When you explicitly consent to sharing"
+        },
+        "security": {
+            "title": "5. Data Security",
+            "content": "We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
+        },
+        "blockchain": {
+            "title": "6. Blockchain and Public Data",
+            "content": "Please note that blockchain transactions are inherently public and transparent. When you interact with blockchain networks through our platform, transaction data becomes publicly available on the blockchain. We cannot control or modify this public data once it has been recorded on the blockchain."
+        },
+        "cookies": {
+            "title": "7. Cookies and Tracking Technologies",
+            "intro": "We use cookies and similar technologies to:",
+            "item1": "Remember your preferences and settings",
+            "item2": "Analyze platform usage and performance",
+            "item3": "Provide personalized content and features",
+            "item4": "Ensure platform security and prevent fraud",
+            "note": "You can control cookie settings through your browser preferences, though disabling certain cookies may affect platform functionality."
+        },
+        "rights": {
+            "title": "8. Your Rights and Choices",
+            "intro": "Depending on your location, you may have the following rights:",
+            "item1": "Access: Request information about the data we hold about you",
+            "item2": "Correction: Request correction of inaccurate data",
+            "item3": "Deletion: Request deletion of your personal data",
+            "item4": "Portability: Request a copy of your data in a portable format",
+            "item5": "Objection: Object to certain types of data processing",
+            "item6": "Withdrawal: Withdraw consent for data processing"
+        },
+        "retention": {
+            "title": "9. Data Retention",
+            "content": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. The retention period may vary depending on the type of data and its purpose."
+        },
+        "international": {
+            "title": "10. International Data Transfers",
+            "content": "Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable data protection laws."
+        },
+        "children": {
+            "title": "11. Children's Privacy",
+            "content": "DexSpace is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children under 18. If you believe we have collected such information, please contact us immediately."
+        },
+        "changes": {
+            "title": "12. Changes to This Policy",
+            "content": "We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the \"Last Updated\" date. Your continued use of DexSpace after such changes constitutes acceptance of the updated policy."
+        },
+        "contact": {
+            "title": "13. Contact Us",
+            "intro": "If you have any questions about this Privacy Policy or our data practices, please contact us at:",
+            "address": "[Your Company Address]",
+            "last-updated": "Last Updated"
+        }
     }
 }

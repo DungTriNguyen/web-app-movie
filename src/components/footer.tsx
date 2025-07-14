@@ -20,12 +20,19 @@ export default function Footer() {
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("trading")}</a></li>
                         </ul>
                     </div>
-                    <div className="flex flex-col gap-9 items-start flex-1">
+                    {/* <div className="flex flex-col gap-9 items-start flex-1">
                         <h4 className="text-base font-bold ">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("careers")}</a></li>
+                        </ul>
+                    </div> */}
+                    <div className="flex flex-col gap-9 items-start flex-1">
+                        <h4 className="text-base font-bold ">{t("legal")}</h4>
+                        <ul className="gap-2.5 flex flex-col items-start text-sm">
+                            <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
+                            <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +52,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="px-4 py-9 text-center">
-                <p className="text-gray-400 text-xs">© 2023 DexSpace. All rights reserved.</p>
+                <p className="text-gray-400 text-xs">© {new Date().getFullYear()} DexSpace Crypto Platform LLC. All rights reserved.</p>
             </div>
 
         </footer>

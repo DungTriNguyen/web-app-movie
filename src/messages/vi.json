@@ -66,12 +66,13 @@
                 "description": "Để niêm yết token trên DexSpace, bạn có thể gửi yêu cầu thông qua cổng Đệ Trình Token của chúng tôi. Chúng tôi yêu cầu thông tin cơ bản về dự án của bạn, bao gồm địa chỉ hợp đồng, trang web, liên kết mạng xã hội và chi tiết tokenomics. Đội ngũ của chúng tôi sẽ xem xét tất cả các yêu cầu để đảm bảo đáp ứng tiêu chuẩn an toàn và chất lượng trước khi thêm vào nền tảng."
             }
         },
-        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ."
+        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ. contact@dexspace.io"
     },
     "footer": {
         "description": "Nền tảng phân tích token crypto tiên tiến dành cho trader hiện đại.",
         "product": "Sản Phẩm",
         "company": "Công Ty",
+        "legal": "Pháp Lý",
         "support": "Hỗ Trợ",
         "terms": "Điều Khoản",
         "privacy": "Chính Sách",
@@ -83,5 +84,96 @@
         "features": "Tính Năng",
         "analytics": "Phân Tích",
         "trading": "Giao Dịch"
+    },
+    "policy": {
+        "title": "Chính Sách Bảo Mật",
+        "introduction": {
+            "title": "1. Giới Thiệu",
+            "content": "DexSpace (\"chúng tôi,\" \"của chúng tôi,\" hoặc \"chúng tôi\") cam kết bảo vệ quyền riêng tư của bạn. Chính Sách Bảo Mật này giải thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi sử dụng nền tảng phân tích sàn giao dịch phi tập trung của chúng tôi. Bằng việc sử dụng DexSpace, bạn đồng ý với các thực tiễn dữ liệu được mô tả trong chính sách này."
+        },
+        "information-collection": {
+            "title": "2. Thông Tin Chúng Tôi Thu Thập",
+            "provided": {
+                "title": "2.1 Thông Tin Bạn Cung Cấp",
+                "item1": "Địa chỉ ví khi bạn kết nối ví",
+                "item2": "Địa chỉ email (nếu bạn chọn cung cấp để đăng nhập)",
+                "item3": "Tùy chọn và cài đặt giao tiếp",
+                "item4": "Phản hồi và yêu cầu hỗ trợ"
+            },
+            "automatic": {
+                "title": "2.2 Thông Tin Được Thu Thập Tự Động",
+                "item1": "Địa chỉ IP và thông tin thiết bị",
+                "item2": "Loại và phiên bản trình duyệt",
+                "item3": "Mẫu sử dụng và dữ liệu phân tích",
+                "item4": "Cookie và các công nghệ theo dõi tương tự",
+                "item5": "Dữ liệu giao dịch blockchain công khai"
+            }
+        },
+        "usage": {
+            "title": "3. Cách Chúng Tôi Sử Dụng Thông Tin Của Bạn",
+            "item1": "Cung cấp và duy trì các dịch vụ nền tảng",
+            "item2": "Phân tích mẫu sử dụng để cải thiện trải nghiệm người dùng",
+            "item3": "Phát hiện và ngăn chặn gian lận hoặc mối đe dọa bảo mật",
+            "item4": "Tuân thủ các yêu cầu pháp lý và quy định",
+            "item5": "Gửi cập nhật và thông báo quan trọng",
+            "item6": "Cung cấp hỗ trợ khách hàng và phản hồi yêu cầu"
+        },
+        "sharing": {
+            "title": "4. Chia Sẻ Và Tiết Lộ Thông Tin",
+            "intro": "Chúng tôi không bán, trao đổi hoặc cho thuê thông tin cá nhân của bạn cho bên thứ ba. Chúng tôi có thể chia sẻ thông tin trong các trường hợp sau:",
+            "item1": "Yêu Cầu Pháp Lý: Khi được yêu cầu bởi luật pháp hoặc để bảo vệ quyền của chúng tôi",
+            "item2": "Nhà Cung Cấp Dịch Vụ: Với các nhà cung cấp dịch vụ bên thứ ba đáng tin cậy hỗ trợ hoạt động nền tảng",
+            "item3": "Bảo Mật: Để ngăn chặn gian lận, lạm dụng hoặc mối đe dọa bảo mật",
+            "item4": "Đồng Ý: Khi bạn đồng ý rõ ràng để chia sẻ"
+        },
+        "security": {
+            "title": "5. Bảo Mật Dữ Liệu",
+            "content": "Chúng tôi thực hiện các biện pháp bảo mật kỹ thuật và tổ chức phù hợp để bảo vệ thông tin của bạn khỏi truy cập trái phép, thay đổi, tiết lộ hoặc phá hủy. Tuy nhiên, không có phương pháp truyền tải nào qua internet là 100% an toàn, và chúng tôi không thể đảm bảo bảo mật tuyệt đối."
+        },
+        "blockchain": {
+            "title": "6. Blockchain Và Dữ Liệu Công Khai",
+            "content": "Xin lưu ý rằng các giao dịch blockchain vốn dĩ là công khai và minh bạch. Khi bạn tương tác với các mạng blockchain thông qua nền tảng của chúng tôi, dữ liệu giao dịch trở nên công khai trên blockchain. Chúng tôi không thể kiểm soát hoặc sửa đổi dữ liệu công khai này một khi nó đã được ghi lại trên blockchain."
+        },
+        "cookies": {
+            "title": "7. Cookie Và Công Nghệ Theo Dõi",
+            "intro": "Chúng tôi sử dụng cookie và các công nghệ tương tự để:",
+            "item1": "Ghi nhớ tùy chọn và cài đặt của bạn",
+            "item2": "Phân tích việc sử dụng và hiệu suất nền tảng",
+            "item3": "Cung cấp nội dung và tính năng cá nhân hóa",
+            "item4": "Đảm bảo bảo mật nền tảng và ngăn chặn gian lận",
+            "note": "Bạn có thể kiểm soát cài đặt cookie thông qua tùy chọn trình duyệt, mặc dù việc vô hiệu hóa một số cookie có thể ảnh hưởng đến chức năng nền tảng."
+        },
+        "rights": {
+            "title": "8. Quyền Và Lựa Chọn Của Bạn",
+            "intro": "Tùy thuộc vào vị trí của bạn, bạn có thể có các quyền sau:",
+            "item1": "Truy Cập: Yêu cầu thông tin về dữ liệu chúng tôi nắm giữ về bạn",
+            "item2": "Sửa Chữa: Yêu cầu sửa chữa dữ liệu không chính xác",
+            "item3": "Xóa: Yêu cầu xóa dữ liệu cá nhân của bạn",
+            "item4": "Di Chuyển: Yêu cầu bản sao dữ liệu của bạn ở định dạng có thể di chuyển",
+            "item5": "Phản Đối: Phản đối một số loại xử lý dữ liệu",
+            "item6": "Rút Lại: Rút lại đồng ý cho việc xử lý dữ liệu"
+        },
+        "retention": {
+            "title": "9. Lưu Trữ Dữ Liệu",
+            "content": "Chúng tôi chỉ lưu trữ thông tin cá nhân của bạn trong thời gian cần thiết để thực hiện các mục đích nêu trong chính sách này, tuân thủ nghĩa vụ pháp lý, giải quyết tranh chấp và thực thi các thỏa thuận của chúng tôi. Thời gian lưu trữ có thể khác nhau tùy thuộc vào loại dữ liệu và mục đích của nó."
+        },
+        "international": {
+            "title": "10. Chuyển Dữ Liệu Quốc Tế",
+            "content": "Thông tin của bạn có thể được chuyển và xử lý ở các quốc gia khác ngoài quốc gia của bạn. Chúng tôi đảm bảo các biện pháp bảo vệ phù hợp được áp dụng để bảo vệ dữ liệu của bạn theo Chính Sách Bảo Mật này và các luật bảo vệ dữ liệu hiện hành."
+        },
+        "children": {
+            "title": "11. Quyền Riêng Tư Của Trẻ Em",
+            "content": "DexSpace không dành cho người dùng dưới 18 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 18 tuổi. Nếu bạn tin rằng chúng tôi đã thu thập thông tin như vậy, vui lòng liên hệ với chúng tôi ngay lập tức."
+        },
+        "changes": {
+            "title": "12. Thay Đổi Chính Sách Này",
+            "content": "Chúng tôi có thể cập nhật Chính Sách Bảo Mật này theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi quan trọng nào bằng cách đăng chính sách mới trên trang này và cập nhật ngày \"Cập Nhật Cuối Cùng\". Việc tiếp tục sử dụng DexSpace sau những thay đổi đó có nghĩa là bạn chấp nhận chính sách đã cập nhật."
+        },
+        "contact": {
+            "title": "13. Liên Hệ Với Chúng Tôi",
+            "intro": "Nếu bạn có bất kỳ câu hỏi nào về Chính Sách Bảo Mật này hoặc thực tiễn dữ liệu của chúng tôi, vui lòng liên hệ với chúng tôi tại:",
+            "address": "[Địa Chỉ Công Ty Của Bạn]",
+            "last-updated": "Cập Nhật Cuối Cùng"
+        }
     }
 }

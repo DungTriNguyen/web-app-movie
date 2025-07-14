@@ -1,0 +1,179 @@
+{
+  "home": {
+    "hero": {
+      "title": "La prochaine dimension du trading crypto sécurisé",
+      "description": "Gardez une longueur d'avance sur le marché avec des mises à jour instantanées des prix sur les tokens les plus tendance et nouvellement lancés. Rapide, fiable et conçu pour les traders DeFi.",
+      "button": {
+        "explore": "Explorer les tendances du marché",
+        "start": "Commencer à trader maintenant"
+      }
+    },
+    "feature": {
+      "title": "Fonctionnalités",
+      "description": "Le meilleur endroit pour trader et gérer vos actifs crypto."
+    },
+    "advance": {
+      "title": "Avancé",
+      "description": "Le meilleur endroit pour trader et gérer vos actifs crypto."
+    }
+  },
+  "scroll": "Faire défiler",
+  "feature": {
+    "title": "Pourquoi choisir DexSpace",
+    "real-time-data": "Données en temps réel",
+    "real-time-data-description": "Mises à jour instantanées avec des analyses à grande vitesse pour des décisions de trading éclairées.",
+    "seamless-trading": "Trading sans couture",
+    "seamless-trading-description": "Tradez directement depuis la plateforme avec un glissement minimal et une efficacité maximale.",
+    "user-friendly-interface": "Interface conviviale",
+    "user-friendly-interface-description": "Conception simplifiée adaptée aux débutants comme aux traders experts.",
+    "multi-chain-support": "Support multi-chaînes",
+    "multi-chain-support-description": "Suivez les tokens sur plusieurs blockchains dans une seule plateforme unifiée."
+  },
+  "advance": {
+    "title": "Analyses avancées à portée de main",
+    "description": "Suivez les mouvements du marché, analysez les tendances et prenez des décisions éclairées avec notre suite d'analyses puissante.",
+    "real-time-price-updates": "Mises à jour des prix en temps réel",
+    "custom-chart-indicators": "Indicateurs de graphique personnalisés",
+    "market-depth-analysis": "Analyse de la profondeur du marché"
+  },
+  "ready": {
+    "title": "Prêt à améliorer votre trading DeFi ?",
+    "description": "Rejoignez DexSpace aujourd'hui et prenez le contrôle total de votre expérience de trading.",
+    "button": "Commencer maintenant"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "description": "Trouvez des réponses aux questions courantes sur DexSpace et comment tirer le meilleur parti de notre plateforme.",
+    "accordion": {
+      "item-1": {
+        "title": "Qu'est-ce que DexSpace ?",
+        "description": "DexSpace est une plateforme d'analyse DeFi de nouvelle génération qui fournit des prix de tokens en temps réel, des tendances du marché et des analyses de trading avancées pour les exchanges décentralisés."
+      },
+      "item-2": {
+        "title": "Comment DexSpace suit-il les prix des tokens ?",
+        "description": "DexSpace utilise une technologie avancée d'indexation blockchain pour surveiller les transactions on-chain et les pools de liquidité sur plusieurs réseaux. Nous agrégeons les données des exchanges décentralisés et fournissons des mises à jour de prix en temps réel avec une latence minimale, vous assurant d'avoir toujours les informations de marché les plus récentes."
+      },
+      "item-3": {
+        "title": "Dois-je connecter mon wallet pour utiliser DexSpace ?",
+        "description": "Non, vous n'avez pas besoin de connecter votre wallet pour accéder aux fonctionnalités de base telles que le suivi des prix des tokens, les tendances du marché et les analyses. Cependant, connecter votre wallet permet des fonctionnalités personnalisées telles que le suivi de portefeuille, le trading direct depuis notre plateforme et la réception d'alertes personnalisées basées sur vos avoirs."
+      },
+      "item-4": {
+        "title": "DexSpace est-il gratuit ?",
+        "description": "Oui, DexSpace propose un niveau gratuit qui donne accès aux fonctionnalités essentielles telles que le suivi des prix des tokens, les analyses de marché de base et les informations de trading. Nous proposons également des abonnements premium avec des fonctionnalités avancées telles que des alertes en temps réel, une visualisation de données améliorée, un accès à l'API et un support client prioritaire pour les traders et développeurs professionnels."
+      },
+      "item-5": {
+        "title": "Comment puis-je lister un token sur DexSpace ?",
+        "description": "Pour lister votre token sur DexSpace, vous pouvez soumettre une demande de listing via notre portail de soumission de tokens. Nous demandons des informations de base sur votre projet, y compris l'adresse du contrat, le site web, les liens vers les réseaux sociaux et les détails du tokenomics. Notre équipe examine toutes les soumissions pour s'assurer qu'elles répondent à nos normes de sécurité et de qualité avant de les ajouter à la plateforme."
+      }
+    },
+    "support": "Vous avez encore des questions ? Contactez le support. contact@dexspace.io"
+  },
+  "footer": {
+    "description": "Plateforme avancée d'analyse de tokens crypto pour les traders modernes.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "support": "Support",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "about": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "connect": "Connecter",
+    "features": "Fonctionnalités",
+    "analytics": "Analytique",
+    "trading": "Trading"
+  },
+  "policy": {
+    "title": "Politique de confidentialité",
+    "introduction": {
+      "title": "1. Introduction",
+      "content": "DexSpace (\"nous\", \"notre\" ou \"nos\") s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme d'analyse d'échanges décentralisés. En utilisant DexSpace, vous consentez aux pratiques de données décrites dans cette politique."
+    },
+    "information-collection": {
+      "title": "2. Informations que nous collectons",
+      "provided": {
+        "title": "2.1 Informations que vous fournissez",
+        "item1": "Adresses de wallet lorsque vous connectez votre wallet",
+        "item2": "Adresses e-mail (si vous choisissez de les fournir pour l'authentification)",
+        "item3": "Préférences de communication et paramètres",
+        "item4": "Demandes de support et retours"
+      },
+      "automatic": {
+        "title": "2.2 Informations collectées automatiquement",
+        "item1": "Adresses IP et informations sur l'appareil",
+        "item2": "Type et version du navigateur",
+        "item3": "Modèles d'utilisation et données analytiques",
+        "item4": "Cookies et technologies de suivi similaires",
+        "item5": "Données de transactions publiques sur la blockchain"
+      }
+    },
+    "usage": {
+      "title": "3. Comment nous utilisons vos informations",
+      "item1": "Fournir et maintenir les services de notre plateforme",
+      "item2": "Analyser les modèles d'utilisation pour améliorer l'expérience utilisateur",
+      "item3": "Détecter et prévenir la fraude ou les menaces à la sécurité",
+      "item4": "Respecter les obligations légales et réglementaires",
+      "item5": "Envoyer des mises à jour et des notifications importantes",
+      "item6": "Fournir un support client et répondre aux demandes"
+    },
+    "sharing": {
+      "title": "4. Partage et divulgation des informations",
+      "intro": "Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager des informations dans les circonstances suivantes :",
+      "item1": "Exigences légales : Lorsque la loi l'exige ou pour protéger nos droits",
+      "item2": "Fournisseurs de services : Avec des prestataires de services tiers de confiance qui assistent dans les opérations de la plateforme",
+      "item3": "Sécurité : Pour prévenir la fraude, les abus ou les menaces à la sécurité",
+      "item4": "Consentement : Lorsque vous consentez explicitement au partage"
+    },
+    "security": {
+      "title": "5. Sécurité des données",
+      "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations contre l'accès, la modification, la divulgation ou la destruction non autorisés. Cependant, aucune méthode de transmission sur Internet n'est 100% sûre et nous ne pouvons garantir une sécurité absolue."
+    },
+    "blockchain": {
+      "title": "6. Blockchain et données publiques",
+      "content": "Veuillez noter que les transactions blockchain sont par nature publiques et transparentes. Lorsque vous interagissez avec des réseaux blockchain via notre plateforme, les données de transaction deviennent publiques sur la blockchain. Nous ne pouvons pas contrôler ou modifier ces données publiques une fois qu'elles ont été enregistrées sur la blockchain."
+    },
+    "cookies": {
+      "title": "7. Cookies et technologies de suivi",
+      "intro": "Nous utilisons des cookies et des technologies similaires pour :",
+      "item1": "Mémoriser vos préférences et paramètres",
+      "item2": "Analyser l'utilisation et la performance de la plateforme",
+      "item3": "Fournir du contenu et des fonctionnalités personnalisés",
+      "item4": "Garantir la sécurité de la plateforme et prévenir la fraude",
+      "note": "Vous pouvez contrôler les paramètres des cookies via les préférences de votre navigateur, bien que la désactivation de certains cookies puisse affecter la fonctionnalité de la plateforme."
+    },
+    "rights": {
+      "title": "8. Vos droits et choix",
+      "intro": "Selon votre emplacement, vous pouvez avoir les droits suivants :",
+      "item1": "Accès : Demander des informations sur les données que nous détenons à votre sujet",
+      "item2": "Correction : Demander la correction de données inexactes",
+      "item3": "Suppression : Demander la suppression de vos données personnelles",
+      "item4": "Portabilité : Demander une copie de vos données dans un format portable",
+      "item5": "Opposition : S'opposer à certains types de traitement des données",
+      "item6": "Retrait : Retirer le consentement au traitement des données"
+    },
+    "retention": {
+      "title": "9. Conservation des données",
+      "content": "Nous conservons vos informations personnelles uniquement aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette politique, respecter les obligations légales, résoudre les litiges et faire respecter nos accords. La durée de conservation peut varier en fonction du type de données et de leur finalité."
+    },
+    "international": {
+      "title": "10. Transferts internationaux de données",
+      "content": "Vos informations peuvent être transférées et traitées dans des pays autres que le vôtre. Nous veillons à ce que des garanties appropriées soient en place pour protéger vos données conformément à cette politique de confidentialité et aux lois applicables sur la protection des données."
+    },
+    "children": {
+      "title": "11. Confidentialité des enfants",
+      "content": "DexSpace n'est pas destiné à être utilisé par des personnes de moins de 18 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 18 ans. Si vous pensez que nous avons collecté de telles informations, veuillez nous contacter immédiatement."
+    },
+    "changes": {
+      "title": "12. Modifications de cette politique",
+      "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement important en publiant la nouvelle politique sur cette page et en mettant à jour la date de \"Dernière mise à jour\". Votre utilisation continue de DexSpace après de tels changements constitue une acceptation de la politique mise à jour."
+    },
+    "contact": {
+      "title": "13. Contactez-nous",
+      "intro": "Si vous avez des questions concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :",
+      "address": "[L'adresse de votre entreprise]",
+      "last-updated": "Dernière mise à jour"
+    }
+  }
+}
