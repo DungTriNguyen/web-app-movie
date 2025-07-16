@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const locales = ['en', 'vi']
+const locales = ['en', 'vi', 'de', 'es', 'fr', 'jp', 'kr', 'ru', 'zh']
 
 type LayoutProps = {
   children: ReactNode
@@ -26,10 +26,10 @@ type LayoutProps = {
 }
 
 export const metadata: Metadata = {
-  title: 'DexSpace',
-  description: 'Advanced crypto token analytics platform',
+  title: "DexSpace | Open Market — Where Everything’s Tradable, By Everyone",
+  description: "DexSpace provides real-time market updates and secure crypto trading with advanced features for all traders.",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
