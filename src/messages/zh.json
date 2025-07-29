@@ -69,7 +69,7 @@
     "support": "还有问题？联系支持团队。contact@dexspace.io"
   },
   "footer": {
-    "description": "面向现代交易者的高级加密代币分析平台。",
+    "description": "Open Market — 谁都可以交易的地方",
     "product": "产品",
     "company": "公司",
     "legal": "法律",
@@ -83,7 +83,9 @@
     "connect": "连接",
     "features": "功能",
     "analytics": "分析",
-    "trading": "交易"
+    "trading": "交易",
+    "products": "产品",
+    "academy": "学院"
   },
   "policy": {
     "title": "隐私政策",

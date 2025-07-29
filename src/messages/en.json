@@ -55,7 +55,7 @@
             },
             "item-3": {
                 "title": "Do I need to connect my wallet to use DexSpace?",
-                "description": "No, you don&apos;t need to connect your wallet to access basic features like token price tracking, market trends, and analytics. However, connecting your wallet enables personalized features such as portfolio tracking, trading directly from our platform, and receiving customized alerts based on your holdings."
+                "description": "No, you don't need to connect your wallet to access basic features like token price tracking, market trends, and analytics. However, connecting your wallet enables personalized features such as portfolio tracking, trading directly from our platform, and receiving customized alerts based on your holdings."
             },
             "item-4": {
                 "title": "Is DexSpace free to use?",
@@ -69,7 +69,7 @@
         "support": "Still have questions? Contact Support. contact@dexspace.io"
     },
     "footer": {
-        "description": "Advanced crypto token analytics platform for modern traders.",
+        "description": "Open Market — Where Everything's Tradable, By Everyone.",
         "product": "Product",
         "company": "Company",
         "legal": "Legal",
@@ -83,7 +83,9 @@
         "connect": "Connect",
         "features": "Features",
         "analytics": "Analytics",
-        "trading": "Trading"
+        "trading": "Trading",
+        "products": "Products",
+        "academy": "Academy"
     },
     "policy": {
         "title": "Privacy Policy",

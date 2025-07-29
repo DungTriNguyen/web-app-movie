@@ -10,7 +10,7 @@ export default function Feature() {
                 <h2 className="text-4xl font-bold">{t("title")}</h2>
             </div>
             <div className="flex flex-col md:flex-row gap-6 md:gap-12 self-stretch min-h-20">
-                <Card className="p-9 border-none ">
+                <Card className="p-6 border-none ">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2  ">
                         <Image src="/images/chart.svg" alt="Real-Time Data" width={40} height={40} />
                         <CardTitle >
@@ -22,7 +22,7 @@ export default function Feature() {
                         </div>
                     </CardContent>
                 </Card>
-                <Card className="p-9 border-none">
+                <Card className="p-6 border-none">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2">
                         <Image src="/images/reset.svg" alt="Real-Time Data" width={40} height={40} />
                         <CardTitle >
@@ -33,7 +33,7 @@ export default function Feature() {
                         </div>
                     </CardContent>
                 </Card>
-                <Card className="p-9 border-none">
+                <Card className="p-6 border-none">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2">
                         <Image src="/images/shield.svg" alt="Real-Time Data" width={40} height={40} />
                         <CardTitle >
@@ -45,7 +45,7 @@ export default function Feature() {
                         </div>
                     </CardContent>
                 </Card>
-                <Card className="p-9 border-none">
+                <Card className="p-6 border-none">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2">
                         <Image src="/images/link.svg" alt="Real-Time Data" width={40} height={40} />
                         <CardTitle >

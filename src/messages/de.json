@@ -69,7 +69,7 @@
     "support": "Noch Fragen? Kontaktieren Sie den Support. contact@dexspace.io"
   },
   "footer": {
-    "description": "Fortschrittliche Krypto-Token-Analyseplattform für moderne Trader.",
+    "description": "Open Market — Wo alles handelbar ist, von allen.",
     "product": "Produkt",
     "company": "Unternehmen",
     "legal": "Rechtliches",
@@ -83,7 +83,9 @@
     "connect": "Verbinden",
     "features": "Funktionen",
     "analytics": "Analytik",
-    "trading": "Handel"
+    "trading": "Handel",
+    "products": "Produkte",
+    "academy": "Akademie"
   },
   "policy": {
     "title": "Datenschutzerklärung",

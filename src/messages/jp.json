@@ -69,7 +69,7 @@
         "support": "まだ質問がありますか？サポートにお問い合わせください。contact@dexspace.io"
     },
     "footer": {
-        "description": "現代のトレーダー向けの高度な暗号通貨トークン分析プラットフォーム。",
+        "description": "Open Market — 誰でも取引可能な場所。",
         "product": "製品",
         "company": "会社",
         "legal": "法的情報",
@@ -83,7 +83,9 @@
         "connect": "接続",
         "features": "機能",
         "analytics": "分析",
-        "trading": "取引"
+        "trading": "取引",
+        "products": "製品",
+        "academy": "アカデミー"
     },
     "policy": {
         "title": "プライバシーポリシー",

@@ -69,7 +69,7 @@
       "support": "아직 질문이 있으신가요? 지원팀에 문의하세요. contact@dexspace.io"
   },
   "footer": {
-      "description": "현대 트레이더를 위한 고급 암호화폐 토큰 분석 플랫폼.",
+      "description": "Open Market — 누구나 거래 가능한 곳",
       "product": "제품",
       "company": "회사",
       "legal": "법적 정보",
@@ -83,7 +83,9 @@
       "connect": "연결",
       "features": "기능",
       "analytics": "분석",
-      "trading": "거래"
+      "trading": "거래",
+      "products": "제품",
+      "academy": "아카데미"
   },
   "policy": {
       "title": "개인정보처리방침",

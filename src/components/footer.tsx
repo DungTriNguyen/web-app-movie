@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
 export default function Footer() {
     const t = useTranslations('footer');
     return (
@@ -13,11 +15,16 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row gap-12 items-start flex-1 justify-between w-full">
                     <div className="flex flex-col gap-9 items-start flex-1">
-                        <h4 className="text-base font-bold ">{t("product")}</h4>
+                        <h4 className="text-base font-bold ">{t("products")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("features")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("analytics")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("trading")}</a></li>
+                            <li>
+                                <Link href={`${NEXT_PUBLIC_APP_URL}/dashboard`} className="text-gray-400 hover:text-white">
+                                    {t("trading")}
+                                </Link>
+                            </li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("academy")}</a></li>
+                            {/* <li><a href="#" className="text-gray-400 hover:text-white">{t("features")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("analytics")}</a></li> */}
                         </ul>
                     </div>
                     {/* <div className="flex flex-col gap-9 items-start flex-1">
@@ -39,13 +46,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-9 items-start flex-1" >
                     <h4 className="text-base font-bold hidden md:block">{t("connect")}</h4>
                     <div className="flex space-x-4">
-                        <a href="#" >
+                        <a href="https://x.com/dexspace_io" >
                             <img src="/images/twitter.svg" alt="Twitter" className="w-5 h-5" />
                         </a>
-                        <a href="#" >
+                        <a href="https://discord.com/channels/1399657161390424146/1399657162082353164" >
                             <img src="/images/discord.svg" alt="Discord" />
                         </a>
-                        <a href="#" >
+                        <a href="http://t.me/dexspace_io" >
                             <img src="/images/telegram.svg" alt="Telegram" />
                         </a>
                     </div>

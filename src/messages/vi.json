@@ -69,7 +69,7 @@
         "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ. contact@dexspace.io"
     },
     "footer": {
-        "description": "Nền tảng phân tích token crypto tiên tiến dành cho trader hiện đại.",
+        "description": "Open Market — Nơi mọi thứ đều có thể giao dịch, cho tất cả mọi người",
         "product": "Sản Phẩm",
         "company": "Công Ty",
         "legal": "Pháp Lý",
@@ -83,7 +83,9 @@
         "connect": "Kết Nối",
         "features": "Tính Năng",
         "analytics": "Phân Tích",
-        "trading": "Giao Dịch"
+        "trading": "Giao Dịch",
+        "products": "Sản Phẩm",
+        "academy": "Học Viện"
     },
     "policy": {
         "title": "Chính Sách Bảo Mật",
