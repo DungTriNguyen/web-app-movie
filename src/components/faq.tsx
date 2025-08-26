@@ -15,7 +15,7 @@ export default function FAQ() {
                     </p>
                 </div>
 
-                <Accordion type="single" collapsible className="gap-2 flex flex-col w-full max-w-3xl transition-all duration-300">
+                <Accordion type="single" collapsible className="gap-2 flex flex-col w-full max-w-3xl transition-all duration-300" defaultValue="item-1">
                     <AccordionItem
                         value="item-1"
                         className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"

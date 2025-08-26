@@ -13,7 +13,7 @@ export default function Feature() {
                 <Card className="p-9 border-none flex-1">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2 !px-0">
                         <Image src="/images/chart.svg" alt="Real-Time Data" width={48} height={48} />
-                        <CardTitle className="text-white text-center text-xl font-bold font-['Inter'] uppercase leading-loose">
+                        <CardTitle className="text-white text-center text-base lg:text-xl font-bold font-['Inter'] uppercase leading-6">
                             {t("real-time-data")}
                         </CardTitle>
                         <div className=" text-muted-foreground text-sm text-center">
@@ -25,7 +25,7 @@ export default function Feature() {
                 <Card className="p-9 border-none flex-1 ">
                     <CardContent className="flex flex-col items-center text-center gap-2 text-xl space-y-2 !px-0">
                         <Image src="/images/reset.svg" alt="Real-Time Data" width={48} height={48} />
-                        <CardTitle className="text-white text-xl text-center font-bold font-['Inter'] uppercase leading-loose">
+                        <CardTitle className="text-white text-base lg:text-xl text-center font-bold font-['Inter'] uppercase leading-6">
                             {t("seamless-trading")}
                         </CardTitle>
                         <div className=" text-muted-foreground text-sm text-center">
@@ -36,7 +36,7 @@ export default function Feature() {
                 <Card className="p-9 border-none flex-1 ">
                     <CardContent className="flex flex-col items-center text-xl space-y-2 !px-0">
                         <Image src="/images/shield.svg" alt="Real-Time Data" width={48} height={48} />
-                        <CardTitle className="text-white text-xl text-center font-bold font-['Inter'] uppercase leading-loose">
+                        <CardTitle className="text-white text-base lg:text-xl text-center font-bold font-['Inter'] uppercase leading-6">
                             {t("user-friendly-interface")}
 
                         </CardTitle>
@@ -48,7 +48,7 @@ export default function Feature() {
                 <Card className="p-9 border-none flex-1 ">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2 !px-0">
                         <Image src="/images/link.svg" alt="Real-Time Data" width={48} height={48} />
-                        <CardTitle className="text-white text-xl text-center font-bold font-['Inter'] uppercase leading-loose">
+                        <CardTitle className="text-white text-base lg:text-xl text-center font-bold font-['Inter'] uppercase leading-6">
                             {t("multi-chain-support")}
                         </CardTitle>
                         <div className=" text-muted-foreground text-sm text-center">

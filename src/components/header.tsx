@@ -11,7 +11,6 @@ import {
 } from "./ui/dropdown-menu"
 import { useRouter } from "next/navigation"
 import { usePathname } from "next/navigation"
-import Link from "next/link"
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env"
 
 const Header = () => {

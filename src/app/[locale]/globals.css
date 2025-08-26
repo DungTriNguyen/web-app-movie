@@ -132,3 +132,44 @@
 h1 {
   font-size: clamp(1.875rem, 4vmin, 3rem);
 }
+
+.featured-swiper {
+  padding-bottom: 48px !important;
+  padding-top: 48px !important;
+}
+
+.featured-swiper .swiper-pagination {
+  bottom: 0px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.featured-bullet {
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0px !important;
+  background: #ffffff !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.featured-bullet-active {
+  background: oklch(55.8% 0.288 302.321) !important;
+}
+
+.bg-search {
+  background: hsla(221, 27%, 20%, 1);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
