@@ -4,7 +4,6 @@ import Footer from "@/components/footer";
 export default function TermsOfService() {
   return (
     <div className="min-h-screen overflow-x-hidden relative mx-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-      <Header />
       <main className="pt-20 pb-16 px-4 max-w-4xl mx-auto">
         <div className="prose prose-lg max-w-none text-white">
           <h1 className="text-4xl font-bold text-center mb-8 text-white">Terms of Service</h1>

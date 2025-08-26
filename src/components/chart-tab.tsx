@@ -20,7 +20,7 @@ export default function ChartTab() {
 
 
     return (
-        <Tabs defaultValue="trending" className=" max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(17,24,39,0.8)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center border-[16px] border-background ">
+        <Tabs defaultValue="trending" className="max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.2)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center border-[16px] border-background ">
             <div className="flex flex-1 w-full items-center justify-between gap-4 self-stretch border-b-2 border-border">
                 <TabsList className="bg-background gap-4 p-0 flex">
                     <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">TRENDING</TabsTrigger>

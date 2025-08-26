@@ -42,7 +42,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
 }
 
 :root {
@@ -62,7 +62,7 @@
   --muted: #1E2535;
   --muted-foreground: #F4F5F7;
   --accent: #1E2535;
-  --accent-foreground: #F4F5F7; 
+  --accent-foreground: #F4F5F7;
   --destructive: #E53E3E;
   --border: #30394a;
   --input: rgba(255, 255, 255, 0.15);
@@ -123,7 +123,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+h1 {
+  font-size: clamp(1.875rem, 4vmin, 3rem);
 }

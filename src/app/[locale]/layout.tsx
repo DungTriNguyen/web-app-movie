@@ -1,20 +1,22 @@
 import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "../../configs/provider";
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { setRequestLocale } from 'next-intl/server';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -47,12 +49,16 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${inter.variable} antialiased overflow-x-hidden`}
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         <NextIntlClientProvider>
           <Providers>
-            {children}
+            <Header />
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <Footer />
           </Providers>
         </NextIntlClientProvider>
       </body>

@@ -4,21 +4,21 @@ import { useTranslations } from "next-intl";
 export default function FAQ() {
     const t = useTranslations('faq');
     return (
-        <section className="md:p-20 bg-background-tertiary px-4 py-10">
-            <div className="container mx-auto gap-12 flex flex-col items-center justify-center ">
+        <section className="md:p-20 bg-accent px-4">
+            <div className="container mx-auto gap-12 flex flex-col items-center justify-center">
                 <div className="text-center gap-12 flex flex-col items-center justify-center">
-                    <h2 className="text-4xl md:text-5xl font-bold">
+                    <h2 className="text-gray-100 text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[600px]">
                         {t("title")}
                     </h2>
-                    <p className="text-secondary-foreground text-sm ">
+                    <p className="text-gray-100 text-sm font-medium font-['Inter'] leading-snug">
                         {t("description")}
                     </p>
                 </div>
 
-                <Accordion type="single" collapsible className="gap-2 flex flex-col  w-full max-w-3xl transition-all duration-300">
+                <Accordion type="single" collapsible className="gap-2 flex flex-col w-full max-w-3xl transition-all duration-300">
                     <AccordionItem
                         value="item-1"
-                        className="bg-card rounded-lg border border-border data-[state=open]:bg-accent"
+                        className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"
                     >
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             {t("accordion.item-1.title")}
@@ -30,7 +30,7 @@ export default function FAQ() {
 
                     <AccordionItem
                         value="item-2"
-                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                        className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"
                     >
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             {t("accordion.item-2.title")}
@@ -42,7 +42,7 @@ export default function FAQ() {
 
                     <AccordionItem
                         value="item-3"
-                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                        className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"
                     >
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             {t("accordion.item-3.title")}
@@ -54,7 +54,7 @@ export default function FAQ() {
 
                     <AccordionItem
                         value="item-4"
-                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent"
+                        className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"
                     >
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             {t("accordion.item-4.title")}
@@ -66,7 +66,7 @@ export default function FAQ() {
 
                     <AccordionItem
                         value="item-5"
-                        className="bg-card rounded-lg border border-border overflow-hidden data-[state=open]:bg-accent  "
+                        className="bg-accent rounded-lg border border-border data-[state=open]:bg-card"
                     >
                         <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline hover:bg-muted/20">
                             {t("accordion.item-5.title")}
@@ -76,7 +76,7 @@ export default function FAQ() {
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
-                <div className="flex justify-center items-center text-sm ">
+                <div className="flex justify-center items-center text-sm text-gray-100 font-medium font-['Inter'] leading-snug ">
                     {t("support")}
                 </div>
             </div>

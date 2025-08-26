@@ -1,37 +1,35 @@
-import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Feature from "@/components/feature";
 import FAQ from "@/components/faq";
-import Footer from "@/components/footer";
 import Ready from "@/components/ready";
 import Advance from "@/components/advance";
-import { ChevronDown } from "lucide-react";
-import { useTranslations } from "next-intl";
+
 export default function Home() {
-  const t = useTranslations();
   return (
-    <div className="min-h-screen  overflow-x-hidden relative mx-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-      <Header />
-      <Hero />
-
-      {/*----Mobile View ----*/}
-      <div className="md:hidden gap-2.5 bg-accent w-full h-full flex justify-center items-center  flex-col">
-        {t('scroll')}
-        <ChevronDown className="w-4 h-4" />
+    <div className="min-h-screen overflow-x-hidden">
+      <div className="relative z-10">
+        <Hero />
       </div>
-      <div className="w-screen h-screen md:hidden bg-accent bg-[url('/images/mobile-wave-image.png')] bg-cover bg-center bg-no-repeat items-start self-stretch flex flex-col" />
-
-      {/*----Desktop View ----*/}
-      <div className="bg-accent">
-        <Feature />
-        <div className="relative pt-10 md:pt-20 overflow-hidden">
-          <Advance />
+      <div className="bg-accent relative w-full md:h-[1200px] overflow-hidden -mt-1 flex flex-col justify-between">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute left-0 top-0 w-full h-full object-cover z-0 md:h-[1200px]"
+        >
+          <source src="/images/feature-bg.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-accent to-transparent z-0 md:h-[1200px]" />
+        <div className="relative z-10 flex flex-col h-full justify-between">
+          <Feature />
+          <div className="relative pb-0 md:pb-0 overflow-hidden">
+            <Advance />
+          </div>
         </div>
       </div>
       <Ready />
       <FAQ />
-      <Footer />
-
     </div>
   );
 }
