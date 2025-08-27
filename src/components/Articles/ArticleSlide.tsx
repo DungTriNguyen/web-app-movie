@@ -55,7 +55,7 @@ export default function ArticleSlide() {
                     key={idx}
                     className="w-full"
                 >
-                    <Link href={`/articles/detail/${idx}`}>
+                    <Link href={`/academy/detail/${idx}`}>
                         <div className="flex flex-col md:flex-row items-center">
                             <div className="w-full md:w-1/2">
                                 <Image

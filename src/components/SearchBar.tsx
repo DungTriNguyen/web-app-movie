@@ -1,9 +1,10 @@
 "use client"
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 export default function SearchBar() {
-
+    const t = useTranslations("academy");
     const [searchTerm, setSearchTerm] = useState("");
     const handleSearch = () => {
         if (searchTerm.trim() !== "") {
@@ -21,7 +22,7 @@ export default function SearchBar() {
                         }
                     }}
                     type="text"
-                    placeholder="Search by token, tag or keyword..."
+                    placeholder={t("search placeholder")}
                     className="w-full py-4 md:py-2 rounded-md border-none focus:outline-none focus:ring-0 text-slate-400 text-sm font-medium font-['Inter'] leading-snug focus:text-white"
                 />
                 <Button variant={"ghost"} size="icon" onClick={handleSearch}>

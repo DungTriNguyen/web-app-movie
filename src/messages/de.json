@@ -1,4 +1,21 @@
 {
+  "navbar": {
+    "home": "Startseite",
+    "news": "Nachrichten",
+    "academy": "Akademie",
+    "get started": "Loslegen",
+    "language": {
+      "en": "Englisch",
+      "zh": "Chinesisch",
+      "es": "Spanisch",
+      "kr": "Koreanisch",
+      "jp": "Japanisch",
+      "fr": "Französisch",
+      "de": "Deutsch",
+      "ru": "Russisch",
+      "vi": "Vietnamesisch"
+    }
+  },
   "home": {
     "hero": {
       "title": "Die nächste Dimension des sicheren Krypto-Handels",
@@ -177,5 +194,24 @@
       "address": "[Ihre Firmenadresse]",
       "last-updated": "Zuletzt aktualisiert"
     }
+  },
+  "academy": {
+    "root link": "Startseite",
+    "title": "Akademie",
+    "tabs": {
+      "all": "Alle",
+      "trending": "Trend",
+      "on chain": "On-Chain",
+      "listing": "Listing",
+      "alert": "Alarm"
+    },
+    "search placeholder": "Suche nach Token, Tag oder Stichwort...",
+    "load more": "Mehr laden",
+    "related articles": "Verwandte Artikel"
+  },
+  "interaction": {
+    "like": "Gefällt mir",
+    "comment": "Kommentar",
+    "share": "Teilen"
   }
 }

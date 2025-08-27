@@ -3,8 +3,10 @@ import CardItem from "./CardItem";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function CardList() {
+    const t = useTranslations("academy");
     const [visible, setVisible] = useState(6);
     const items = [0, 1, 2, 3, 4, 6, 7, 8, 9];
     return (
@@ -24,7 +26,7 @@ export default function CardList() {
                             <path fillRule="evenodd" clipRule="evenodd" d="M3.11523 9.41034L4.883 7.64258L9.99912 12.7587L15.1152 7.64258L16.883 9.41034L9.99912 16.2942L3.11523 9.41034Z" fill="#A0AEC0" />
                         </svg>
 
-                        <div className="justify-center text-slate-400 text-sm font-semibold font-['Inter'] leading-tight ml-2">Load more</div>
+                        <div className="justify-center text-slate-400 text-sm font-semibold font-['Inter'] leading-tight ml-2">{t("load more")}</div>
                     </div>
                 </div>
             )}

@@ -1,4 +1,21 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "news": "Noticias",
+    "academy": "Academia",
+    "get started": "Comenzar",
+    "language": {
+      "en": "Inglés",
+      "zh": "Chino",
+      "es": "Español",
+      "kr": "Coreano",
+      "jp": "Japonés",
+      "fr": "Francés",
+      "de": "Alemán",
+      "ru": "Ruso",
+      "vi": "Vietnamita"
+    }
+  },
   "home": {
     "hero": {
       "title": "La próxima dimensión del comercio seguro de criptomonedas",
@@ -177,5 +194,24 @@
       "address": "[La dirección de tu empresa]",
       "last-updated": "Última actualización"
     }
+  },
+  "academy": {
+    "root link": "Inicio",
+    "title": "Academia",
+    "tabs": {
+      "all": "Todo",
+      "trending": "Tendencias",
+      "on chain": "En cadena",
+      "listing": "Listado",
+      "alert": "Alerta"
+    },
+    "search placeholder": "Buscar por token, etiqueta o palabra clave...",
+    "load more": "Cargar más",
+    "related articles": "Artículos relacionados"
+  },
+  "interaction": {
+    "like": "Me gusta",
+    "comment": "Comentario",
+    "share": "Compartir"
   }
 }

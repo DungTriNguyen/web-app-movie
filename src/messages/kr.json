@@ -1,4 +1,21 @@
 {
+    "navbar": {
+        "home": "홈",
+        "news": "뉴스",
+        "academy": "아카데미",
+        "get started": "시작하기",
+        "language": {
+            "en": "영어",
+            "zh": "중국어",
+            "es": "스페인어",
+            "kr": "한국어",
+            "jp": "일본어",
+            "fr": "프랑스어",
+            "de": "독일어",
+            "ru": "러시아어",
+            "vi": "베트남어"
+        }
+    },
     "home": {
         "hero": {
             "title": "안전한 암호화폐 거래의 다음 단계",
@@ -177,5 +194,24 @@
             "address": "[회사 주소]",
             "last-updated": "최종 업데이트"
         }
+    },
+    "academy": {
+        "root link": "홈",
+        "title": "아카데미",
+        "tabs": {
+            "all": "전체",
+            "trending": "트렌딩",
+            "on chain": "온체인",
+            "listing": "리스트",
+            "alert": "알림"
+        },
+        "search placeholder": "토큰, 태그 또는 키워드로 검색...",
+        "load more": "더 보기",
+        "related articles": "관련 기사"
+    },
+    "interaction": {
+        "like": "좋아요",
+        "comment": "댓글",
+        "share": "공유"
     }
 }

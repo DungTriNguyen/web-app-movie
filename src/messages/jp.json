@@ -1,4 +1,21 @@
 {
+    "navbar": {
+        "home": "ホーム",
+        "news": "ニュース",
+        "academy": "アカデミー",
+        "get started": "はじめる",
+        "language": {
+            "en": "英語",
+            "zh": "中国語",
+            "es": "スペイン語",
+            "kr": "韓国語",
+            "jp": "日本語",
+            "fr": "フランス語",
+            "de": "ドイツ語",
+            "ru": "ロシア語",
+            "vi": "ベトナム語"
+        }
+    },
     "home": {
         "hero": {
             "title": "安全な暗号取引の新たな次元",
@@ -177,5 +194,24 @@
             "address": "[会社住所]",
             "last-updated": "最終更新日"
         }
+    },
+    "academy": {
+        "root link": "ホーム",
+        "title": "アカデミー",
+        "tabs": {
+            "all": "すべて",
+            "trending": "トレンド",
+            "on chain": "オンチェーン",
+            "listing": "リスト",
+            "alert": "アラート"
+        },
+        "search placeholder": "トークン、タグ、キーワードで検索...",
+        "load more": "もっと読み込む",
+        "related articles": "関連記事"
+    },
+    "interaction": {
+        "like": "いいね",
+        "comment": "コメント",
+        "share": "共有"
     }
 }

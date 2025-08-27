@@ -12,23 +12,26 @@ import {
 import { useRouter } from "next/navigation"
 import { usePathname } from "next/navigation"
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env"
+import { useTranslations } from "next-intl";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
+    const t = useTranslations('navbar');
     const navLinks = [
-        { href: '/', label: 'Home' },
-        { href: '/news', label: 'News' },
-        { href: '/articles', label: 'Articles' },
+        { href: '/', label: t('home') },
+        // { href: '/news', label: t('news') },
+        { href: '/academy', label: t('academy') },
     ];
     const router = useRouter()
     const pathname = usePathname()
     const [isScrolled, setIsScrolled] = React.useState(false)
+    const currentLocale = pathname.split('/')[1];
     // Loại bỏ locale ở đầu đường dẫn
     const currentPath = pathname.replace(/^\/[a-z]{2}/, '');
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 1080);
+            setIsScrolled(window.scrollY > 100);
         };
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -37,16 +40,17 @@ const Header = () => {
     }, []);
 
     const languages = [
-        { code: 'en', label: 'English' },
-        { code: 'zh', label: '中文' },
-        { code: 'es', label: 'Español' },
-        { code: 'fr', label: 'Français' },
-        { code: 'de', label: 'Deutsch' },
-        { code: 'ru', label: 'Русский' },
-        { code: 'jp', label: '日本語' },
-        { code: 'kr', label: '한국어' },
-        { code: 'vi', label: 'Tiếng Việt' },
+        { code: 'en', label: t('language.en') },
+        { code: 'zh', label: t('language.zh') },
+        { code: 'es', label: t('language.es') },
+        { code: 'fr', label: t('language.fr') },
+        { code: 'de', label: t('language.de') },
+        { code: 'ru', label: t('language.ru') },
+        { code: 'jp', label: t('language.jp') },
+        { code: 'kr', label: t('language.kr') },
+        { code: 'vi', label: t('language.vi') },
     ]
+
 
     const handleLanguageChange = (locale: string) => {
         const newPath = pathname.replace(/^\/[a-z]{2}/, `/${locale}`)
@@ -54,7 +58,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`${isScrolled ? 'bg-black' : 'bg-transparent'} fixed w-full left-0 top-0 z-40`}>
+        <header className={`${isScrolled ? 'bg-gradient-to-b from-black/90 to-black/20' : 'bg-transparent'} fixed w-full left-0 top-0 z-40`}>
             <div className="min-h-20 md:py-6 px-5 md:px-20 flex gap-2.5 justify-between items-center">
                 <a href="/" className="relative z-[999]">
                     <Image
@@ -89,27 +93,45 @@ const Header = () => {
                             <DropdownMenuTrigger asChild>
                                 <Button className="flex items-center gap-1 bg-transparent hover:bg-transparent focus:bg-transparent cursor-pointer" variant="ghost" size="sm">
                                     <span>
-                                        {languages.find(lang => pathname.startsWith(`/${lang.code}`))?.label || 'English'}
+                                        {languages.find(lang => pathname.startsWith(`/${lang.code}`))?.code.toUpperCase() || 'EN'}
                                     </span>
                                     <ChevronDown className="w-4 h-4" />
                                 </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
-                                {languages.map((lang) => (
-                                    <DropdownMenuItem
-                                        key={lang.code}
-                                        onClick={() => handleLanguageChange(lang.code)}
-                                    >
-                                        {lang.label}
-                                    </DropdownMenuItem>
-                                ))}
+                            <DropdownMenuContent align="end" asChild>
+                                <div className="bg-white p-4 rounded-none rounded-tl-lg rounded-bl-lg rounded-br-lg min-w-[160px]">
+                                    {languages.map((lang) => (
+                                        <DropdownMenuItem
+                                            key={lang.code}
+                                            onClick={() => handleLanguageChange(lang.code)}
+                                            className="w-full focus:bg-transparent hover:bg-gray-100 px-2 py-1 cursor-pointer min-h-5"
+                                        >
+                                            <div className="flex w-full justify-between items-center">
+                                                {currentLocale === lang.code ? (
+                                                    <>
+                                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.16602 7.08398C1.16602 7.08398 2.41602 7.08398 4.08268 10.0007C4.08268 10.0007 8.71504 2.36176 12.8327 0.833984" stroke="#8D48E3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                        <span className="text-purple-600 self-stretch text-right justify-start text-sm font-normal font-['Inter'] leading-tight">{lang.label}</span>
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                        <span className="w-5" />
+                                                        <span className="text-slate-400 self-stretch text-right justify-start text-sm font-normal font-['Inter'] leading-tight">{lang.label}</span>
+                                                    </>
+                                                )}
+                                            </div>
+                                        </DropdownMenuItem>
+                                    ))}
+                                </div>
+
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </div>
 
                     <a href={NEXT_PUBLIC_APP_URL} target="_blank">
                         <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12 mb-2" size="sm" variant="default">
-                            Get Started
+                            {t('get started')}
                         </Button>
                     </a>
                 </div>
@@ -159,14 +181,14 @@ const Header = () => {
 
                             <a href={NEXT_PUBLIC_APP_URL} target="_blank" onClick={() => setMenuOpen(false)}>
                                 <Button className="bg-primary flex md:hidden gap-2 justify-center items-center px-4 min-h-12 mb-2" size="sm" variant="default">
-                                    Get Started
+                                    {t('get started')}
                                 </Button>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </header >
     )
 }
 

@@ -1,8 +1,10 @@
+import { useTranslations } from "next-intl";
 import CardList from "../CardList";
 import SearchBar from "../SearchBar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 export default function ArticleTabs() {
+    const t = useTranslations("academy");
     return (
         <div className="w-full pt-12">
             <Tabs defaultValue="all" className="w-full gap-0 ">
@@ -12,31 +14,31 @@ export default function ArticleTabs() {
                             value="all"
                             className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
                         >
-                            All
+                            {t("tabs.all")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="trending"
                             className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
                         >
-                            Trending
+                            {t("tabs.trending")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="on-chain"
                             className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
                         >
-                            On-Chain
+                            {t("tabs.on chain")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="listing"
                             className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
                         >
-                            Listing
+                            {t("tabs.listing")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="alert"
                             className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
                         >
-                            Alert
+                            {t("tabs.alert")}
                         </TabsTrigger>
                     </TabsList>
                     <SearchBar />

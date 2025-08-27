@@ -1,4 +1,21 @@
 {
+    "navbar": {
+        "home": "Home",
+        "news": "News",
+        "academy": "Academy",
+        "get started": "Get Started",
+        "language": {
+            "en": "English",
+            "zh": "Chinese",
+            "es": "Spanish",
+            "kr": "Korean",
+            "jp": "Japanese",
+            "fr": "French",
+            "de": "German",
+            "ru": "Russian",
+            "vi": "Vietnamese"
+        }
+    },
     "home": {
         "hero": {
             "title": "The Next Dimension of Secure Crypto Trading",
@@ -177,5 +194,24 @@
             "address": "[Your Company Address]",
             "last-updated": "Last Updated"
         }
+    },
+    "academy": {
+        "root link": "Home",
+        "title": "Academy",
+        "tabs": {
+            "all": "All",
+            "trending": "Trending",
+            "on chain": "On-Chain",
+            "listing": "Listing",
+            "alert": "Alert"
+        },
+        "search placeholder": "Search by token, tag or keyword...",
+        "load more": "Load More",
+        "related articles": "Related Articles"
+    },
+    "interaction": {
+        "like": "Like",
+        "comment": "Comment",
+        "share": "Share"
     }
 }

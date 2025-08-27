@@ -7,9 +7,9 @@ export default function Feature() {
     return (
         <section id="features" className="md:max-w-[1600px] md:mx-auto md:p-20 p-4 py-10 min-h-20 gap-12 flex flex-col items-center justify-center">
             <div className="text-center">
-                <h2 className="w-full max-w-[600px] text-center justify-center text-white text-3xl lg:text-5xl font-semibold uppercase leading-10 lg:leading-[72px]">{t("title")}</h2>
+                <h1 className="w-full max-w-[600px] text-center justify-center text-white text-3xl lg:text-5xl font-semibold uppercase leading-10 lg:leading-[72px]">{t("title")}</h1>
             </div>
-            <div className="flex flex-col md:flex-row gap-6 self-stretch min-h-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 self-stretch min-h-20">
                 <Card className="p-9 border-none flex-1">
                     <CardContent className="flex flex-col items-center gap-2 text-xl space-y-2 !px-0">
                         <Image src="/images/chart.svg" alt="Real-Time Data" width={48} height={48} />

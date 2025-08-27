@@ -2,8 +2,10 @@ import Link from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
 import ArticleSlide from "./ArticleSlide";
 import ArticleTabs from "./ArticleTabs";
+import { useTranslations } from "next-intl";
 
 export default function ArticleSection() {
+    const t = useTranslations("academy");
     return (
         <div className="w-full">
             <div className="max-w-[1440px] mx-auto px-4">
@@ -11,7 +13,7 @@ export default function ArticleSection() {
                     <BreadcrumbList>
                         <BreadcrumbItem>
                             <BreadcrumbLink asChild>
-                                <Link href="/" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">Home</Link>
+                                <Link href="/" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">{t("root link")}</Link>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbSeparator>
@@ -19,13 +21,13 @@ export default function ArticleSection() {
                         </BreadcrumbSeparator>
                         <BreadcrumbItem>
                             <BreadcrumbLink asChild>
-                                <Link href="/articles" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">Articles</Link>
+                                <Link href="/academy" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">{t("title")}</Link>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
                 <h1 className="text-white text-5xl font-semibold font-['Inter'] uppercase leading-[67.20px]">
-                    Articles
+                    {t("title")}
                 </h1>
                 <ArticleSlide />
             </div>

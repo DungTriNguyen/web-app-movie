@@ -1,4 +1,21 @@
 {
+  "navbar": {
+    "home": "首页",
+    "news": "新闻",
+    "academy": "学院",
+    "get started": "开始使用",
+    "language": {
+      "en": "英语",
+      "zh": "中文",
+      "es": "西班牙语",
+      "kr": "韩语",
+      "jp": "日语",
+      "fr": "法语",
+      "de": "德语",
+      "ru": "俄语",
+      "vi": "越南语"
+    }
+  },
   "home": {
     "hero": {
       "title": "安全加密货币交易的下一个维度",
@@ -177,5 +194,24 @@
       "address": "[您的公司地址]",
       "last-updated": "最后更新"
     }
+  },
+  "academy": {
+    "root link": "首页",
+    "title": "学院",
+    "tabs": {
+      "all": "全部",
+      "trending": "趋势",
+      "on chain": "链上",
+      "listing": "列表",
+      "alert": "警报"
+    },
+    "search placeholder": "按代币、标签或关键词搜索...",
+    "load more": "加载更多",
+    "related articles": "相关文章"
+  },
+  "interaction": {
+    "like": "点赞",
+    "comment": "评论",
+    "share": "分享"
   }
 }

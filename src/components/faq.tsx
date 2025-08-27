@@ -7,9 +7,9 @@ export default function FAQ() {
         <section className="md:p-20 bg-accent px-4">
             <div className="container mx-auto gap-12 flex flex-col items-center justify-center">
                 <div className="text-center gap-12 flex flex-col items-center justify-center">
-                    <h2 className="text-gray-100 text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[600px]">
+                    <h1 className="text-gray-100 text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[600px]">
                         {t("title")}
-                    </h2>
+                    </h1>
                     <p className="text-gray-100 text-sm font-medium font-['Inter'] leading-snug">
                         {t("description")}
                     </p>

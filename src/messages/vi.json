@@ -1,4 +1,21 @@
 {
+    "navbar": {
+        "home": "Trang chủ",
+        "news": "Tin tức",
+        "academy": "Học viện",
+        "get started": "Bắt đầu",
+        "language": {
+            "en": "Tiếng Anh",
+            "zh": "Tiếng Trung",
+            "es": "Tiếng Tây Ban Nha",
+            "kr": "Tiếng Hàn",
+            "jp": "Tiếng Nhật",
+            "fr": "Tiếng Pháp",
+            "de": "Tiếng Đức",
+            "ru": "Tiếng Nga",
+            "vi": "Tiếng Việt"
+        }
+    },
     "home": {
         "hero": {
             "title": "Xu hướng tiếp theo của giao dịch tiền điện tử an toàn",
@@ -177,5 +194,24 @@
             "address": "[Địa Chỉ Công Ty Của Bạn]",
             "last-updated": "Cập Nhật Cuối Cùng"
         }
+    },
+    "academy": {
+        "root link": "Trang chủ",
+        "title": "Học viện",
+        "tabs": {
+            "all": "Tất cả",
+            "trending": "Xu hướng",
+            "on chain": "On-Chain",
+            "listing": "Niêm yết",
+            "alert": "Cảnh báo"
+        },
+        "search placeholder": "Tìm kiếm theo token, thẻ hoặc từ khóa...",
+        "load more": "Tải thêm",
+        "related articles": "Bài viết liên quan"
+    },
+    "interaction": {
+        "like": "Thích",
+        "comment": "Bình luận",
+        "share": "Chia sẻ"
     }
 }

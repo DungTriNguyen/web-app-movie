@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "../ui/breadcrumb";
 import Tag from "../Tag";
 import ArticleContent from "./ArticleContent";
-import RelatedArticle from "./RelatedArticle";
+import { useTranslations } from "next-intl";
 
 type Props = {
     params: { slug: string[] }
 }
 
 export default function ArticleDetail({ params }: Props) {
+    const t = useTranslations("academy");
     const [slug, id] = params.slug || [];
     console.log("Slug:", slug);
     console.log("ID:", id);
@@ -21,7 +22,7 @@ export default function ArticleDetail({ params }: Props) {
                             <BreadcrumbList>
                                 <BreadcrumbItem>
                                     <BreadcrumbLink asChild>
-                                        <Link href="/" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">Home</Link>
+                                        <Link href="/" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">{t("root link")}</Link>
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator>
@@ -29,7 +30,7 @@ export default function ArticleDetail({ params }: Props) {
                                 </BreadcrumbSeparator>
                                 <BreadcrumbItem>
                                     <BreadcrumbLink asChild>
-                                        <Link href="/articles" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">Articles</Link>
+                                        <Link href="/articles" className="text-gray-500 text-xs font-medium font-['Inter'] leading-tight">{t("title")}</Link>
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator>

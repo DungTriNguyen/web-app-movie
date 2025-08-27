@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function CardItem({ idx }: { idx?: number }) {
     return (
-        <Link href={`/articles/detail/${idx}`}>
+        <Link href={`/academy/detail/${idx}`}>
             <div className="flex flex-col gap-4">
                 <div data-placeholder="true" data-ratio="16:9">
                     <Image src="/images/image.png" alt="image" width={600} height={370} className="rounded-lg object-cover w-full h-auto" />

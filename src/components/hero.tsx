@@ -5,12 +5,14 @@ import ChartTab from "./chart-tab";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, Loader2 } from "lucide-react";
 
 export default function Hero() {
     const t = useTranslations('home.hero');
     const [isLoading, setIsLoading] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [scrollOpacity, setScrollOpacity] = useState(1);
 
     const handleClick = async () => {
         setIsLoading(true)
@@ -21,18 +23,26 @@ export default function Hero() {
             setIsLoading(false)
         }
     }
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 500);
+            // Opacity giảm dần từ 1 đến 0 khi scroll từ 0 đến 100
+            const max = 500;
+            const y = window.scrollY;
+            setScrollOpacity(Math.max(0, 1 - y / max));
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-center gap-6 md:gap-12 pt-40 px-2 md:px-20 md:py-16 overflow-hidden pb-30 md:pb-10">
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
+            <iframe
+                src="https://my.spline.design/intergalacticcloser-S9rSVcYf61pdQ54LKvbOwkr7/"
                 className="absolute inset-0 w-full h-full object-cover z-0"
-            >
-                <source src="/images/hero-bg.mp4" type="video/mp4" />
-            </video>
+            ></iframe>
             <div className="absolute inset-0 bg-gradient-to-t from-accent to-transparent z-0" />
             <div className="max-w-[1440px] mx-auto z-20 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 w-full">
                 <div className="flex flex-col gap-6 items-start justify-center py-9 flex-1  self-stretch z-10">
@@ -85,13 +95,21 @@ export default function Hero() {
                     </Button>
                 </div>
             </div>
-            <div className="absolute left-0 bottom-5 right-0 flex flex-col z-20 animate-bounce -mb-7">
-                <div className="text-center justify-center text-white text-xl font-bold font-['Inter'] uppercase lg:leading-loose">Scroll</div>
-                <div className="flex justify-center items-center">
-                    <ChevronDown className="w-6 h-6 text-white" />
+            {!isScrolled && (
+                <div className="absolute left-0 bottom-5 right-0 flex flex-col z-20 animate-bounce -mb-7">
+                    <div
+                        className="text-center justify-center text-white text-xl font-bold font-['Inter'] uppercase lg:leading-loose"
+                        style={{ opacity: scrollOpacity }}
+                    >
+                        Scroll
+                    </div>
+                    <div className="flex justify-center items-center"
+                        style={{ opacity: scrollOpacity }}>
+                        <ChevronDown className="w-6 h-6 text-white" />
+                    </div>
                 </div>
-            </div>
-        </section>
+            )}
+        </section >
     )
 }
 

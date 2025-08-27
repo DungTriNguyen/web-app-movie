@@ -1,4 +1,21 @@
 {
+  "navbar": {
+    "home": "Accueil",
+    "news": "Actualités",
+    "academy": "Académie",
+    "get started": "Commencer",
+    "language": {
+      "en": "Anglais",
+      "zh": "Chinois",
+      "es": "Espagnol",
+      "kr": "Coréen",
+      "jp": "Japonais",
+      "fr": "Français",
+      "de": "Allemand",
+      "ru": "Russe",
+      "vi": "Vietnamien"
+    }
+  },
   "home": {
     "hero": {
       "title": "La prochaine dimension du trading sécurisé de cryptomonnaies",
@@ -177,5 +194,24 @@
       "address": "[L'adresse de votre entreprise]",
       "last-updated": "Dernière mise à jour"
     }
+  },
+  "academy": {
+    "root link": "Accueil",
+    "title": "Académie",
+    "tabs": {
+      "all": "Tout",
+      "trending": "Tendance",
+      "on chain": "Sur chaîne",
+      "listing": "Liste",
+      "alert": "Alerte"
+    },
+    "search placeholder": "Rechercher par token, tag ou mot-clé...",
+    "load more": "Charger plus",
+    "related articles": "Articles associés"
+  },
+  "interaction": {
+    "like": "J'aime",
+    "comment": "Commentaire",
+    "share": "Partager"
   }
 }
