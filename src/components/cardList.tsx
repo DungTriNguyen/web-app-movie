@@ -9,7 +9,7 @@ export default function CardList() {
     const items = [0, 1, 2, 3, 4, 6, 7, 8, 9];
     return (
         <div className="bg-gray-900 pt-10 pb-20 px-4">
-            <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
                 {items.slice(0, visible).map((item) => (
                     <CardItem key={item} idx={item} />
                 ))}
