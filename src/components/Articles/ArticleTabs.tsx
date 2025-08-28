@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import CardList from "../CardList";
+import CardList from "../cardList";
 import SearchBar from "../SearchBar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import useGetBlogCategories from "@/hooks/use-get-blog-categories";

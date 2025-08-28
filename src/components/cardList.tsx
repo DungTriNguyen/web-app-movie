@@ -1,5 +1,5 @@
 "use client"
-import CardItem from "./CardItem";
+import CardItem from "./cardItem";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { GetBlogResponse } from "@/types/blog";
