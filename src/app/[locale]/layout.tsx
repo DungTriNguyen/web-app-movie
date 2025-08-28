@@ -7,8 +7,8 @@ import Providers from "../../configs/provider";
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { setRequestLocale } from 'next-intl/server';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import Header from '@/components/Common/header';
+import Footer from '@/components/Common/footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

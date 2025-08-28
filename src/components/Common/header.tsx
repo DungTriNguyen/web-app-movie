@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from "react";
-import { Button } from "./ui/button"
+import { Button } from "../ui/button"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 import {
@@ -8,7 +8,7 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
+} from "../ui/dropdown-menu"
 import { useRouter } from "next/navigation"
 import { usePathname } from "next/navigation"
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env"

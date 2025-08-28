@@ -1,5 +1,5 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/Common/header";
+import Footer from "@/components/Common/footer";
 
 export default function TermsOfService() {
   return (

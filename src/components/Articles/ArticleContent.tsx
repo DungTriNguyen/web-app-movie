@@ -1,4 +1,4 @@
-import InteractionBar from "../InteractionBar";
+import InteractionBar from "../Common/InteractionBar";
 import Image from "next/image";
 import RelatedArticle from "./RelatedArticle";
 

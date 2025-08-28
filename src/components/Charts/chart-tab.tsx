@@ -1,7 +1,7 @@
 'use client'
 
 import { useTokens } from "@/hooks/use-tokens";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { TokenItem } from "@/services/token";
 import { formatNumber } from "@/lib/utils";
 import Link from "next/link";

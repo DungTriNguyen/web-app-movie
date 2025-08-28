@@ -6,7 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import Tag from "../Tag";
+import Tag from "../Common/Tag";
 import Link from "next/link";
 import useGetBlogs from "@/hooks/use-get-blogs";
 import { formatDate } from "date-fns";
@@ -38,7 +38,7 @@ export default function ArticleSlide() {
                     key={idx}
                     className="w-full"
                 >
-                    <Link href={`/academy/detail/${idx}`}>
+                    <Link href={`/academy/${slide?.itemUrl}`}>
                         <div className="flex flex-col md:flex-row items-center">
                             <div className="w-full md:w-1/2">
                                 <Image

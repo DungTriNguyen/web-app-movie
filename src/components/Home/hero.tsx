@@ -1,8 +1,8 @@
 'use client'
 
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
-import ChartTab from "./chart-tab";
-import { Button } from "./ui/button";
+import ChartTab from "../Charts/chart-tab";
+import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";

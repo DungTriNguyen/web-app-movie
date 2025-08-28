@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 
 export default function SearchBar() {

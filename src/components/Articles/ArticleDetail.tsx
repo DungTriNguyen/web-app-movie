@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "../ui/breadcrumb";
-import Tag from "../Tag";
+import Tag from "../Common/Tag";
 import ArticleContent from "./ArticleContent";
 import { useTranslations } from "next-intl";
 
@@ -11,8 +11,7 @@ type Props = {
 export default function ArticleDetail({ params }: Props) {
     const t = useTranslations("academy");
     const [slug, id] = params.slug || [];
-    console.log("Slug:", slug);
-    console.log("ID:", id);
+    
     return (
         <>
             <div className="w-full bg-gray-900 px-4">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardContent, CardTitle } from "./ui/card";
+import { Card, CardContent, CardTitle } from "../ui/card";
 import { useTranslations } from "next-intl";
 
 export default function Feature() {

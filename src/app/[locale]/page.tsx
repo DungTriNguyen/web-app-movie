@@ -1,8 +1,8 @@
-import Hero from "@/components/hero";
-import Feature from "@/components/feature";
-import FAQ from "@/components/faq";
-import Ready from "@/components/ready";
-import Advance from "@/components/advance";
+import Hero from "@/components/Home/hero";
+import Feature from "@/components/Home/feature";
+import FAQ from "@/components/Home/faq";
+import Ready from "@/components/Home/ready";
+import Advance from "@/components/Home/advance";
 
 export default function Home() {
   return (
