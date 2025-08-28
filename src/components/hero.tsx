@@ -17,12 +17,12 @@ export default function Hero() {
     const handleClick = async () => {
         setIsLoading(true)
         try {
-            // Your loading logic here
-            window.open(NEXT_PUBLIC_APP_URL, '_blank')
+            window.location.href = `${NEXT_PUBLIC_APP_URL}`;
         } finally {
             setIsLoading(false)
         }
     }
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 500);
@@ -53,11 +53,11 @@ export default function Hero() {
                         {t('description')}
                     </p>
                     <div className="flex flex-col max-md:hidden sm:flex-row gap-4">
-                        <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg text-base">
+                        {/* <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg text-base">
                             {t('button.explore')}
-                        </Button>
+                        </Button> */}
                         <Button
-                            className="bg-primary text-white px-8 py-6 rounded-lg text-base"
+                            className="bg-primary text-white px-8 py-6 rounded-lg text-base cursor-pointer"
                             onClick={handleClick}
                             disabled={isLoading}
                         >
