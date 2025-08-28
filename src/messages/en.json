@@ -83,7 +83,7 @@
                 "description": "To list your token on DexSpace, you can submit a listing request through our Token Submission portal. We require basic information about your project, including contract address, website, social media links, and tokenomics details. Our team reviews all submissions to ensure they meet our security and quality standards before adding them to our platform."
             }
         },
-        "support": "Still have questions? Contact Support. contact@dexspace.io"
+        "support": "Still have questions? Contact Support."
     },
     "footer": {
         "description": "Advanced crypto token analytics platform for modern traders.",
@@ -95,7 +95,7 @@
         "privacy": "Privacy",
         "contact": "Contact",
         "about": "About",
-        "blog": "Blog",
+        "blog": "Blogs",
         "careers": "Careers",
         "connect": "Connect",
         "features": "Features",

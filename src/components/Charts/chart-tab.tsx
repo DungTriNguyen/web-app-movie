@@ -71,6 +71,8 @@ export default function ChartTab() {
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <div className="rounded-full"  ><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
                                 <span className="font-medium whitespace-nowrap"> {token.symbol}</span>
+                                <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">/</span>
+                                <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">USDT</span>
                             </div>
                             <div className="flex min-w-28 items-center justify-end max-w-40 text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
                             <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} flex-1 font-medium text-sm text-right min-w-28 max-w-40`}>

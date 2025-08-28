@@ -20,19 +20,23 @@ export default function Advance() {
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                {t("real-time-price-updates")}
+                                <span className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("real-time-price-updates")}</span>
                             </p>
                         </div>
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                {t("custom-chart-indicators")}
+                                <span className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">
+                                    {t("custom-chart-indicators")}
+                                </span>
                             </p>
                         </div>
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                {t("market-depth-analysis")}
+                                <span className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">
+                                    {t("market-depth-analysis")}
+                                </span>
                             </p>
                         </div>
                     </div>

@@ -41,14 +41,15 @@ const Header = () => {
 
     const languages = [
         { code: 'en', label: t('language.en') },
-        { code: 'zh', label: t('language.zh') },
+        { code: 'vi', label: t('language.vi') },
         { code: 'es', label: t('language.es') },
         { code: 'fr', label: t('language.fr') },
         { code: 'de', label: t('language.de') },
         { code: 'ru', label: t('language.ru') },
         { code: 'jp', label: t('language.jp') },
         { code: 'kr', label: t('language.kr') },
-        { code: 'vi', label: t('language.vi') },
+        { code: 'zh', label: t('language.zh') },
+
     ]
 
 

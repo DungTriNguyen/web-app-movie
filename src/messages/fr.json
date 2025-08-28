@@ -83,7 +83,7 @@
         "description": "Pour lister votre token sur DexSpace, vous pouvez soumettre une demande de listing via notre portail de soumission de tokens. Nous demandons des informations de base sur votre projet, y compris l'adresse du contrat, le site web, les liens vers les réseaux sociaux et les détails du tokenomics. Notre équipe examine toutes les soumissions pour s'assurer qu'elles répondent à nos normes de sécurité et de qualité avant de les ajouter à la plateforme."
       }
     },
-    "support": "Vous avez encore des questions ? Contactez le support. contact@dexspace.io"
+    "support": "Vous avez encore des questions ? Contactez le support."
   },
   "footer": {
     "description": "Plateforme d'analyse avancée de jetons cryptographiques pour les traders modernes.",

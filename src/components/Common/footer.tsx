@@ -18,18 +18,28 @@ export default function Footer() {
                         <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("product")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li>
+                                <Link href="#" className="text-gray-400 hover:text-white">
+                                    {t("features")}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className="text-gray-400 hover:text-white">
+                                    {t("analytics")}
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href={`${NEXT_PUBLIC_APP_URL}/dashboard`} className="text-gray-400 hover:text-white">
                                     {t("trading")}
                                 </Link>
                             </li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("academy")}</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-9 items-start flex-1 md:hidden">
                         <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
-                            <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
-                            <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("careers")}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,8 +47,9 @@ export default function Footer() {
                     <div className="flex flex-col gap-9 items-start flex-1">
                         <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
-                            <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
-                            <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">{t("careers")}</a></li>
                         </ul>
                     </div>
                 </div>

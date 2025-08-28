@@ -83,7 +83,7 @@
                 "description": "Để niêm yết token trên DexSpace, bạn có thể gửi yêu cầu thông qua cổng Đệ Trình Token của chúng tôi. Chúng tôi yêu cầu thông tin cơ bản về dự án của bạn, bao gồm địa chỉ hợp đồng, trang web, liên kết mạng xã hội và chi tiết tokenomics. Đội ngũ của chúng tôi sẽ xem xét tất cả các yêu cầu để đảm bảo đáp ứng tiêu chuẩn an toàn và chất lượng trước khi thêm vào nền tảng."
             }
         },
-        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ. contact@dexspace.io"
+        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ."
     },
     "footer": {
         "description": "Nền tảng phân tích mã thông báo tiền điện tử tiên tiến dành cho các nhà giao dịch hiện đại.",

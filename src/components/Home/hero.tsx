@@ -39,17 +39,20 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-center gap-6 md:gap-12 pt-40 px-2 md:px-20 md:py-16 overflow-hidden pb-30 md:pb-10">
-            <iframe
-                src="https://my.spline.design/intergalacticcloser-S9rSVcYf61pdQ54LKvbOwkr7/"
-                className="absolute inset-0 w-full h-full object-cover z-0"
-            ></iframe>
-            <div className="absolute inset-0 bg-gradient-to-t from-accent to-transparent z-0" />
+            <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full">
+                <iframe
+                    src="https://my.spline.design/intergalacticcloser-S9rSVcYf61pdQ54LKvbOwkr7/"
+                    className="w-full h-full object-cover z-20"
+                ></iframe>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-accent to-transparent z-20 h-[400px]" />
+            </div>
+
             <div className="max-w-[1440px] mx-auto z-20 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 w-full">
                 <div className="flex flex-col gap-6 items-start justify-center py-9 flex-1  self-stretch z-10">
-                    <h1 className="text-white text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[700px]">
+                    <h1 className="text-white text-center md:text-left text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[700px]">
                         {t('title')}
                     </h1>
-                    <p className="text-gray-100 text-sm font-normal font-['Inter'] leading-snug">
+                    <p className="text-gray-100 text-sm font-normal font-['Inter'] leading-snug text-center md:text-left">
                         {t('description')}
                     </p>
                     <div className="flex flex-col max-md:hidden sm:flex-row gap-4">
