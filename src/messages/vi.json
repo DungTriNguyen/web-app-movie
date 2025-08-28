@@ -201,13 +201,14 @@
         "tabs": {
             "all": "Tất cả",
             "trending": "Xu hướng",
-            "on chain": "On-Chain",
+            "on-chain": "On-Chain",
             "listing": "Niêm yết",
             "alert": "Cảnh báo"
         },
         "search placeholder": "Tìm kiếm theo token, thẻ hoặc từ khóa...",
         "load more": "Tải thêm",
-        "related articles": "Bài viết liên quan"
+        "related articles": "Bài viết liên quan",
+        "no articles": "Không có bài viết nào"
     },
     "interaction": {
         "like": "Thích",

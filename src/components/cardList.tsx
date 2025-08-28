@@ -1,19 +1,37 @@
 "use client"
 import CardItem from "./CardItem";
 import { useState } from "react";
-import { Button } from "./ui/button";
-import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { GetBlogResponse } from "@/types/blog";
 
-export default function CardList() {
+type CardListProps = {
+    category?: string,
+    blogs: GetBlogResponse[]
+};
+
+export default function CardList({ blogs, category }: CardListProps) {
     const t = useTranslations("academy");
     const [visible, setVisible] = useState(6);
-    const items = [0, 1, 2, 3, 4, 6, 7, 8, 9];
+    let items = blogs || [];
+    if (category) {
+        items = items.filter((item) => item.categoryName?.toLowerCase() === category);
+    }
+
+    if (items.length === 0) {
+        return (
+            <div className="bg-gray-900 pt-10 pb-20 px-4">
+                <div className="max-w-[1440px] mx-auto text-center text-white text-xl md:text-2xl font-semibold font-['Inter'] leading-10 md:leading-[56px]">
+                    {t("no articles")}
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="bg-gray-900 pt-10 pb-20 px-4">
             <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
                 {items.slice(0, visible).map((item) => (
-                    <CardItem key={item} idx={item} />
+                    <CardItem key={item.id} blogs={[item]} />
                 ))}
             </div>
             {visible < items.length && (

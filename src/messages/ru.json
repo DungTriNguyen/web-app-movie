@@ -201,13 +201,14 @@
         "tabs": {
             "all": "Все",
             "trending": "Тренды",
-            "on chain": "Ончейн",
+            "on-chain": "Ончейн",
             "listing": "Листинг",
             "alert": "Оповещение"
         },
         "search placeholder": "Поиск по токену, тегу или ключевому слову...",
         "load more": "Загрузить еще",
-        "related articles": "Похожие статьи"
+        "related articles": "Похожие статьи",
+        "no articles": "Нет статей"
     },
     "interaction": {
         "like": "Нравится",

@@ -201,13 +201,14 @@
         "tabs": {
             "all": "すべて",
             "trending": "トレンド",
-            "on chain": "オンチェーン",
+            "on-chain": "オンチェーン",
             "listing": "リスト",
             "alert": "アラート"
         },
         "search placeholder": "トークン、タグ、キーワードで検索...",
         "load more": "もっと読み込む",
-        "related articles": "関連記事"
+        "related articles": "関連記事",
+        "no articles": "記事がありません"
     },
     "interaction": {
         "like": "いいね",

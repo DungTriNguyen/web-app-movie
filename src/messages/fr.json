@@ -201,13 +201,14 @@
     "tabs": {
       "all": "Tout",
       "trending": "Tendance",
-      "on chain": "Sur chaîne",
+      "on-chain": "Sur chaîne",
       "listing": "Liste",
       "alert": "Alerte"
     },
     "search placeholder": "Rechercher par token, tag ou mot-clé...",
     "load more": "Charger plus",
-    "related articles": "Articles associés"
+    "related articles": "Articles associés",
+    "no articles": "Aucun article"
   },
   "interaction": {
     "like": "J'aime",

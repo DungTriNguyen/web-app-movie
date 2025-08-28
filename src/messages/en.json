@@ -201,13 +201,14 @@
         "tabs": {
             "all": "All",
             "trending": "Trending",
-            "on chain": "On-Chain",
+            "on-chain": "On-Chain",
             "listing": "Listing",
             "alert": "Alert"
         },
         "search placeholder": "Search by token, tag or keyword...",
         "load more": "Load More",
-        "related articles": "Related Articles"
+        "related articles": "Related Articles",
+        "no articles": "No articles"
     },
     "interaction": {
         "like": "Like",

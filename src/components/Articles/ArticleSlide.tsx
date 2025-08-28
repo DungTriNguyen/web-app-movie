@@ -8,36 +8,19 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import Tag from "../Tag";
 import Link from "next/link";
+import useGetBlogs from "@/hooks/use-get-blogs";
+import { formatDate } from "date-fns";
 
 export default function ArticleSlide() {
-    // Example data array for slides
-    const slides = [
-        {
-            image: "/images/image.png",
-            alt: "image",
-            date: "26 May · 16:10 UTC",
-            title: "How to trade safely on DexSpace",
-            description: "Learn the best practices for secure trading and maximizing your profits.",
-            tag: ["New", "Featured", "Popular"]
-        },
-        {
-            image: "/images/image.png",
-            alt: "image",
-            date: "27 May · 10:00 UTC",
-            title: "Understanding Smart Contracts: The Code Behind DeFi",
-            description: "Discover the latest trends and insights for crypto markets this year.",
-            tag: ["New", "Featured", "Popular"]
-        },
-        {
-            image: "/images/image.png",
-            alt: "image",
-            date: "27 May · 10:00 UTC",
-            title: "Understanding Smart Contracts: The Code Behind DeFi",
-            description: "Discover the latest trends and insights for crypto markets this year.",
-            tag: ["New", "Featured", "Popular"]
-        }
-        // Add more slides as needed
-    ];
+
+    const { data: blogData } = useGetBlogs();
+    const slides = blogData?.items
+        ?.slice()
+        .sort(
+            (a, b) => new Date(b?.createdDate ?? 0).getTime() -
+                new Date(a?.createdDate ?? 0).getTime()
+        )
+        ?.slice(0, 5);
 
     return (
         <Swiper
@@ -50,7 +33,7 @@ export default function ArticleSlide() {
                     "swiper-pagination-bullet-active featured-bullet-active",
             }}
         >
-            {slides.map((slide, idx) => (
+            {slides?.map((slide, idx) => (
                 <SwiperSlide
                     key={idx}
                     className="w-full"
@@ -59,8 +42,8 @@ export default function ArticleSlide() {
                         <div className="flex flex-col md:flex-row items-center">
                             <div className="w-full md:w-1/2">
                                 <Image
-                                    src={slide.image}
-                                    alt={slide.alt}
+                                    src={slide?.images?.[0]?.origin || "/images/image.png"}
+                                    alt={slide?.title || ""}
                                     width={600}
                                     height={370}
                                     className="rounded-lg object-cover w-full h-auto"
@@ -69,7 +52,7 @@ export default function ArticleSlide() {
 
                             <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 md:px-12">
                                 <p className="text-slate-400 text-xs font-medium leading-tight my-2">
-                                    {slide.date}
+                                    {formatDate(slide?.createdDate ?? "", "dd MMM · HH:mm 'UTC'")}
                                 </p>
                                 <h3 className="text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px] line-clamp-2">
                                     {slide.title}
@@ -79,8 +62,8 @@ export default function ArticleSlide() {
                                 </p>
                                 <div className="flex gap-x-2">
 
-                                    {slide.tag && slide.tag.map((tagText, tagIdx) => (
-                                        <Tag key={tagIdx} text={tagText} />
+                                    {[0, 1, 2].map((tagIdx) => (
+                                        <Tag key={tagIdx} text="New" />
                                     ))}
                                 </div>
                             </div>

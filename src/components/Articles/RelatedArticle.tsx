@@ -8,8 +8,20 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { useTranslations } from "next-intl";
+import useGetBlogs from "@/hooks/use-get-blogs";
 export default function RelatedArticle() {
     const t = useTranslations("academy");
+
+    const { data: blogData = { totalCount: 0, items: [] } } = useGetBlogs();
+    const sortedBlogs = blogData?.items
+        ?.slice()
+        .sort(
+            (a, b) =>
+                new Date(b?.createdDate ?? 0).getTime() -
+                new Date(a?.createdDate ?? 0).getTime()
+        )
+        ?.slice(0, 5);
+
     return (
         <div className="max-w-[1440px] mx-auto px-4">
             <div className="w-full max-w-[1200px] justify-start text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px]">{t("related articles")}</div>
@@ -37,14 +49,13 @@ export default function RelatedArticle() {
                     },
                 }}
             >
-                {[0, 1, 2, 3].map((slide, idx) => (
+                {sortedBlogs?.map((blog, idx) => (
                     <SwiperSlide
-                        key={idx}
+                        key={blog.id || idx}
                         className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
                     >
-                        <CardItem idx={idx} />
+                        <CardItem blogs={[blog]} />
                     </SwiperSlide>
-
                 ))}
             </Swiper>
         </div>
