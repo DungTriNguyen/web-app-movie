@@ -8,9 +8,9 @@ RUN mkdir -p /temp/dev
 COPY package.json bun.lockb /temp/dev/
 RUN cd /temp/dev && bun install --verbose
 
-RUN mkdir -p /temp/prod
-COPY package.json bun.lockb /temp/prod/
-RUN cd /temp/prod && bun install --production --verbose
+# RUN mkdir -p /temp/prod
+# COPY package.json bun.lockb /temp/prod/
+# RUN cd /temp/prod && bun install --production --verbose
 
 # Stage 2: Build
 FROM base AS builder
@@ -23,7 +23,7 @@ RUN bun run build
 FROM oven/bun:1.1.29 AS production
 WORKDIR /app
 
-COPY --from=install --chown=bun:bun /temp/prod/node_modules ./node_modules
+COPY --from=install --chown=bun:bun /temp/dev/node_modules ./node_modules
 COPY --from=builder --chown=bun:bun /app/.next ./.next
 COPY --from=builder /app/public ./public
 
