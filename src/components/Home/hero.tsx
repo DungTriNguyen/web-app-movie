@@ -49,15 +49,15 @@ export default function Hero() {
                     <h1 className="text-white text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[700px]">
                         {t('title')}
                     </h1>
-                    <p className="text-gray-100 text-sm font-medium font-['Inter'] leading-snug">
+                    <p className="text-gray-100 text-sm font-normal font-['Inter'] leading-snug">
                         {t('description')}
                     </p>
                     <div className="flex flex-col max-md:hidden sm:flex-row gap-4">
-                        <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg text-base">
+                        <Button variant="outline" className="border-muted border-2 text-secondary-foreground px-8 py-6 rounded-lg font-normal text-base">
                             {t('button.explore')}
                         </Button>
                         <Button
-                            className="bg-primary text-white px-8 py-6 rounded-lg text-base"
+                            className="bg-primary text-white px-8 py-6 rounded-lg font-normal text-base"
                             onClick={handleClick}
                             disabled={isLoading}
                         >

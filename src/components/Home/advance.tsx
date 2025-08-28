@@ -6,7 +6,7 @@ export default function Advance() {
     return (
         <section
             id="advance"
-            className="flex items-center relative px-4 md:px-20 w-full h-full lg:h-[536px] "
+            className="flex items-center relative px-4 md:px-20 w-full h-full md:h-[600px]"
         >
             <div className="flex w-full h-full justify-center gap-12 self-stretch flex-col md:flex-row-reverse relative">
                 <div className="flex-1 justify-center flex flex-col py-9 gap-4 z-20">
@@ -39,7 +39,7 @@ export default function Advance() {
                 </div>
                 <div className="flex flex-1 flex-col justify-center items-end gap-12 overflow-hidden">
                     <div className="bg-[url('/images/token-trade.png')] bg-cover bg-right-top
- bg-no-repeat flex-1 flex w-full lg:w-[1390px] h-[536px] md:absolute top-0 rounded-t-2xl shadow-[-20px_-20px_0px_0px_rgba(17,24,39,0.8)] border-2 border-border aspect-[479/268]"></div>
+ bg-no-repeat flex-1 flex w-full lg:w-[1390px] md:absolute top-0 rounded-t-2xl shadow-[-20px_-20px_0px_0px_rgba(17,24,39,0.8)] border-2 border-border aspect-[479/268]"></div>
                     <div className="bg-gradient-to-b  from-[#1C2230]/0 to-[#1C2230] w-full lg:w-[1390px] h-[300px] md:h-[536px] absolute bottom-0"></div>
                 </div>
 
