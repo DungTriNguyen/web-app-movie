@@ -1,5 +1,5 @@
 "use client";
-import CardItem from "../CardItem";
+import CardItem from "../cardItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";

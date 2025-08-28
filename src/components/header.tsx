@@ -179,6 +179,46 @@ const Header = () => {
                                 )
                             })}
 
+                            <div className="max-w-[400px] md:hidden">
+                                <DropdownMenu>
+                                    <DropdownMenuTrigger asChild>
+                                        <Button className="flex items-center gap-1 bg-transparent hover:bg-transparent focus:bg-transparent cursor-pointer w-full justify-between" variant="ghost" size="sm">
+                                            <span>
+                                                {languages.find(lang => pathname.startsWith(`/${lang.code}`))?.code.toUpperCase() || 'EN'}
+                                            </span>
+                                            <ChevronDown className="w-4 h-4" />
+                                        </Button>
+                                    </DropdownMenuTrigger>
+                                    <DropdownMenuContent align="end" asChild>
+                                        <div className="bg-white p-4 rounded-none rounded-tl-lg rounded-bl-lg rounded-br-lg min-w-[160px]">
+                                            {languages.map((lang) => (
+                                                <DropdownMenuItem
+                                                    key={lang.code}
+                                                    onClick={() => { handleLanguageChange(lang.code); setMenuOpen(false); }}
+                                                    className="w-full focus:bg-transparent hover:bg-gray-100 px-2 py-1 cursor-pointer min-h-5"
+                                                >
+                                                    <div className="flex w-full justify-between items-center">
+                                                        {currentLocale === lang.code ? (
+                                                            <>
+                                                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.16602 7.08398C1.16602 7.08398 2.41602 7.08398 4.08268 10.0007C4.08268 10.0007 8.71504 2.36176 12.8327 0.833984" stroke="#8D48E3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                </svg>
+                                                                <span className="text-purple-600 self-stretch text-right justify-start text-sm font-normal font-['Inter'] leading-tight">{lang.label}</span>
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                <span className="w-5" />
+                                                                <span className="text-slate-400 self-stretch text-right justify-start text-sm font-normal font-['Inter'] leading-tight">{lang.label}</span>
+                                                            </>
+                                                        )}
+                                                    </div>
+                                                </DropdownMenuItem>
+                                            ))}
+                                        </div>
+                                    </DropdownMenuContent>
+                                </DropdownMenu>
+                            </div>
+
                             <a href={NEXT_PUBLIC_APP_URL} target="_blank" onClick={() => setMenuOpen(false)}>
                                 <Button className="bg-primary flex md:hidden gap-2 justify-center items-center px-4 min-h-12 mb-2" size="sm" variant="default">
                                     {t('get started')}

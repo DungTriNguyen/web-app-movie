@@ -72,13 +72,10 @@ export default function Hero() {
                         </Button>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-16 flex-1 z-20">
+                <div className="flex flex-col justify-center items-center gap-16 flex-1 z-20 px-4">
                     <ChartTab />
                 </div>
                 <div className="flex justify-center items-start self-stretch md:hidden flex-row gap-4">
-                    <Button variant="outline" className="border-muted border-2 text-secondary-foreground md:px-8 py-6 px-3 rounded-lg text-base" >
-                        {t('button.explore')}
-                    </Button>
                     <Button
                         className="bg-primary text-white px-8 py-6 rounded-lg text-base"
                         onClick={handleClick}
