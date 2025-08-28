@@ -22,7 +22,6 @@ export default function ArticleTabs() {
     return (
         <div className="w-full pt-12">
             <Tabs defaultValue="all" className="w-full gap-0">
-            <Tabs defaultValue="all" className="w-full gap-0">
                 <div className="max-w-[1440px] mx-auto w-full flex flex-col-reverse md:flex-row items-start justify-between px-4 overflow-x-hidden">
                     <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto">
                         <TabsTrigger

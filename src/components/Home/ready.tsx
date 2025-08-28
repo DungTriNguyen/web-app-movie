@@ -1,7 +1,7 @@
 'use client'
 
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 
 export default function Ready() {
