@@ -49,7 +49,7 @@ export default function ChartTab() {
     if (error) return null;
 
     return (
-        <Tabs defaultValue="trending" className="max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.2)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center md:border-[16px] md:border-background ">
+        <Tabs defaultValue="trending" className="max-w-[400px] md:max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.2)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center md:border-[16px] md:border-background ">
             <div className="flex flex-1 w-full items-center justify-between gap-4 self-stretch border-b-2 border-border">
                 <TabsList className="bg-background gap-4 p-0 flex">
                     <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm uppercase">{t('trending')}</TabsTrigger>
@@ -64,8 +64,8 @@ export default function ChartTab() {
             </div>
             <TabsContent value="trending" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="min-w-[120px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
-                    <div className="min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
+                    <div className="min-w-[100px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
+                    <div className="min-w-[140px] md:min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
                     <div className="min-w-[80px] max-w-[100px] text-right text-slate-400 leading-tight">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
@@ -78,7 +78,7 @@ export default function ChartTab() {
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">/</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">USDT</span>
                             </div>
-                            <div className="min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
+                            <div className="min-w-[140px] md:min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
                             <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} min-w-[80px] max-w-[100px] text-right font-medium text-sm`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
@@ -88,21 +88,21 @@ export default function ChartTab() {
             </TabsContent>
             <TabsContent value="new-pair" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="min-w-[120px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
-                    <div className="min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
+                    <div className="min-w-[100px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
+                    <div className="min-w-[140px] md:min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
                     <div className="min-w-[80px] max-w-[100px] text-right text-slate-400 leading-tight">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {newPairs?.data.data.map((token: TokenItem) => (
                         <Link href={`${NEXT_PUBLIC_APP_URL}/${token.contract_address}`} key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
-                            <div className="min-w-[120px] flex-1 flex gap-1 items-center font-medium text-sm">
+                            <div className="min-w-[100px] flex-1 flex gap-1 items-center font-medium text-sm">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <div className="rounded-full min-h-5 min-w-5"><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
                                 <span className="font-medium whitespace-nowrap"> {token.symbol}</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">/</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">USDT</span>
                             </div>
-                            <div className="min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
+                            <div className="min-w-[140px] md:min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
                             <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} min-w-[80px] max-w-[100px] text-right font-medium text-sm`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
