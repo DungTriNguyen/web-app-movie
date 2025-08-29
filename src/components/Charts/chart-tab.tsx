@@ -63,24 +63,23 @@ export default function ChartTab() {
                 </Link>
             </div>
             <TabsContent value="trending" className="w-full h-full">
-                <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="flex-1 text-slate-400 leading-tight">{t('token')}</div>
-                    <div className=" min-w-[160px] text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
-                    <div className="text-right min-w-[120px] max-w-40 flex-1 text-slate-400 leading-tight">{t('1h change')}</div>
+                <div className="flex min-h-9 items-center w-full h-full gap-2.5 self-stretch text-text-secondary text-xs">
+                    <div className="min-w-[120px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
+                    <div className="min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
+                    <div className="min-w-[80px] max-w-[100px] text-right text-slate-400 leading-tight">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {trendingTokens?.data.data.map((token: TokenItem) => (
                         <Link href={`${NEXT_PUBLIC_APP_URL}/${token.contract_address}`} key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
-                            <div className="flex flex-1 gap-1 items-center font-medium text-sm">
+                            <div className="min-w-[120px] flex-1 flex gap-1 items-center font-medium text-sm">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <div className="rounded-full"  ><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
+                                <div className="rounded-full min-h-5 min-w-5"><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
                                 <span className="font-medium whitespace-nowrap">{token.symbol}</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">/</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">USDT</span>
-
                             </div>
-                            <div className="flex min-w-28 items-center justify-end max-w-40 text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
-                            <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} flex-1 font-medium text-sm text-right min-w-28 max-w-40`}>
+                            <div className="min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
+                            <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} min-w-[80px] max-w-[100px] text-right font-medium text-sm`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
                         </Link>
@@ -88,23 +87,23 @@ export default function ChartTab() {
                 </div>
             </TabsContent>
             <TabsContent value="new-pair" className="w-full h-full">
-                <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="flex-1">{t('token')}</div>
-                    <div className=" min-w-[160px] text-right">{t('price')} (USDT)</div>
-                    <div className="text-right min-w-[120px] max-w-40 flex-1">{t('1h change')}</div>
+                <div className="flex min-h-9 items-center w-full h-full gap-2.5 self-stretch text-text-secondary text-xs">
+                    <div className="min-w-[120px] flex-1 text-slate-400 leading-tight">{t('token')}</div>
+                    <div className="min-w-[160px] flex-1 text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
+                    <div className="min-w-[80px] max-w-[100px] text-right text-slate-400 leading-tight">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {newPairs?.data.data.map((token: TokenItem) => (
                         <Link href={`${NEXT_PUBLIC_APP_URL}/${token.contract_address}`} key={token._id} className="flex self-stretch gap-2.5 items-center px-1 min-h-14 h-14 hover:bg-[#2A3246]/50 rounded-lg ">
-                            <div className="flex flex-1 gap-1 items-center font-medium text-sm">
+                            <div className="min-w-[120px] flex-1 flex gap-1 items-center font-medium text-sm">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <div className="rounded-full"  ><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
+                                <div className="rounded-full min-h-5 min-w-5"><img src={token.logo ? token.logo : defaultLogo} alt={token.symbol} width={20} height={20} /></div>
                                 <span className="font-medium whitespace-nowrap"> {token.symbol}</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">/</span>
                                 <span className="text-slate-400 text-base font-semibold font-['Inter'] uppercase leading-normal">USDT</span>
                             </div>
-                            <div className="flex min-w-28 items-center justify-end max-w-40 text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
-                            <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} flex-1 font-medium text-sm text-right min-w-28 max-w-40`}>
+                            <div className="min-w-[160px] flex-1 flex items-center justify-end text-right font-medium text-sm">{formatNumber(token.price_usd, 2, 6)}</div>
+                            <div className={`${token['1h'].price_change_usd_percent > 0 ? "text-green-500" : "text-red-500"} min-w-[80px] max-w-[100px] text-right font-medium text-sm`}>
                                 {formatNumber(token['1h'].price_change_usd_percent)}%
                             </div>
                         </Link>
