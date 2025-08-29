@@ -19,11 +19,6 @@ export default function Footer() {
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li>
                                 <Link href="#" className="text-gray-400 hover:text-white">
-                                    {t("features")}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="text-gray-400 hover:text-white">
                                     {t("analytics")}
                                 </Link>
                             </li>
@@ -37,7 +32,6 @@ export default function Footer() {
                     <div className="flex flex-col gap-4 md:gap-9 items-start flex-1 md:hidden">
                         <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
                             <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
                             <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
                         </ul>
@@ -47,7 +41,6 @@ export default function Footer() {
                     <div className="flex flex-col gap-4 md:gap-9 items-start flex-1">
                         <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
                             <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
                             <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
                         </ul>
