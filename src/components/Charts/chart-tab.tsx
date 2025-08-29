@@ -6,9 +6,12 @@ import { TokenItem } from "@/services/token";
 import { formatNumber } from "@/lib/utils";
 import Link from "next/link";
 import { NEXT_PUBLIC_APP_URL } from "@/configs/env";
+import { useTranslations } from "next-intl";
 // import { useEffect } from "react";
 
 export default function ChartTab() {
+    const t = useTranslations('chart');
+
     const { data: trendingTokens, isLoading, error } = useTokens({ page: 1, limit: 5 });
 
     const { data: newPairs } = useTokens({ page: 1, limit: 5, sortOrder: 'desc', sortBy: 'born_at' });
@@ -23,11 +26,11 @@ export default function ChartTab() {
         <Tabs defaultValue="trending" className="max-w-[480px] w-full h-full md:shadow-[20px_20px_0px_0px_rgba(0,0,0,0.2)] bg-background rounded-2xl p-4 md:p-9 gap-9 justify-center items-center md:border-[16px] md:border-background ">
             <div className="flex flex-1 w-full items-center justify-between gap-4 self-stretch border-b-2 border-border">
                 <TabsList className="bg-background gap-4 p-0 flex">
-                    <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">TRENDING</TabsTrigger>
-                    <TabsTrigger value="new-pair" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm">NEW PAIRS</TabsTrigger>
+                    <TabsTrigger value="trending" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm uppercase">{t('trending')}</TabsTrigger>
+                    <TabsTrigger value="new-pair" className="border-spacing-2 rounded-none data-[state=active]:border-b-secondary data-[state=active]:text-secondary border-b-2 p-0 font-bold text-sm uppercase">{t('new pairs')}</TabsTrigger>
                 </TabsList>
                 <Link href={`${NEXT_PUBLIC_APP_URL}/dashboard`} className="text-sm text-gray-400 hover:text-white flex items-center justify-center gap-1 min-w-5">
-                    More
+                    {t('more')}
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
@@ -35,9 +38,9 @@ export default function ChartTab() {
             </div>
             <TabsContent value="trending" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="flex-1">Token</div>
-                    <div className=" min-w-[160px] text-right">Price (USDT)</div>
-                    <div className="text-right min-w-[120px] max-w-40 flex-1">1H change</div>
+                    <div className="flex-1">{t('token')}</div>
+                    <div className=" min-w-[160px] text-right">{t('price')} (USDT)</div>
+                    <div className="text-right min-w-[120px] max-w-40 flex-1">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {trendingTokens?.data.data.map((token: TokenItem) => (
@@ -60,9 +63,9 @@ export default function ChartTab() {
             </TabsContent>
             <TabsContent value="new-pair" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="flex-1">Token</div>
-                    <div className=" min-w-[160px] text-right">Price (USDT)</div>
-                    <div className="text-right min-w-[120px] max-w-40 flex-1">1H change</div>
+                    <div className="flex-1">{t('token')}</div>
+                    <div className=" min-w-[160px] text-right">{t('price')} (USDT)</div>
+                    <div className="text-right min-w-[120px] max-w-40 flex-1">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {newPairs?.data.data.map((token: TokenItem) => (

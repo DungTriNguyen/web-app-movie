@@ -214,5 +214,13 @@
     "like": "Gefällt mir",
     "comment": "Kommentar",
     "share": "Teilen"
+  },
+  "chart": {
+    "price": "Preis",
+    "token": "Token",
+    "1h change": "1H Änderung",
+    "trending": "Im Trend",
+    "new pairs": "Neue Paare",
+    "more": "Mehr"
   }
 }

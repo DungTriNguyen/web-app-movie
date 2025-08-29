@@ -214,5 +214,13 @@
         "like": "좋아요",
         "comment": "댓글",
         "share": "공유"
+    },
+    "chart": {
+        "price": "가격",
+        "token": "토큰",
+        "1h change": "1시간 변화",
+        "trending": "트렌딩",
+        "new pairs": "새로운 페어",
+        "more": "더보기"
     }
 }

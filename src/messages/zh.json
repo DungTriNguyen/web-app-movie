@@ -214,5 +214,13 @@
     "like": "点赞",
     "comment": "评论",
     "share": "分享"
+  },
+  "chart": {
+    "price": "价格",
+    "token": "代币",
+    "1h change": "1小时变化",
+    "trending": "趋势",
+    "new pairs": "新交易对",
+    "more": "更多"
   }
 }

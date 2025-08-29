@@ -173,3 +173,7 @@ h1 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.bg-hero {
+  background: #800080
+}

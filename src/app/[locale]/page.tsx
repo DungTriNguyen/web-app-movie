@@ -14,6 +14,7 @@ export default function Home() {
         <iframe
           src="https://my.spline.design/dotwaves-31mfNuH5WRrPGRGZn6joJgy2/"
           className="absolute inset-0 w-full h-full object-cover z-0 scale-120"
+          loading="lazy"
         ></iframe>
         <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-accent to-transparent z-0 md:h-[1200px]" />
         <div className="relative z-10 flex flex-col h-full justify-between">

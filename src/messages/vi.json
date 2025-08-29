@@ -214,5 +214,13 @@
         "like": "Thích",
         "comment": "Bình luận",
         "share": "Chia sẻ"
+    },
+    "chart": {
+        "price": "Giá",
+        "token": "Token",
+        "1h change": "Biến động 1 giờ",
+        "trending": "Xu hướng",
+        "new pairs": "Cặp giao dịch mới",
+        "more": "Xem thêm"
     }
 }

@@ -214,5 +214,13 @@
         "like": "いいね",
         "comment": "コメント",
         "share": "共有"
+    },
+    "chart": {
+        "price": "価格",
+        "token": "トークン",
+        "1h change": "1時間変化",
+        "trending": "トレンド",
+        "new pairs": "新ペア",
+        "more": "もっと見る"
     }
 }

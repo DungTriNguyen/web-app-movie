@@ -69,7 +69,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="px-4 py-9 md:text-center">
-                <p className="text-gray-400 text-xs">© {new Date().getFullYear()} DexSpace Crypto Platform LLC. All rights reserved.</p>
+                <p className="text-gray-400 text-xs">© {new Date().getFullYear()} DexSpace. All rights reserved.</p>
             </div>
 
         </footer>
