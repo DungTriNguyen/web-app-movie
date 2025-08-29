@@ -13,7 +13,6 @@ export default function Hero() {
     const [isLoading, setIsLoading] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false);
     const [scrollOpacity, setScrollOpacity] = useState(1);
-
     const handleClick = async () => {
         setIsLoading(true)
         try {
@@ -38,13 +37,13 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center gap-6 md:gap-12 pt-40 px-2 md:px-20 md:py-16 overflow-hidden pb-30 md:pb-10 ">
-            <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-hero">
+        <section className="relative min-h-screen flex flex-col items-center justify-center gap-6 md:gap-12 pt-40 px-2 md:px-20 md:py-16 overflow-hidden pb-30 md:pb-10 bg-accent ">
+            <div className="absolute top-0 left-0 right-0 bottom-0 max-h-[60vh] md:w-full md:max-h-[100vh] bg-hero">
                 <iframe
                     src="https://my.spline.design/intergalacticcloser-S9rSVcYf61pdQ54LKvbOwkr7/"
-                    className="w-full h-full object-cover z-20"
+                    className="w-[140%] md:w-full h-full object-cover z-20"
                     loading="eager"
-                ></iframe>
+                />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-accent to-transparent z-20 h-[400px]" />
             </div>
 

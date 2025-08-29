@@ -10,8 +10,8 @@ export default function Ready() {
         window.location.href = `${NEXT_PUBLIC_APP_URL}`;
     }
     return (
-        <section id="ready" className="py-16 px-4 bg-slate-900">
-            <div className="container mx-auto bg-[url('/images/ready.jpeg')] bg-cover bg-center bg-no-repeat gap-4 bg-background rounded-2xl text-center flex-col flex self-stretch py-[46px] px-6">
+        <section id="ready" className="py-16 bg-slate-900">
+            <div className="w-full bg-[url('/images/ready.jpeg')] bg-cover bg-center bg-no-repeat gap-4 bg-background text-center flex-col flex self-stretch py-[46px] px-6">
                 <h1 className="text-gray-100 text-3xl lg:text-5xl font-semibold font-['Inter'] text-center uppercase leading-10 lg:leading-[67.20px] max-w-[700px] mx-auto">{t("title")}</h1>
                 <p className="text-gray-100 text-sm font-medium font-['Inter'] leading-snug">{t("description")}</p>
                 <Button onClick={handleClick} className="w-fit mx-auto py-6 cursor-pointer">{t("button")}</Button>

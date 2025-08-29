@@ -71,9 +71,9 @@ const Header = () => {
                         src="/dex-space.svg"
                         alt="DexSpace Logo"
                         width={197}
-                        height={40}
+                        height={43}
                         priority
-                        className="w-[197px] justify-center items-center"
+                        className="justify-center items-center w-[160px] h-[36px] md:w-[197px] md:h-[43px]"
                     />
                 </a>
 

@@ -81,7 +81,7 @@ export default function FAQ() {
                 </div>
 
             </div>
-            <div className="w-[800px] h-10 absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-10 bg-purple-600 rounded-full blur-[10px]" />
+            <div className="w-[800px] h-10 absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-13 bg-purple-600 rounded-full blur-[30px]" />
         </section>
     );
 }
