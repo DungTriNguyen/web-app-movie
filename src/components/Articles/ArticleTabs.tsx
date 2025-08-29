@@ -5,6 +5,7 @@ import SearchBar from "../Common/SearchBar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import useGetBlogCategories from "@/hooks/use-get-blog-categories";
 import useGetBlogs from "@/hooks/use-get-blogs";
+import { Skeleton } from "../ui/skeleton";
 
 export default function ArticleTabs() {
     const t = useTranslations("academy");
@@ -18,7 +19,22 @@ export default function ArticleTabs() {
         query: { isSuccess: isBlogSuccess },
         data: blogData
     } = useGetBlogs();
-
+    if (!isBlogSuccess) {
+        return (
+            <div className="bg-gray-900 pt-10 pb-20 px-4">
+                <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
+                    {[...Array(6)].map((_, idx) => (
+                        <div key={idx} className="bg-slate-800 rounded-2xl p-6 flex flex-col gap-4 min-h-[320px]">
+                            <Skeleton className="w-full h-40 rounded-xl bg-slate-700" />
+                            <Skeleton className="h-6 w-2/3 rounded-2xl bg-slate-700" />
+                            <Skeleton className="h-4 w-1/2 rounded-2xl bg-slate-700" />
+                            <Skeleton className="h-4 w-1/3 rounded-2xl bg-slate-700" />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
     return (
         <div className="w-full pt-12">
             <Tabs defaultValue="all" className="w-full gap-0">

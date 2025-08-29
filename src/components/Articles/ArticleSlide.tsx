@@ -10,10 +10,11 @@ import Tag from "../Common/Tag";
 import Link from "next/link";
 import useGetBlogs from "@/hooks/use-get-blogs";
 import { formatDate } from "date-fns";
+import { Skeleton } from "../ui/skeleton";
 
 export default function ArticleSlide() {
 
-    const { data: blogData } = useGetBlogs();
+    const { data: blogData, isLoading } = useGetBlogs();
     const slides = blogData?.items
         ?.slice()
         .sort(
@@ -21,6 +22,29 @@ export default function ArticleSlide() {
                 new Date(a?.createdDate ?? 0).getTime()
         )
         ?.slice(0, 5);
+
+    if (isLoading) {
+        return (
+            <div className="w-full featured-swiper !pt-6 animate-pulse">
+
+                <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+                    <div className="w-full md:w-1/2">
+                        <div className="rounded-lg bg-slate-700 w-full h-[220px] md:h-[470px]" />
+                    </div>
+                    <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 md:px-12">
+                        <Skeleton className="w-32 h-4 rounded-xl bg-slate-700" />
+                        <Skeleton className="h-6 w-2/3 rounded-2xl bg-slate-700" />
+                        <Skeleton className="h-4 w-1/2 rounded-2xl bg-slate-700" />
+                        <div className="flex gap-x-2 mt-2">
+                            {[0, 1, 2].map((tagIdx) => (
+                                <div key={tagIdx} className="w-12 h-6 bg-slate-800 rounded-full" />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <Swiper

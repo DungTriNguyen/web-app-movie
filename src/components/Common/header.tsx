@@ -136,7 +136,7 @@ const Header = () => {
                     </div>
 
                     <a href={NEXT_PUBLIC_APP_URL}>
-                        <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12 mb-2 cursor-pointer" size="sm" variant="default">
+                        <Button className="bg-primary hidden md:flex gap-2 justify-center items-center px-4 min-h-12 cursor-pointer" size="sm" variant="default">
                             {t('get started')}
                         </Button>
                     </a>
