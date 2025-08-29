@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import useGetBlogCategories from "@/hooks/use-get-blog-categories";
 import useGetBlogs from "@/hooks/use-get-blogs";
 import { Skeleton } from "../ui/skeleton";
+import { DEFAULT_PARAMS } from "@/constants/constants";
 
 export default function ArticleTabs() {
     const t = useTranslations("academy");
@@ -18,7 +19,7 @@ export default function ArticleTabs() {
     const {
         query: { isSuccess: isBlogSuccess },
         data: blogData
-    } = useGetBlogs();
+    } = useGetBlogs({ ...DEFAULT_PARAMS, languageCode: "vi" });
     if (!isBlogSuccess) {
         return (
             <div className="bg-gray-900 pt-10 pb-20 px-4">

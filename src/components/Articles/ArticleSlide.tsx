@@ -9,12 +9,12 @@ import "swiper/css/pagination";
 import Tag from "../Common/Tag";
 import Link from "next/link";
 import useGetBlogs from "@/hooks/use-get-blogs";
+import { DEFAULT_PARAMS } from "@/constants/constants";
 import { formatDate } from "date-fns";
 import { Skeleton } from "../ui/skeleton";
 
 export default function ArticleSlide() {
-
-    const { data: blogData, isLoading } = useGetBlogs();
+    const { data: blogData, isLoading } = useGetBlogs({ ...DEFAULT_PARAMS, languageCode: "vi" });
     const slides = blogData?.items
         ?.slice()
         .sort(
@@ -71,6 +71,7 @@ export default function ArticleSlide() {
                                     width={600}
                                     height={370}
                                     className="rounded-lg object-cover w-full h-auto"
+                                    unoptimized
                                 />
                             </div>
 

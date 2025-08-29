@@ -11,13 +11,12 @@ export async function getBlogs(
     try {
         const params = GetBlogsRequestSchema.parse(request)
         const response = await axiosInstance.get<GetBlogsResponse>(
-            `${PATHS.BLOG.GET_ALL}/${NEXT_PUBLIC_TENANT_ID}`,
+            `${PATHS.BLOG.GET_ALL}/${NEXT_PUBLIC_TENANT_ID}/${params.languageCode}`,
             {
                 params,
             }
         )
         const { data } = response
-        console.log("response blogs", response)
         return {
             data,
             message: response.statusText,

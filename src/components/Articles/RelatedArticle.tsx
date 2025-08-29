@@ -9,10 +9,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { useTranslations } from "next-intl";
 import useGetBlogs from "@/hooks/use-get-blogs";
+import { DEFAULT_PARAMS } from "@/constants/constants";
 export default function RelatedArticle() {
     const t = useTranslations("academy");
 
-    const { data: blogData = { totalCount: 0, items: [] } } = useGetBlogs();
+    const { data: blogData = { totalCount: 0, items: [] } } = useGetBlogs({ ...DEFAULT_PARAMS, languageCode: "vi" });
     const sortedBlogs = blogData?.items
         ?.slice()
         .sort(
