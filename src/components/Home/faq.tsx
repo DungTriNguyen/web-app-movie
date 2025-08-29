@@ -20,10 +20,10 @@ export default function FAQ() {
                         value="item-1"
                         className="bg-slate-900 rounded-lg border border-border data-[state=open]:bg-slate-800"
                     >
-                        <AccordionTrigger className="px-6 py-4 text-lg font-semibold hover:no-underline md:uppercase">
+                        <AccordionTrigger className="px-6 py-4 text-slate-400 data-[state=open]:text-gray-100 text-base font-normal font-['Inter'] leading-normal hover:no-underline [&>svg]:text-slate-400 data-[state=open]:[&>svg]:text-gray-100">
                             {t("accordion.item-1.title")}
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                        <AccordionContent className="px-6 py-4 text-gray-100 text-base font-normal font-['Inter'] leading-snug">
                             {t("accordion.item-1.description")}
                         </AccordionContent>
                     </AccordionItem>
@@ -32,10 +32,10 @@ export default function FAQ() {
                         value="item-2"
                         className="bg-slate-900 rounded-lg border border-border data-[state=open]:bg-slate-800"
                     >
-                        <AccordionTrigger className="px-6 py-4 text-lg font-semibold hover:no-underline md:uppercase">
+                        <AccordionTrigger className="px-6 py-4 text-slate-400 data-[state=open]:text-gray-100 text-base font-normal font-['Inter'] leading-normal hover:no-underline [&>svg]:text-slate-400 data-[state=open]:[&>svg]:text-gray-100">
                             {t("accordion.item-2.title")}
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                        <AccordionContent className="px-6 py-4 text-gray-100 text-base font-normal font-['Inter'] leading-snug">
                             {t("accordion.item-2.description")}
                         </AccordionContent>
                     </AccordionItem>
@@ -44,10 +44,10 @@ export default function FAQ() {
                         value="item-3"
                         className="bg-slate-900 rounded-lg border border-border data-[state=open]:bg-slate-800"
                     >
-                        <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline md:uppercase">
+                        <AccordionTrigger className="px-6 py-4 text-slate-400 data-[state=open]:text-gray-100 text-base font-normal font-['Inter'] leading-normal hover:no-underline [&>svg]:text-slate-400 data-[state=open]:[&>svg]:text-gray-100">
                             {t("accordion.item-3.title")}
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                        <AccordionContent className="px-6 py-4 text-gray-100 text-base font-normal font-['Inter'] leading-snug">
                             {t("accordion.item-3.description")}
                         </AccordionContent>
                     </AccordionItem>
@@ -56,10 +56,10 @@ export default function FAQ() {
                         value="item-4"
                         className="bg-slate-900 rounded-lg border border-border data-[state=open]:bg-slate-800"
                     >
-                        <AccordionTrigger className="px-6 py-4 text-lg font-semibold hover:no-underline md:uppercase">
+                        <AccordionTrigger className="px-6 py-4 text-slate-400 data-[state=open]:text-gray-100 text-base font-normal font-['Inter'] leading-normal hover:no-underline [&>svg]:text-slate-400 data-[state=open]:[&>svg]:text-gray-100">
                             {t("accordion.item-4.title")}
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                        <AccordionContent className="px-6 py-4 text-gray-100 text-base font-normal font-['Inter'] leading-snug">
                             {t("accordion.item-4.description")}
                         </AccordionContent>
                     </AccordionItem>
@@ -68,10 +68,10 @@ export default function FAQ() {
                         value="item-5"
                         className="bg-slate-900 rounded-lg border border-border data-[state=open]:bg-slate-800"
                     >
-                        <AccordionTrigger className="px-6 py-4 text-lg font-semibold hover:no-underline md:uppercase">
+                        <AccordionTrigger className="px-6 py-4 text-slate-400 data-[state=open]:text-gray-100 text-base font-normal font-['Inter'] leading-normal hover:no-underline [&>svg]:text-slate-400 data-[state=open]:[&>svg]:text-gray-100">
                             {t("accordion.item-5.title")}
                         </AccordionTrigger>
-                        <AccordionContent className="px-6 py-4 text-secondary-foreground">
+                        <AccordionContent className="px-6 py-4 text-gray-100 text-base font-normal font-['Inter'] leading-snug">
                             {t("accordion.item-5.description")}
                         </AccordionContent>
                     </AccordionItem>

@@ -13,20 +13,20 @@ export default function Advance() {
                     <h1 className="text-white text-3xl lg:text-5xl font-semibold uppercase leading-10 lg:leading-[72px] max-w-[600px]">
                         {t("title")}
                     </h1>
-                    <p className="text-gray-100 text-base font-normal md:font-semibold font-['Inter'] md:uppercase leading-normal max-w-[600px] mb-2">
+                    <p className="text-gray-100 text-base font-normal font-['Inter'] leading-normal max-w-[600px] mb-2">
                         {t("description")}
                     </p>
                     <div className="flex flex-col gap-4 items-start self-stretch">
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2.5">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                <span className="text-gray-100 text-base font-normal md:font-semibold font-['Inter'] md:uppercase leading-normal">{t("real-time-price-updates")}</span>
+                                <span className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("real-time-price-updates")}</span>
                             </p>
                         </div>
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2.5">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                <span className="text-gray-100 text-base font-normal md:font-semibold font-['Inter'] md:uppercase leading-normal">
+                                <span className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">
                                     {t("custom-chart-indicators")}
                                 </span>
                             </p>
@@ -34,7 +34,7 @@ export default function Advance() {
                         <div className="flex items-center">
                             <p className="flex text-muted-foreground text-sm gap-2.5">
                                 <Image src="/images/check.svg" alt="Real-Time Data" width={20} height={20} />
-                                <span className="text-gray-100 text-base font-normal md:font-semibold font-['Inter'] md:uppercase leading-normal">
+                                <span className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">
                                     {t("market-depth-analysis")}
                                 </span>
                             </p>

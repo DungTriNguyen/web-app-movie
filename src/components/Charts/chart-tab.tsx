@@ -64,9 +64,9 @@ export default function ChartTab() {
             </div>
             <TabsContent value="trending" className="w-full h-full">
                 <div className="flex min-h-9 items-center w-full h-full  gap-2.5 self-stretch text-text-secondary text-xs">
-                    <div className="flex-1">{t('token')}</div>
-                    <div className=" min-w-[160px] text-right">{t('price')} (USDT)</div>
-                    <div className="text-right min-w-[120px] max-w-40 flex-1">{t('1h change')}</div>
+                    <div className="flex-1 text-slate-400 leading-tight">{t('token')}</div>
+                    <div className=" min-w-[160px] text-right text-slate-400 leading-tight">{t('price')} (USDT)</div>
+                    <div className="text-right min-w-[120px] max-w-40 flex-1 text-slate-400 leading-tight">{t('1h change')}</div>
                 </div>
                 <div className="flex self-stretch flex-col items-start">
                     {trendingTokens?.data.data.map((token: TokenItem) => (

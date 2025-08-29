@@ -6,16 +6,16 @@ export default function Footer() {
     const t = useTranslations('footer');
     return (
         <footer className="bg-accent flex flex-col px-0 md:px-4">
-            <div className="w-full max-w-[1440px] mx-auto py-20 px-4 self-stretch flex flex-col md:flex-row md:gap-12 gap-0">
+            <div className="w-full max-w-[1600px] mx-auto py-20 px-4 self-stretch flex flex-col md:flex-row md:gap-12 gap-0">
                 <div className="flex flex-col md:flex-col items-start gap-9 w-full md:w-auto md:flex-1 mb-8 md:mb-0">
                     <Image src="/images/logo.svg" alt="DexSpace Logo" width={237} height={67} className="items-center justify-center " />
-                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">
+                    <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-snug">
                         {t("description")}
                     </p>
                 </div>
                 <div className="flex flex-row md:flex-col gap-12 w-full md:w-auto md:flex-1 mb-8 md:mb-0">
-                    <div className="flex flex-col gap-9 items-start flex-1">
-                        <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("product")}</h4>
+                    <div className="flex flex-col gap-4 md:gap-9 items-start flex-1">
+                        <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("product")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li>
                                 <Link href="#" className="text-gray-400 hover:text-white">
@@ -34,8 +34,8 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="flex flex-col gap-9 items-start flex-1 md:hidden">
-                        <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("company")}</h4>
+                    <div className="flex flex-col gap-4 md:gap-9 items-start flex-1 md:hidden">
+                        <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
@@ -44,8 +44,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex-row md:flex-col gap-12 w-full md:w-auto md:flex-1 mb-8 md:mb-0 hidden md:flex">
-                    <div className="flex flex-col gap-9 items-start flex-1">
-                        <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal">{t("company")}</h4>
+                    <div className="flex flex-col gap-4 md:gap-9 items-start flex-1">
+                        <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
@@ -53,8 +53,8 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex flex-col gap-9 items-start w-full md:w-auto md:flex-1 pt-10 md:pt-0">
-                    <h4 className="text-gray-100 text-base font-semibold font-['Inter'] uppercase leading-normal hidden md:block">{t("connect")}</h4>
+                <div className="flex flex-col gap-4 md:gap-9 items-start w-full md:w-auto md:flex-1 pt-10 md:pt-0">
+                    <h4 className="text-gray-100 text-base font-['Inter'] font-semibold md:font-normal leading-normal hidden md:block">{t("connect")}</h4>
                     <div className="flex space-x-4">
                         <a href="https://x.com/dexspace_io" >
                             <img src="/images/twitter.svg" alt="Twitter" className="w-5 h-5" />
