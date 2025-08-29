@@ -38,8 +38,8 @@ export default function Footer() {
                         <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("careers")}</a></li>
+                            <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
+                            <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ export default function Footer() {
                         <h4 className="text-gray-100 text-base font-normal font-['Inter'] leading-normal">{t("company")}</h4>
                         <ul className="gap-2.5 flex flex-col items-start text-sm">
                             <li><a href="#" className="text-gray-400 hover:text-white">{t("about")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("blog")}</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">{t("careers")}</a></li>
+                            <li><a href="/terms-of-service" className="text-gray-400 hover:text-white">{t("terms")}</a></li>
+                            <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">{t("privacy")}</a></li>
                         </ul>
                     </div>
                 </div>

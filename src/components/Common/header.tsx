@@ -31,7 +31,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 100);
+            setIsScrolled(window.scrollY > 0);
         };
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -59,8 +59,8 @@ const Header = () => {
     }
     return (
         <header
-            className={`${isScrolled ? 'bg-gradient-to-b from-black/90 to-black/0 backdrop-blur-xs' : 'bg-transparent'} fixed w-full left-0 top-0 z-40 transition-all duration-300`}
-            style={isScrolled ? {
+            className={`${isScrolled && !menuOpen ? 'bg-gradient-to-b from-black/90 to-black/0 backdrop-blur-xs' : 'bg-transparent'} fixed w-full left-0 top-0 z-40 transition-all duration-300`}
+            style={isScrolled && !menuOpen ? {
                 WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
                 maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)"
             } : { background: "transparent" }}
@@ -104,7 +104,7 @@ const Header = () => {
                                     <ChevronDown className="w-4 h-4" />
                                 </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" asChild>
+                            <DropdownMenuContent align="end" asChild className="z-[999]">
                                 <div className="bg-white p-4 rounded-none rounded-tl-lg rounded-bl-lg rounded-br-lg min-w-[160px]">
                                     {languages.map((lang) => (
                                         <DropdownMenuItem
@@ -153,7 +153,7 @@ const Header = () => {
                                     <ChevronDown className="w-4 h-4" />
                                 </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" asChild>
+                            <DropdownMenuContent align="end" asChild className="z-[999]">
                                 <div className="bg-white p-4 rounded-none rounded-tl-lg rounded-bl-lg rounded-br-lg min-w-[160px]">
                                     {languages.map((lang) => (
                                         <DropdownMenuItem

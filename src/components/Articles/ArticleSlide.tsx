@@ -70,7 +70,7 @@ export default function ArticleSlide() {
                                     alt={slide?.title || ""}
                                     width={600}
                                     height={370}
-                                    className="rounded-lg object-cover w-full h-auto"
+                                    className="rounded-lg object-cover w-full max-h-[370px]"
                                     unoptimized
                                 />
                             </div>

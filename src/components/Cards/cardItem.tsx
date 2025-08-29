@@ -14,7 +14,7 @@ export default function CardItem({ blogs }: CardItemProps) {
         <Link href={`/academy/${blogs?.[0]?.itemUrl}`}>
             <div className="flex flex-col gap-4 md:min-h-[500px]">
                 <div data-placeholder="true" data-ratio="16:9">
-                    <Image src={imageUrl || "/images/image.png"} alt={blogs?.[0]?.title || ""} width={600} height={370} className="rounded-lg object-cover w-full h-auto" unoptimized />
+                    <Image src={imageUrl || "/images/image.png"} alt={blogs?.[0]?.title || ""} width={600} height={270} className="rounded-lg object-cover w-full h-auto max-h-[270px]" unoptimized />
                 </div>
                 <p className="text-slate-400 text-xs font-medium font-['Inter'] leading-tight">{formatDate(blogs?.[0]?.createdDate ?? "", "dd MMM · HH:mm 'UTC'")}
                 </p>
