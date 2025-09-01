@@ -193,34 +193,34 @@
             "intro": "If you have any questions about this Privacy Policy or our data practices, please contact us at:",
             "address": "[Your Company Address]",
             "last-updated": "Last Updated"
-        },
-        "academy": {
-            "root link": "Home",
-            "title": "Academy",
-            "tabs": {
-                "all": "All",
-                "trending": "Trending",
-                "on-chain": "On-Chain",
-                "listing": "Listing",
-                "alert": "Alert"
-            },
-            "search placeholder": "Search by token, tag or keyword...",
-            "load more": "Load More",
-            "related articles": "Related Articles",
-            "no articles": "No articles"
-        },
-        "interaction": {
-            "like": "Like",
-            "comment": "Comment",
-            "share": "Share"
-        },
-        "chart": {
-            "price": "Price",
-            "token": "Token",
-            "1h change": "1H Change",
-            "trending": "Trending",
-            "new pairs": "New Pairs",
-            "more": "More"
         }
+    },
+    "academy": {
+        "root link": "Home",
+        "title": "Academy",
+        "tabs": {
+            "all": "All",
+            "trending": "Trending",
+            "on-chain": "On-Chain",
+            "listing": "Listing",
+            "alert": "Alert"
+        },
+        "search placeholder": "Search by token, tag or keyword...",
+        "load more": "Load More",
+        "related articles": "Related Articles",
+        "no articles": "No articles"
+    },
+    "interaction": {
+        "like": "Like",
+        "comment": "Comment",
+        "share": "Share"
+    },
+    "chart": {
+        "price": "Price",
+        "token": "Token",
+        "1h change": "1H Change",
+        "trending": "Trending",
+        "new pairs": "New Pairs",
+        "more": "More"
     }
 }
