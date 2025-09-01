@@ -5,20 +5,20 @@
     "academy": "Akademie",
     "get started": "Loslegen",
     "language": {
-      "en": "Englisch",
-      "zh": "Chinesisch",
-      "es": "Spanisch",
-      "kr": "Koreanisch",
-      "jp": "Japanisch",
-      "fr": "Französisch",
-      "de": "Deutsch",
-      "ru": "Russisch",
-      "vi": "Vietnamesisch"
-    }
+      "en": "English",
+      "zh": "Chinese",
+      "es": "Spanish",
+      "kr": "Korean",
+      "jp": "Japanese",
+      "fr": "French",
+      "de": "German",
+      "ru": "Russian",
+      "vi": "Vietnamese"
+  }
   },
   "home": {
     "hero": {
-      "title": "Die nächste Dimension des sicheren Krypto-Handels",
+      "title": "Open Market — Wo alles handelbar ist, von allen",
       "description": "Bleiben Sie dem Markt voraus mit sofortigen Preisaktualisierungen zu den angesagtesten und neu eingeführten Token. Schnell, zuverlässig und für DeFi-Händler entwickelt.",
       "button": {
         "explore": "Markttrends erkunden",
@@ -83,10 +83,10 @@
         "description": "Um Ihren Token auf DexSpace zu listen, können Sie eine Listungsanfrage über unser Token Submission-Portal einreichen. Wir benötigen grundlegende Informationen zu Ihrem Projekt, einschließlich Vertragsadresse, Website, Social-Media-Links und Tokenomics-Details. Unser Team prüft alle Einreichungen, um sicherzustellen, dass sie unseren Sicherheits- und Qualitätsstandards entsprechen, bevor sie auf unserer Plattform hinzugefügt werden."
       }
     },
-    "support": "Noch Fragen? Kontaktieren Sie den Support."
+    "support": "Noch Fragen? Kontaktieren Sie den Support. contact@dexspace.io"
   },
   "footer": {
-    "description": "Erweiterte Krypto-Token-Analyseplattform für moderne Händler.",
+    "description": "Open Market — Wo alles handelbar ist, von allen.",
     "product": "Produkt",
     "company": "Unternehmen",
     "legal": "Rechtliches",

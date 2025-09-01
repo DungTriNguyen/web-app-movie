@@ -5,20 +5,20 @@
         "academy": "アカデミー",
         "get started": "はじめる",
         "language": {
-            "en": "英語",
-            "zh": "中国語",
-            "es": "スペイン語",
-            "kr": "韓国語",
-            "jp": "日本語",
-            "fr": "フランス語",
-            "de": "ドイツ語",
-            "ru": "ロシア語",
-            "vi": "ベトナム語"
+            "en": "English",
+            "zh": "Chinese",
+            "es": "Spanish",
+            "kr": "Korean",
+            "jp": "Japanese",
+            "fr": "French",
+            "de": "German",
+            "ru": "Russian",
+            "vi": "Vietnamese"
         }
     },
     "home": {
         "hero": {
-            "title": "安全な暗号取引の新たな次元",
+            "title": "Open Market — すべてが取引可能で、誰もが",
             "description": "最もトレンドの暗号通貨と新規発行トークンの即座の価格更新で市場の先を行きましょう。高速で信頼性が高く、DeFiトレーダーのために構築されています。",
             "button": {
                 "explore": "市場トレンドを探索",
@@ -86,7 +86,7 @@
         "support": "まだ質問がありますか？サポートにお問い合わせください。"
     },
     "footer": {
-        "description": "現代のトレーダー向けの高度な暗号トークン分析プラットフォーム。",
+        "description": "Open Market — すべてが取引可能で、誰もが",
         "product": "製品",
         "company": "会社",
         "legal": "法的情報",

@@ -5,20 +5,20 @@
     "academy": "Academia",
     "get started": "Comenzar",
     "language": {
-      "en": "Inglés",
-      "zh": "Chino",
-      "es": "Español",
-      "kr": "Coreano",
-      "jp": "Japonés",
-      "fr": "Francés",
-      "de": "Alemán",
-      "ru": "Ruso",
-      "vi": "Vietnamita"
-    }
+      "en": "English",
+      "zh": "Chinese",
+      "es": "Spanish",
+      "kr": "Korean",
+      "jp": "Japanese",
+      "fr": "French",
+      "de": "German",
+      "ru": "Russian",
+      "vi": "Vietnamese"
+  }
   },
   "home": {
     "hero": {
-      "title": "La próxima dimensión del comercio seguro de criptomonedas",
+      "title": "Open Market — Donde todo es negociable, por todos",
       "description": "Mantente a la vanguardia del mercado con actualizaciones instantáneas de precios sobre los tokens más populares y recién lanzados. Rápido, confiable y diseñado para traders DeFi.",
       "button": {
         "explore": "Explorar tendencias del mercado",
@@ -86,7 +86,7 @@
     "support": "¿Aún tienes preguntas? Contacta al soporte."
   },
   "footer": {
-    "description": "Plataforma avanzada de análisis de tokens criptográficos para comerciantes modernos.",
+    "description": "Open Market — Donde todo es negociable, por todos.",
     "product": "Producto",
     "company": "Compañía",
     "legal": "Legal",

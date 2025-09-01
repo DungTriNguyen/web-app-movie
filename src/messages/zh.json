@@ -5,20 +5,20 @@
     "academy": "学院",
     "get started": "开始使用",
     "language": {
-      "en": "英语",
-      "zh": "中文",
-      "es": "西班牙语",
-      "kr": "韩语",
-      "jp": "日语",
-      "fr": "法语",
-      "de": "德语",
-      "ru": "俄语",
-      "vi": "越南语"
-    }
+      "en": "English",
+      "zh": "Chinese",
+      "es": "Spanish",
+      "kr": "Korean",
+      "jp": "Japanese",
+      "fr": "French",
+      "de": "German",
+      "ru": "Russian",
+      "vi": "Vietnamese"
+  }
   },
   "home": {
     "hero": {
-      "title": "安全加密货币交易的下一个维度",
+      "title": "Open Market — 让所有交易者都能交易，让所有人都能交易",
       "description": "通过最热门和新发布代币的即时价格更新，领先于市场。快速、可靠，专为DeFi交易者打造。",
       "button": {
         "explore": "探索市场趋势",
@@ -86,7 +86,7 @@
     "support": "还有问题？联系支持团队。"
   },
   "footer": {
-    "description": "面向现代交易者的高级加密令牌分析平台。",
+    "description": "Open Market — 让所有交易者都能交易，让所有人都能交易",
     "product": "产品",
     "company": "公司",
     "legal": "法律",

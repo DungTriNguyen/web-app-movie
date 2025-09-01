@@ -5,20 +5,20 @@
         "academy": "Học viện",
         "get started": "Bắt đầu",
         "language": {
-            "en": "Tiếng Anh",
-            "zh": "Tiếng Trung",
-            "es": "Tiếng Tây Ban Nha",
-            "kr": "Tiếng Hàn",
-            "jp": "Tiếng Nhật",
-            "fr": "Tiếng Pháp",
-            "de": "Tiếng Đức",
-            "ru": "Tiếng Nga",
-            "vi": "Tiếng Việt"
+            "en": "English",
+            "zh": "Chinese",
+            "es": "Spanish",
+            "kr": "Korean",
+            "jp": "Japanese",
+            "fr": "French",
+            "de": "German",
+            "ru": "Russian",
+            "vi": "Vietnamese"
         }
     },
     "home": {
         "hero": {
-            "title": "Xu hướng tiếp theo của giao dịch tiền điện tử an toàn",
+            "title": "Open Market — Nơi tất cả đều có thể giao dịch, bởi tất cả",
             "description": "Dẫn đầu thị trường với cập nhật giá tức thì về các token mới và xu hướng hot nhất. Nhanh chóng, đáng tin cậy và được xây dựng dành cho trader DeFi.",
             "button": {
                 "explore": "Khám Phá Xu Hướng Thị Trường",
@@ -86,7 +86,7 @@
         "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ."
     },
     "footer": {
-        "description": "Nền tảng phân tích mã thông báo tiền điện tử tiên tiến dành cho các nhà giao dịch hiện đại.",
+        "description": "Open Market — Nơi tất cả đều có thể giao dịch, bởi tất cả",
         "product": "Sản Phẩm",
         "company": "Công Ty",
         "legal": "Pháp Lý",

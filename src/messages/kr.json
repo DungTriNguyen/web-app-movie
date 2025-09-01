@@ -5,20 +5,20 @@
         "academy": "아카데미",
         "get started": "시작하기",
         "language": {
-            "en": "영어",
-            "zh": "중국어",
-            "es": "스페인어",
-            "kr": "한국어",
-            "jp": "일본어",
-            "fr": "프랑스어",
-            "de": "독일어",
-            "ru": "러시아어",
-            "vi": "베트남어"
+            "en": "English",
+            "zh": "Chinese",
+            "es": "Spanish",
+            "kr": "Korean",
+            "jp": "Japanese",
+            "fr": "French",
+            "de": "German",
+            "ru": "Russian",
+            "vi": "Vietnamese"
         }
     },
     "home": {
         "hero": {
-            "title": "안전한 암호화폐 거래의 다음 단계",
+            "title": "Open Market — 모두가 거래 가능한 시장",
             "description": "가장 트렌딩하고 새로 출시된 토큰의 즉시 가격 업데이트로 시장을 선도하세요. 빠르고 신뢰할 수 있으며 DeFi 트레이더를 위해 구축되었습니다.",
             "button": {
                 "explore": "시장 트렌드 탐색",
@@ -86,7 +86,7 @@
         "support": "아직 질문이 있으신가요? 지원팀에 문의하세요."
     },
     "footer": {
-        "description": "현대 트레이더를 위한 고급 암호 토큰 분석 플랫폼입니다.",
+        "description": "Open Market — 모두가 거래 가능한 시장",
         "product": "제품",
         "company": "회사",
         "legal": "법적 정보",

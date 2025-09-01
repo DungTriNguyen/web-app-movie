@@ -18,7 +18,7 @@
     },
     "home": {
         "hero": {
-            "title": "The Next Dimension of Secure Crypto Trading",
+            "title": "Open Market — Where Everything’s Tradable, By Everyone",
             "description": "Stay ahead of the market with instant price updates on the most trending and newly launched tokens. Fast, reliable, and built for DeFi traders.",
             "button": {
                 "explore": "Explore Market Trends",
@@ -83,10 +83,10 @@
                 "description": "To list your token on DexSpace, you can submit a listing request through our Token Submission portal. We require basic information about your project, including contract address, website, social media links, and tokenomics details. Our team reviews all submissions to ensure they meet our security and quality standards before adding them to our platform."
             }
         },
-        "support": "Still have questions? Contact Support."
+        "support": "Still have questions? Contact Support. contact@dexspace.io"
     },
     "footer": {
-        "description": "Advanced crypto token analytics platform for modern traders.",
+        "description": "Open Market — Where Everything's Tradable, By Everyone.",
         "product": "Product",
         "company": "Company",
         "legal": "Legal",
@@ -95,7 +95,7 @@
         "privacy": "Privacy",
         "contact": "Contact",
         "about": "About",
-        "blog": "Blogs",
+        "blog": "Blog",
         "careers": "Careers",
         "connect": "Connect",
         "features": "Features",
@@ -193,34 +193,34 @@
             "intro": "If you have any questions about this Privacy Policy or our data practices, please contact us at:",
             "address": "[Your Company Address]",
             "last-updated": "Last Updated"
-        }
-    },
-    "academy": {
-        "root link": "Home",
-        "title": "Academy",
-        "tabs": {
-            "all": "All",
-            "trending": "Trending",
-            "on-chain": "On-Chain",
-            "listing": "Listing",
-            "alert": "Alert"
         },
-        "search placeholder": "Search by token, tag or keyword...",
-        "load more": "Load More",
-        "related articles": "Related Articles",
-        "no articles": "No articles"
-    },
-    "interaction": {
-        "like": "Like",
-        "comment": "Comment",
-        "share": "Share"
-    },
-    "chart": {
-        "price": "Price",
-        "token": "Token",
-        "1h change": "1H Change",
-        "trending": "Trending",
-        "new pairs": "New Pairs",
-        "more": "More"
+        "academy": {
+            "root link": "Home",
+            "title": "Academy",
+            "tabs": {
+                "all": "All",
+                "trending": "Trending",
+                "on-chain": "On-Chain",
+                "listing": "Listing",
+                "alert": "Alert"
+            },
+            "search placeholder": "Search by token, tag or keyword...",
+            "load more": "Load More",
+            "related articles": "Related Articles",
+            "no articles": "No articles"
+        },
+        "interaction": {
+            "like": "Like",
+            "comment": "Comment",
+            "share": "Share"
+        },
+        "chart": {
+            "price": "Price",
+            "token": "Token",
+            "1h change": "1H Change",
+            "trending": "Trending",
+            "new pairs": "New Pairs",
+            "more": "More"
+        }
     }
 }
