@@ -2,8 +2,8 @@ import { PATHS } from "@/constants/constants"
 import { BaseServiceResponse } from "@/types/common"
 import { axiosInstance } from "../api/axios"
 import { NEXT_PUBLIC_TENANT_ID } from "@/configs/env";
-import { GetBlogRequest, GetBlogResponse, GetBlogsRequest, GetBlogsResponse } from "@/types/blog"
-import { GetBlogRequestSchema, GetBlogsRequestSchema } from "@/schemas/blog";
+import { GetBlogContentRequest, GetBlogContentResponse, GetBlogRequest, GetBlogResponse, GetBlogsRequest, GetBlogsResponse } from "@/types/blog"
+import { GetBlogContentRequestSchema, GetBlogRequestSchema, GetBlogsRequestSchema } from "@/schemas/blog";
 
 export async function getBlogs(
     request: GetBlogsRequest
@@ -46,5 +46,27 @@ export async function getBlog(
         };
     } catch (e) {
         return e as BaseServiceResponse<GetBlogResponse>;
+    }
+}
+
+export async function getBlogContent(
+    request: GetBlogContentRequest
+): Promise<BaseServiceResponse<GetBlogContentResponse>> {
+    try {
+        const { customId, ...params } = GetBlogContentRequestSchema.parse(request);
+        const response = await axiosInstance.get<GetBlogContentResponse>(
+            `${PATHS.BLOG.GET_SINGLE.replace(":id", `${NEXT_PUBLIC_TENANT_ID}/${customId}/content`)}`,
+            {
+                params,
+            }
+        );
+        const { data } = response;
+        return {
+            data,
+            message: response.statusText,
+            success: true,
+        };
+    } catch (e) {
+        return e as BaseServiceResponse<GetBlogContentResponse>;
     }
 }

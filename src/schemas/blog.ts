@@ -59,3 +59,12 @@ export const GetBlogsResponseSchema = z.object({
     totalCount: z.number().int().min(0),
     items: z.array(GetBlogResponseSchema),
 })
+
+export const GetBlogContentRequestSchema = z.object({
+    customId: z.string(),
+    LanguageCode: z.string().optional(),
+})
+
+export const GetBlogContentResponseSchema = z.object({
+    content: z.string().nullable().optional(),
+})

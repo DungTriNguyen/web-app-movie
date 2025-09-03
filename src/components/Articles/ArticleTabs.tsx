@@ -26,7 +26,6 @@ export default function ArticleTabs() {
 
     const params = {
         ...DEFAULT_PARAMS,
-        languageCode: "vi",
         PageIndex: page,
         ...(activeTab !== "all" && activeTab !== "search" ? { BlogCategoryId: activeTab } : {}),
         ...(activeTab === "search" && searchQuery ? { SearchTerm: searchQuery } : {})
