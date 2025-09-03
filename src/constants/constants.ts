@@ -12,6 +12,6 @@ export const PATHS = {
 }
 
 export const DEFAULT_PARAMS: DefaultParams = {
-    PageNumber: 0,
-    PageSize: 10,
+    PageIndex: 0,
+    PageSize: 6,
 }

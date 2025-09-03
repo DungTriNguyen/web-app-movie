@@ -51,6 +51,7 @@ export const GetBlogsRequestSchema = DefaultParamsSchema.extend({
     BlogIds: z.array(z.string()).optional().nullable(),
     languageCode: z.string().optional(),
     IncludeLanguageCode: z.string().optional(),
+    SearchTerm: z.string().optional().nullable(),
 })
 
 export const GetBlogsResponseSchema = z.object({

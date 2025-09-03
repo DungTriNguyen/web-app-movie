@@ -2,7 +2,7 @@ import { z } from "zod"
 
 export const PaginationSchema = z.object({
     PageSize: z.number().int().min(0),
-    PageNumber: z.number().int().min(0),
+    PageIndex: z.number().int().min(0),
 })
 
 

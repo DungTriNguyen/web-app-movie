@@ -8,7 +8,6 @@ type CardItemProps = {
 }
 
 export default function CardItem({ blogs }: CardItemProps) {
-    console.log(blogs);
     const imageUrl = blogs?.[0]?.images?.[0]?.origin;
     return (
         <Link href={`/academy/${blogs?.[0]?.itemUrl}`}>

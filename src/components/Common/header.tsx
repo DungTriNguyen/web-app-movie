@@ -20,7 +20,7 @@ const Header = () => {
     const navLinks = [
         { href: '/', label: t('home') },
         // { href: '/news', label: t('news') },
-        // { href: '/academy', label: t('academy') },
+        { href: '/academy', label: t('academy') },
     ];
     const router = useRouter()
     const pathname = usePathname()
