@@ -17,7 +17,6 @@ export async function getBlogCategories(
             }
         )
         const { data } = response
-        console.log("response", response)
         return {
             data,
             message: response.statusText,

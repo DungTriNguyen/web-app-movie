@@ -14,7 +14,7 @@ import { formatDate } from "date-fns";
 import { Skeleton } from "../ui/skeleton";
 
 export default function ArticleSlide() {
-    const { data: blogData, isLoading } = useGetBlogs({ ...DEFAULT_PARAMS, languageCode: "vi" });
+    const { data: blogData, isLoading } = useGetBlogs({ ...DEFAULT_PARAMS });
     const slides = blogData?.items
         ?.slice()
         .sort(
@@ -69,8 +69,8 @@ export default function ArticleSlide() {
                                     src={slide?.images?.[0]?.origin || "/images/image.png"}
                                     alt={slide?.title || ""}
                                     width={600}
-                                    height={370}
-                                    className="rounded-lg object-cover w-full max-h-[370px]"
+                                    height={470}
+                                    className="rounded-lg object-cover w-full max-h-[470px]"
                                     unoptimized
                                 />
                             </div>

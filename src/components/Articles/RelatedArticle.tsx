@@ -13,7 +13,7 @@ import { DEFAULT_PARAMS } from "@/constants/constants";
 export default function RelatedArticle() {
     const t = useTranslations("academy");
 
-    const { data: blogData = { totalCount: 0, items: [] } } = useGetBlogs({ ...DEFAULT_PARAMS, languageCode: "vi" });
+    const { data: blogData = { totalCount: 0, items: [] } } = useGetBlogs({ ...DEFAULT_PARAMS });
     const sortedBlogs = blogData?.items
         ?.slice()
         .sort(

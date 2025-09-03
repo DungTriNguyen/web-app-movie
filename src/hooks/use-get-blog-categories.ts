@@ -8,7 +8,7 @@ import { DEFAULT_PARAMS } from "@/constants/constants"
 
 export default function useGetBlogCategories(
     params: GetBlogCategoriesRequest = DEFAULT_PARAMS,
-    queryOptions?: ReactQueryOptions<GetBlogCategoriesResponse>
+    queryOptions: ReactQueryOptions<GetBlogCategoriesResponse> = { staleTime: 1000 * 60 * 5 }
 ) {
     const query = useQuery({
         queryKey: ["get-blog-categories", { ...DEFAULT_PARAMS, ...params } as never],
