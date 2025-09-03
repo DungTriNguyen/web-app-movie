@@ -3,7 +3,7 @@
         "home": "Trang chủ",
         "news": "Tin tức",
         "academy": "Học viện",
-        "get started": "Bắt đầu",
+        "get started": "Khám phá ngay",
         "language": {
             "en": "English",
             "zh": "Chinese",
@@ -18,11 +18,11 @@
     },
     "home": {
         "hero": {
-            "title": "Open Market — Nơi tất cả đều có thể giao dịch, bởi tất cả",
+            "title": "Open Market — Thị trường mở, giao dịch 24/7 cho tất cả mọi người",
             "description": "Dẫn đầu thị trường với cập nhật giá tức thì về các token mới và xu hướng hot nhất. Nhanh chóng, đáng tin cậy và được xây dựng dành cho trader DeFi.",
             "button": {
                 "explore": "Khám Phá Xu Hướng Thị Trường",
-                "start": "Bắt Đầu Giao Dịch Ngay"
+                "start": "Khám phá ngay"
             }
         },
         "feature": {
@@ -83,7 +83,7 @@
                 "description": "Để niêm yết token trên DexSpace, bạn có thể gửi yêu cầu thông qua cổng Đệ Trình Token của chúng tôi. Chúng tôi yêu cầu thông tin cơ bản về dự án của bạn, bao gồm địa chỉ hợp đồng, trang web, liên kết mạng xã hội và chi tiết tokenomics. Đội ngũ của chúng tôi sẽ xem xét tất cả các yêu cầu để đảm bảo đáp ứng tiêu chuẩn an toàn và chất lượng trước khi thêm vào nền tảng."
             }
         },
-        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ."
+        "support": "Vẫn còn thắc mắc? Liên hệ Hỗ Trợ. contact@dexspace.io"
     },
     "footer": {
         "description": "Open Market — Nơi tất cả đều có thể giao dịch, bởi tất cả",
