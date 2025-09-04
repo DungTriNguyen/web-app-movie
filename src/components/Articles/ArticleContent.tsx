@@ -19,7 +19,7 @@ export default function ArticleContent({ blog, content }: Props) {
                         {isLoading ? (
                             <Skeleton className="w-full h-full aspect-[16/9] rounded-lg bg-slate-700" />
                         ) : (
-                            <Image src={blog?.images?.[0]?.origin || "/images/image.png"} alt={blog?.title || "Article Placeholder"} width={720} height={405} className="object-cover" />
+                            <Image src={blog?.images?.[0]?.origin || "/images/image.png"} alt={blog?.title || "Article Placeholder"} width={720} height={405} className="object-cover" unoptimized />
                         )}
                     </div>
                     <div className="self-stretch px-12 inline-flex justify-center items-center gap-6">
