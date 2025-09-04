@@ -49,7 +49,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${inter.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${inter.variable} antialiased overflow-x-hidden scrollbar-hide`}
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         <NextIntlClientProvider>

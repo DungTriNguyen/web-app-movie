@@ -177,3 +177,11 @@ h1 {
 .bg-hero {
   background: #800080
 }
+
+.bg-footer {
+  background: #1E2535;
+}
+
+.bg-card-list {
+  background: #1A2130;
+}

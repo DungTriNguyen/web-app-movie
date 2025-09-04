@@ -35,7 +35,7 @@ export default function ArticleTabs() {
         query: { isSuccess: isBlogSuccess },
         data: blogData
     } = useGetBlogs(params);
-
+    console.log("blogData", blogData);
     useEffect(() => {
         if (isBlogSuccess && blogData) {
             if (page === 0) {
@@ -81,7 +81,7 @@ export default function ArticleTabs() {
 
     if (!isBlogSuccess) {
         return (
-            <div className="bg-gray-900 pt-10 pb-20 px-4">
+            <div className="bg-gray-800 pt-10 pb-20 px-4">
                 <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
                     {[...Array(DEFAULT_PARAMS.PageSize)].map((_, idx) => (
                         <div key={idx} className="bg-slate-800 rounded-2xl p-6 flex flex-col gap-4 min-h-[320px]">
@@ -99,10 +99,10 @@ export default function ArticleTabs() {
         <div className="w-full pt-12">
             <Tabs defaultValue="all" className="w-full gap-0" value={activeTab} onValueChange={tab => { setActiveTab(tab); }}>
                 <div className="max-w-[1440px] mx-auto w-full flex flex-col-reverse md:flex-row items-start justify-between px-4 overflow-x-hidden">
-                    <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto">
+                    <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto bg-gray-900">
                         <TabsTrigger
                             value="all"
-                            className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
+                            className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none"
                         >
                             {t("tabs.all")}
                         </TabsTrigger>
@@ -110,7 +110,7 @@ export default function ArticleTabs() {
                             <TabsTrigger
                                 key={category.id}
                                 value={category.id}
-                                className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-accent transition-colors rounded-none"
+                                className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none"
                             >
                                 {t(`tabs.${category?.title?.toLowerCase()}`)}
                             </TabsTrigger>

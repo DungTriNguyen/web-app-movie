@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 export default function FAQ() {
     const t = useTranslations('faq');
     return (
-        <section className="pb-10 md:p-20 bg-slate-900 px-4 relative overflow-hidden">
+        <section className="pb-10 md:p-20 bg-gradient-to-b from-slate-900 to-[#1E2535] px-4 relative overflow-hidden">
             <div className="container mx-auto gap-12 flex flex-col items-center justify-center">
                 <div className="text-center gap-12 flex flex-col items-center justify-center">
                     <h1 className="text-gray-100 text-3xl lg:text-5xl font-semibold font-['Inter'] uppercase leading-10 lg:leading-[67.20px] max-w-[600px]">

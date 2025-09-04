@@ -9,6 +9,7 @@ export async function generateSeoMetadata(id: string, parent: ResolvingMetadata)
     try {
         const blogData = await getBlog({ customId: id })
         seoData = blogData.data as Partial<SeoData>
+        console.log('Fetched SEO Data:', seoData)
     } catch (error) {
         console.error('Error fetching SEO metadata:', error)
     }
@@ -18,8 +19,9 @@ export async function generateSeoMetadata(id: string, parent: ResolvingMetadata)
         keywords: seoData.metaKeywords || parentMetadata.keywords || undefined,
         alternates: {
             canonical: seoData.metaCanonical
-                ? `${NEXT_PUBLIC_BASE_URL}/${seoData.metaCanonical.replace(/^\/+/, "")}`
+                ? `${NEXT_PUBLIC_BASE_URL}/${seoData.metaCanonical}`
                 : parentMetadata?.alternates?.canonical,
+
         },
         openGraph: {
             images: Array.isArray(seoData.images) && seoData.images.length > 0

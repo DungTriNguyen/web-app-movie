@@ -13,7 +13,7 @@ export default function SearchBar({ searchTerm, onChange, onSearch }: SearchBarP
     const t = useTranslations("academy");
 
     return (
-        <div className="w-full md:w-auto px-4 bg-search md:!bg-accent rounded-md pl-6 pr-1 min-w-0 md:min-w-[350px] mb-2 md:mb-0">
+        <div className="w-full md:w-auto px-4 bg-search md:!bg-gray-900 rounded-md pl-6 pr-1 min-w-0 md:min-w-[350px] mb-2 md:mb-0">
             <div className="flex items-center gap-6 justify-between">
                 <input
                     value={searchTerm}

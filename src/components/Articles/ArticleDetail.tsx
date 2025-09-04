@@ -57,8 +57,13 @@ export default function ArticleDetail({ params }: Props) {
                             <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">
                                 {blog?.createdDate ? formatDate(new Date(blog.createdDate), "dd MMM · HH:mm 'UTC'") : "dd MMM · HH:mm UTC"}
                             </p>
-                            <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">/</p>
-                            <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">By: {blog?.author || "Unknown"}</p>
+                            {blog?.author && (
+                                <>
+                                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">/</p>
+                                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">By: {blog.author}</p>
+                                </>
+                            )}
+
                         </div>
                         <div className="flex gap-2 mt-4">
                             <Tag text="Featured" />
@@ -68,7 +73,7 @@ export default function ArticleDetail({ params }: Props) {
                     </div>
                 </div>
             </div>
-            <div className="w-full bg-gray-800 min-h-screen">
+            <div className="w-full bg-card-list min-h-screen">
                 <ArticleContent blog={blog} content={content} />
             </div>
         </>

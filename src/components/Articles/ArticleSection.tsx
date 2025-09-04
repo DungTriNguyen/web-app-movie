@@ -7,8 +7,8 @@ import { useTranslations } from "next-intl";
 export default function ArticleSection() {
     const t = useTranslations("academy");
     return (
-        <div className="w-full">
-            <div className="max-w-[1440px] mx-auto px-4">
+        <div className="w-full ">
+            <div className="max-w-[1440px] mx-auto px-4 ">
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>
