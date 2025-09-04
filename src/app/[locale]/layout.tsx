@@ -55,7 +55,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Providers>
             <Header />
-            <main className="min-h-screen w-full">
+            <main className="w-full">
               {children}
             </main>
             <Footer />

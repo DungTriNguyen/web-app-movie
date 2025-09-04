@@ -12,9 +12,11 @@ import useGetBlogs from "@/hooks/use-get-blogs";
 import { DEFAULT_PARAMS } from "@/constants/constants";
 import { formatDate } from "date-fns";
 import { Skeleton } from "../ui/skeleton";
+import { useLocale } from "next-intl";
 
 export default function ArticleSlide() {
-    const { data: blogData, isLoading } = useGetBlogs({ ...DEFAULT_PARAMS });
+    const locale = useLocale();
+    const { data: blogData, isLoading } = useGetBlogs({ ...DEFAULT_PARAMS, LanguageCode: locale });
     const slides = blogData?.items
         ?.slice()
         .sort(

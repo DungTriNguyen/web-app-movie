@@ -12,6 +12,7 @@ import type { GetBlogResponse } from "@/types/blog";
 
 export default function ArticleTabs() {
     const t = useTranslations("academy");
+    const locale = useLocale();
     const [page, setPage] = useState(0);
     const [activeTab, setActiveTab] = useState("all");
     const [blogs, setBlogs] = useState<GetBlogResponse[]>([]);
@@ -22,10 +23,14 @@ export default function ArticleTabs() {
     const {
         query: { isSuccess },
         data: categoryData,
-    } = useGetBlogCategories();
+    } = useGetBlogCategories({
+        ...DEFAULT_PARAMS,
+        LanguageCode: locale,
+    });
 
     const params = {
         ...DEFAULT_PARAMS,
+        LanguageCode: locale,
         PageIndex: page,
         ...(activeTab !== "all" && activeTab !== "search" ? { BlogCategoryId: activeTab } : {}),
         ...(activeTab === "search" && searchQuery ? { SearchTerm: searchQuery } : {})
@@ -81,7 +86,7 @@ export default function ArticleTabs() {
 
     if (!isBlogSuccess) {
         return (
-            <div className="bg-gray-800 pt-10 pb-20 px-4">
+            <div className="bg-card-list pt-10 pb-20 px-4">
                 <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
                     {[...Array(DEFAULT_PARAMS.PageSize)].map((_, idx) => (
                         <div key={idx} className="bg-slate-800 rounded-2xl p-6 flex flex-col gap-4 min-h-[320px]">

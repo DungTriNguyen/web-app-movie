@@ -1,6 +1,7 @@
 import ArticleSection from "@/components/Articles/ArticleSection";
 import { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "Academy - Dex Space",
   description: "Stay updated with the latest articles and insights from Dex Space.",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 export default function ArticlesPage() {
 
   return (
-    <section className="min-h-screen bg-gray-900 w-full pt-30">
+    <section className=" bg-gray-900 w-full pt-30">
       <ArticleSection />
     </section>
   );
