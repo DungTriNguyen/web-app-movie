@@ -2,19 +2,19 @@ import ArticleSection from "@/components/Articles/ArticleSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Articles - Dex Space",
+  title: "Academy - Dex Space",
   description: "Stay updated with the latest articles and insights from Dex Space.",
   openGraph: {
-    title: "Articles - Dex Space",
+    title: "Academy - Dex Space",
     description: "Stay updated with the latest articles and insights from Dex Space.",
-    url: "https://dexspace.io/articles",
+    url: "https://dexspace.io/academy",
     siteName: "Dex Space",
     images: [
       {
-        url: "https://dexspace.io/og-image.jpg",
+        url: "https://dexspace.io/images/ready.jpeg",
         width: 1200,
         height: 630,
-        alt: "Dex Space Articles",
+        alt: "Dex Space Academy",
       },
     ],
     locale: "en_US",

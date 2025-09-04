@@ -53,6 +53,7 @@ export const GetBlogsRequestSchema = DefaultParamsSchema.extend({
     LanguageCode: z.string().optional(),
     IncludeLanguageCode: z.string().optional(),
     SearchTerm: z.string().optional().nullable(),
+    ExcludeBlogId: z.string().optional(),
 })
 
 export const GetBlogsResponseSchema = z.object({
