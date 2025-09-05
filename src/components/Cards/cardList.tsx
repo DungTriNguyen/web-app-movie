@@ -19,8 +19,8 @@ export default function CardList({ blogs, category, onLoadMore, hasMore }: CardL
 
     if (items.length === 0) {
         return (
-            <div className="bg-card-list min-h-[250px] pt-10 pb-20 px-4">
-                <div className="max-w-[1440px] mx-auto text-center text-white text-xl md:text-2xl font-semibold font-['Inter'] leading-10 md:leading-[56px]">
+            <div className="bg-card-list min-h-[250px] pt-10 pb-10 md:pb-20 px-4">
+                <div className="max-w-[1200px] mx-auto text-center text-white text-xl md:text-2xl font-semibold font-['Inter'] leading-10 md:leading-[56px]">
                     {t("no articles")}
                 </div>
             </div>
@@ -28,8 +28,8 @@ export default function CardList({ blogs, category, onLoadMore, hasMore }: CardL
     }
 
     return (
-        <div className="bg-card-list pt-10 pb-20 px-4">
-            <div className="card-list max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
+        <div className="bg-card-list pt-10 pb-10 md:pb-20 px-4">
+            <div className="card-list max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 {items.map((item) => (
                     <div className="card-item" key={item.id}>
                         <CardItem blogs={[item]} />

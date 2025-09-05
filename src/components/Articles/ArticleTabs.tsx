@@ -82,7 +82,7 @@ export default function ArticleTabs() {
     if (!isBlogSuccess) {
         return (
             <div className="bg-card-list pt-10 pb-20 px-4">
-                <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
+                <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:px-4">
                     {[...Array(DEFAULT_PARAMS.PageSize)].map((_, idx) => (
                         <div key={idx} className="bg-slate-800 rounded-2xl p-6 flex flex-col gap-4 min-h-[320px]">
                             <Skeleton className="w-full h-40 rounded-xl bg-slate-700" />
@@ -98,7 +98,7 @@ export default function ArticleTabs() {
     return (
         <div className="w-full pt-12">
             <Tabs defaultValue="all" className="w-full gap-0" value={activeTab} onValueChange={handleTabChange}>
-                <div className="max-w-[1440px] mx-auto w-full flex flex-col-reverse md:flex-row items-start justify-between px-4 overflow-x-hidden">
+                <div className="max-w-[1200px] mx-auto w-full flex flex-col-reverse md:flex-row items-start justify-between overflow-x-hidden px-4 md:px-0">
                     <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto bg-gray-900">
                         <TabsTrigger
                             value="all"

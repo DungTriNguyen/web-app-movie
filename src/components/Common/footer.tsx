@@ -6,7 +6,7 @@ export default function Footer() {
     const t = useTranslations('footer');
     return (
         <footer className="bg-footer flex flex-col px-0 md:px-4">
-            <div className="w-full max-w-[1600px] mx-auto py-20 px-4 self-stretch flex flex-col md:flex-row md:gap-12 gap-0">
+            <div className="w-full max-w-[1600px] mx-auto py-10 md:py-20 px-4 self-stretch flex flex-col md:flex-row md:gap-12 gap-0">
                 <div className="flex flex-col md:flex-col items-start gap-9 w-full md:w-auto md:flex-1 mb-8 md:mb-0">
                     <Image src="/images/logo.svg" alt="DexSpace Logo" width={237} height={67} className="items-center justify-center " />
                     <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-snug">

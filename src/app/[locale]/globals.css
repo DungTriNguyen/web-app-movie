@@ -146,6 +146,12 @@ h1 {
   gap: 6px !important;
 }
 
+@media (max-width: 767px) {
+  .featured-swiper .swiper-pagination {
+    justify-content: flex-start !important;
+  }
+}
+
 .featured-bullet {
   width: 20px !important;
   height: 5px !important;

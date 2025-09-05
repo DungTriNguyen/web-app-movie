@@ -21,41 +21,49 @@ export default function RelatedArticle({ BlogId, BlogCategoryId, locale }: Props
 
     const { data } = useGetBlogs({ ...DEFAULT_PARAMS, PageSize: 5, BlogCategoryId: BlogCategoryId, ExcludeBlogId: BlogId, LanguageCode: locale });
     return (
-        <div className="max-w-[1440px] mx-auto px-4">
+        <div className="max-w-[1280px] mx-auto px-4">
             <div className="w-full max-w-[1200px] justify-start text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px]">{t("related articles")}</div>
-            <Swiper
-                modules={[Pagination]}
-                className="w-full featured-swiper !pt-2"
-                pagination={{
-                    clickable: true,
-                    bulletClass: "swiper-pagination-bullet featured-bullet",
-                    bulletActiveClass:
-                        "swiper-pagination-bullet-active featured-bullet-active",
-                }}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 48,
-                    },
-                }}
-            >
-                {data?.items?.map((blog) => (
-                    <SwiperSlide
-                        key={blog.id}
-                        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
-                    >
-                        <CardItem blogs={[blog]} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            
+            {data?.items.length === 0 ? (
+                <div className="max-w-[1280px] mx-auto text-center text-white text-xl md:text-2xl font-semibold font-['Inter'] leading-10 md:leading-[56px]">
+                    {t("no articles")}
+                </div>
+            ) : (
+                <Swiper
+                    modules={[Pagination]}
+                    className="w-full featured-swiper !pt-2"
+                    pagination={{
+                        clickable: true,
+                        bulletClass: "swiper-pagination-bullet featured-bullet",
+                        bulletActiveClass:
+                            "swiper-pagination-bullet-active featured-bullet-active",
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 48,
+                        },
+                    }}
+                >
+                    {data?.items?.map((blog) => (
+                        <SwiperSlide
+                            key={blog.id}
+                            className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+                        >
+                            <CardItem blogs={[blog]} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            )}
+
         </div>
     );
 }

@@ -65,7 +65,7 @@ const Header = () => {
                 maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)"
             } : { background: "transparent" }}
         >
-            <div className="min-h-20 md:py-6 px-5 md:px-20 flex gap-2.5 justify-between items-center">
+            <div className="min-h-20 md:py-6 px-5 xl:px-20 flex gap-2.5 justify-between items-center">
                 <a href="/" className="relative z-[999]">
                     <Image
                         src="/dex-space.svg"

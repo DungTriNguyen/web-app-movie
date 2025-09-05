@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function ArticlesPage() {
 
   return (
-    <section className=" bg-gray-900 w-full pt-30">
+    <section className="w-full pt-[100px] md:pt-30">
       <ArticleSection />
     </section>
   );
