@@ -208,7 +208,8 @@
         "search placeholder": "トークン、タグ、キーワードで検索...",
         "load more": "もっと読み込む",
         "related articles": "関連記事",
-        "no articles": "記事がありません"
+        "no articles": "記事がありません",
+        "not supported": "この記事はお客様の言語をサポートしていません。別の言語に切り替えてください。"
     },
     "interaction": {
         "like": "いいね",

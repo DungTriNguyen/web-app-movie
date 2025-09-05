@@ -14,7 +14,7 @@
       "de": "German",
       "ru": "Russian",
       "vi": "Vietnamese"
-  }
+    }
   },
   "home": {
     "hero": {
@@ -208,7 +208,8 @@
     "search placeholder": "按代币、标签或关键词搜索...",
     "load more": "加载更多",
     "related articles": "相关文章",
-    "no articles": "没有文章"
+    "no articles": "没有文章",
+    "not supported": "该文章不支持您的语言，请切换到其他语言。"
   },
   "interaction": {
     "like": "点赞",

@@ -208,7 +208,8 @@
     "search placeholder": "Suche nach Token, Tag oder Stichwort...",
     "load more": "Mehr laden",
     "related articles": "Verwandte Artikel",
-    "no articles": "Keine Artikel"
+    "no articles": "Keine Artikel",
+    "not supported": "Der Artikel unterstützt Ihre Sprache nicht, bitte wechseln Sie zu einer anderen Sprache."
   },
   "interaction": {
     "like": "Gefällt mir",

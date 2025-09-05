@@ -17,7 +17,7 @@ export async function generateSeoMetadata(id: string, parent: ResolvingMetadata,
         keywords: seoData?.metaKeywords || parentMetadata.keywords || undefined,
         alternates: {
             canonical: seoData?.metaCanonical
-                ? `${NEXT_PUBLIC_BASE_URL}/${locale}${seoData?.metaCanonical}`
+                ? `${NEXT_PUBLIC_BASE_URL}/${locale}${seoData?.metaCanonical.replace(/^\/bai-viet/, "")}`
                 : parentMetadata?.alternates?.canonical,
 
         },

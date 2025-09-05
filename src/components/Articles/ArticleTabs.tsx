@@ -40,7 +40,7 @@ export default function ArticleTabs() {
         query: { isSuccess: isBlogSuccess },
         data: blogData
     } = useGetBlogs(params);
-    console.log("blogData", blogData);
+
     useEffect(() => {
         if (isBlogSuccess && blogData) {
             if (page === 0) {

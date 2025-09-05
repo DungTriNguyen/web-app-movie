@@ -208,7 +208,8 @@
         "search placeholder": "Tìm kiếm theo token, thẻ hoặc từ khóa...",
         "load more": "Tải thêm",
         "related articles": "Bài viết liên quan",
-        "no articles": "Không có bài viết nào"
+        "no articles": "Không có bài viết nào",
+        "not supported": "Bài viết không hỗ trợ ngôn ngữ của bạn, vui lòng chuyển sang ngôn ngữ khác."
     },
     "interaction": {
         "like": "Thích",

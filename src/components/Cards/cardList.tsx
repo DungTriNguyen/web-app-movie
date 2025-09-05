@@ -19,7 +19,7 @@ export default function CardList({ blogs, category, onLoadMore, hasMore }: CardL
 
     if (items.length === 0) {
         return (
-            <div className="bg-card-list pt-10 pb-20 px-4">
+            <div className="bg-card-list min-h-[250px] pt-10 pb-20 px-4">
                 <div className="max-w-[1440px] mx-auto text-center text-white text-xl md:text-2xl font-semibold font-['Inter'] leading-10 md:leading-[56px]">
                     {t("no articles")}
                 </div>

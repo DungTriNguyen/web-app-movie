@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import ShareDialog from "./ShareDiaLog";
 
 export default function InteractionBar() {
     const t = useTranslations("interaction");
@@ -22,12 +23,14 @@ export default function InteractionBar() {
                     <p className={`text-xs font-medium font-['Inter'] leading-tight ${liked ? 'text-rose-500' : 'text-white'}`}>{t("like")}</p>
                 </button>
                 <div className="w-px self-stretch bg-gray-700" />
-                <button className="flex items-center gap-1 cursor-pointer">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.4561 5.09257C11.4561 5.00782 11.555 4.96128 11.6201 5.01542L16.5771 9.15605C17.0556 9.55578 17.0556 10.2905 16.5771 10.6902L11.6201 14.8309C11.555 14.885 11.4561 14.8385 11.4561 14.7537V12.4422C7.23175 10.9927 4.10515 13.4303 3 14.9685C3 9.60292 8.06234 7.54076 11.4561 7.02421V5.09257Z" fill="#F4F5F7" />
-                    </svg>
-                    <p className="text-white text-xs font-medium font-['Inter'] leading-tight">{t("share")}</p>
-                </button>
+                <ShareDialog trigger={
+                    <button className="flex items-center gap-1 cursor-pointer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.4561 5.09257C11.4561 5.00782 11.555 4.96128 11.6201 5.01542L16.5771 9.15605C17.0556 9.55578 17.0556 10.2905 16.5771 10.6902L11.6201 14.8309C11.555 14.885 11.4561 14.8385 11.4561 14.7537V12.4422C7.23175 10.9927 4.10515 13.4303 3 14.9685C3 9.60292 8.06234 7.54076 11.4561 7.02421V5.09257Z" fill="#F4F5F7" />
+                        </svg>
+                        <p className="text-white text-xs font-medium font-['Inter'] leading-tight">{t("share")}</p>
+                    </button>
+                } />
                 <div className="w-px self-stretch bg-gray-700" />
                 <button className="flex items-center gap-1 cursor-pointer">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

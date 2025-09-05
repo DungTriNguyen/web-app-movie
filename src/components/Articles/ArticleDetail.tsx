@@ -17,13 +17,10 @@ export default function ArticleDetail({ params }: Props) {
     const [slug, id] = params.slug || [];
     const { locale } = params;
     const { data: blog, isLoading: isLoadingBlog, error: errorBlog } = useGetBlog({ customId: id, LanguageCode: locale });
-    console.log("blog", blog)
-    console.log("isLoadingBlog", isLoadingBlog)
-    console.log("errorBlog", errorBlog)
     const { data: content, isLoading: isLoadingContent, error: errorContent } = useGetBlogContent({ customId: id, LanguageCode: locale });
 
     if (errorBlog || errorContent || (!blog && !isLoadingBlog) || (!content && !isLoadingContent)) {
-        return <div className="w-full py-20 min-h-[500px] flex justify-center items-center text-center text-red-500 text-lg font-semibold">Bài viết không hỗ trợ ngôn ngữ của bạn, vui lòng chuyển sang ngôn ngữ khác.</div>;
+        return <div className="w-full py-20 min-h-[500px] flex justify-center items-center text-center text-red-500 text-lg font-semibold">{t("not supported")}</div>;
     }
 
     return (
@@ -62,7 +59,7 @@ export default function ArticleDetail({ params }: Props) {
                             </BreadcrumbList>
                         </Breadcrumb>
                         <h1 className="text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px] pt-2">{blog?.title || "Academy Title"}</h1>
-                        <div className="flex gap-6">
+                        <div className="flex gap-2">
                             <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">
                                 {blog?.createdDate ? formatDate(new Date(blog.createdDate), "dd MMM · HH:mm 'UTC'") : "dd MMM · HH:mm UTC"}
                             </p>
