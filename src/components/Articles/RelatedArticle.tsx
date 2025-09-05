@@ -9,10 +9,17 @@ import "swiper/css/pagination";
 import { useTranslations } from "next-intl";
 import useGetBlogs from "@/hooks/use-get-blogs";
 import { DEFAULT_PARAMS } from "@/constants/constants";
-export default function RelatedArticle({ BlogId }: { BlogId: string }) {
+
+type Props = {
+    BlogId: string,
+    BlogCategoryId: string,
+    locale: string,
+};
+
+export default function RelatedArticle({ BlogId, BlogCategoryId, locale }: Props) {
     const t = useTranslations("academy");
 
-    const { data } = useGetBlogs({ ...DEFAULT_PARAMS, PageSize: 5, ExcludeBlogId: BlogId });
+    const { data } = useGetBlogs({ ...DEFAULT_PARAMS, PageSize: 5, BlogCategoryId: BlogCategoryId, ExcludeBlogId: BlogId, LanguageCode: locale });
     return (
         <div className="max-w-[1440px] mx-auto px-4">
             <div className="w-full max-w-[1200px] justify-start text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px]">{t("related articles")}</div>

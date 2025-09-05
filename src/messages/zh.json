@@ -214,7 +214,12 @@
   "interaction": {
     "like": "点赞",
     "comment": "评论",
-    "share": "分享"
+    "share": "分享",
+    "dialog": {
+      "title": "分享",
+      "copy": "复制页面链接",
+      "copied": "链接已复制！"
+    }
   },
   "chart": {
     "price": "价格",

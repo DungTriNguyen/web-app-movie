@@ -214,7 +214,12 @@
     "interaction": {
         "like": "좋아요",
         "comment": "댓글",
-        "share": "공유"
+        "share": "공유",
+        "dialog": {
+            "title": "공유",
+            "copy": "페이지 링크 복사",
+            "copied": "링크가 복사되었습니다!"
+        }
     },
     "chart": {
         "price": "가격",

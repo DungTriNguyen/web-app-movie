@@ -2,6 +2,7 @@ import InteractionBar from "../Common/InteractionBar";
 import Image from "next/image";
 import RelatedArticle from "./RelatedArticle";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useLocale } from "next-intl";
 
 type Props = {
     blog: any,
@@ -10,6 +11,7 @@ type Props = {
 
 export default function ArticleContent({ blog, content }: Props) {
     const isLoading = !blog || !content;
+    const locale = useLocale();
     return (
         <div className="px-0 md:px-20 pt-10 pb-10 md:pb-20">
             <div className="max-w-[720px] mx-auto px-4 mb-10 md:mb-12">
@@ -36,7 +38,7 @@ export default function ArticleContent({ blog, content }: Props) {
                     </div>
                 </div>
             </div>
-            <RelatedArticle BlogId={blog?.id} />
+            <RelatedArticle BlogId={blog?.id} BlogCategoryId={blog?.categoryId} locale={locale} />
         </div>
     );
 }

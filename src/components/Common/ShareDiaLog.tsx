@@ -13,11 +13,13 @@ import {
 } from "lucide-react";
 import { useState, ReactNode } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
+import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 const socialLinks = [
     { name: "Facebook", icon: Facebook, url: "https://facebook.com/sharer/sharer.php?u=" },
     { name: "Twitter", icon: Twitter, url: "https://twitter.com/intent/tweet?url=" },
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com" }, // IG không có share URL chính thức
+    { name: "Instagram", icon: Instagram, url: "https://instagram.com" }, 
     { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/shareArticle?url=" },
     { name: "WhatsApp", icon: MessageCircle, url: "https://api.whatsapp.com/send?text=" },
     { name: "Telegram", icon: Send, url: "https://t.me/share/url?url=" },
@@ -28,6 +30,7 @@ type ShareDialogProps = {
 };
 
 export default function ShareDialog({ trigger }: ShareDialogProps) {
+    const t = useTranslations("interaction.dialog");
     const [open, setOpen] = useState(false);
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
 
@@ -37,7 +40,7 @@ export default function ShareDialog({ trigger }: ShareDialogProps) {
 
     const handleCopy = async () => {
         await navigator.clipboard.writeText(pageUrl);
-        alert("Copied to clipboard!");
+        toast.success(t("copied"));
     };
 
     return (
@@ -46,7 +49,7 @@ export default function ShareDialog({ trigger }: ShareDialogProps) {
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent className="w-full max-w-md rounded-2xl bg-[#1a1a1a] text-white px-4 sm:px-6 py-4">
                     <DialogHeader>
-                        <DialogTitle className="text-lg font-semibold">Share</DialogTitle>
+                        <DialogTitle className="text-lg font-semibold">{t("title")}</DialogTitle>
                     </DialogHeader>
 
                     <div className="flex flex-wrap md:grid md:grid-cols-4 gap-4 mt-4">
@@ -54,7 +57,7 @@ export default function ShareDialog({ trigger }: ShareDialogProps) {
                             <button
                                 key={name}
                                 onClick={() => handleShare(url)}
-                                className="flex flex-col items-center justify-center gap-1 hover:opacity-80 transition"
+                                className="flex flex-col items-center justify-center gap-1 hover:opacity-80 transition cursor-pointer"
                             >
                                 <div className="bg-[#2a2a2a] p-3 rounded-full">
                                     <Icon className="w-5 h-5" />
@@ -65,11 +68,11 @@ export default function ShareDialog({ trigger }: ShareDialogProps) {
                     </div>
 
                     <div className="mt-6">
-                        <label className="text-sm text-gray-400">Copy page link</label>
+                        <label className="text-sm text-gray-400">{t("copy")}</label>
                         <div className="flex items-center mt-2 bg-[#2a2a2a] px-3 py-2 rounded-lg overflow-x-auto">
                             <span className="flex-1 text-xs break-all">{pageUrl}</span>
                             <button onClick={handleCopy}>
-                                <Copy className="w-4 h-4 ml-2" />
+                                <Copy className="w-4 h-4 ml-2 cursor-pointer" />
                             </button>
                         </div>
                     </div>

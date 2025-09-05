@@ -214,7 +214,12 @@
     "interaction": {
         "like": "いいね",
         "comment": "コメント",
-        "share": "共有"
+        "share": "共有",
+        "dialog": {
+            "title": "共有",
+            "copy": "ページリンクをコピー",
+            "copied": "リンクがコピーされました！"
+        }
     },
     "chart": {
         "price": "価格",

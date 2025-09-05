@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Common/header';
 import Footer from '@/components/Common/footer';
+import { Toaster } from 'sonner';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const locales = ['en', 'vi', 'de', 'es', 'fr', 'jp', 'kr', 'ru', 'zh']
+const locales = ['en', 'vi', 'de', 'es', 'fr', 'ja', 'ko', 'ru', 'zh']
 
 type LayoutProps = {
   children: ReactNode
@@ -59,6 +60,7 @@ export default async function RootLayout({
               {children}
             </main>
             <Footer />
+            <Toaster position='top-center' />
           </Providers>
         </NextIntlClientProvider>
       </body>

@@ -20,7 +20,7 @@ export default function ArticleDetail({ params }: Props) {
     const { data: content, isLoading: isLoadingContent, error: errorContent } = useGetBlogContent({ customId: id, LanguageCode: locale });
 
     if (errorBlog || errorContent || (!blog && !isLoadingBlog) || (!content && !isLoadingContent)) {
-        return <div className="w-full py-20 min-h-[500px] flex justify-center items-center text-center text-red-500 text-lg font-semibold">{t("not supported")}</div>;
+        return <div className="w-full py-20 min-h-screen flex justify-center items-center text-center text-red-500 text-lg font-semibold">{t("not supported")}</div>;
     }
 
     return (
