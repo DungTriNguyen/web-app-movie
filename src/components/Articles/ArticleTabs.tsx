@@ -32,15 +32,13 @@ export default function ArticleTabs() {
         ...DEFAULT_PARAMS,
         LanguageCode: locale,
         PageIndex: page,
-        ...(activeTab !== "all" && activeTab !== "search" ? { BlogCategoryId: activeTab } : {}),
-        ...(activeTab === "search" && searchQuery ? { SearchTerm: searchQuery } : {})
+        ...(activeTab !== "all" ? { BlogCategoryId: activeTab } : {}),
+        ...(searchQuery ? { SearchTerm: searchQuery } : {})
     };
-
     const {
         query: { isSuccess: isBlogSuccess },
         data: blogData
     } = useGetBlogs(params);
-
     useEffect(() => {
         if (isBlogSuccess && blogData) {
             if (page === 0) {
@@ -58,10 +56,6 @@ export default function ArticleTabs() {
     }, [isBlogSuccess, blogData, page, activeTab]);
 
     useEffect(() => {
-        setPage(0);
-    }, [activeTab]);
-
-    useEffect(() => {
         if (page > 0 && blogs.length > 0) {
             const lastCard = document.querySelector('.card-list .card-item:last-child');
             if (lastCard) {
@@ -74,15 +68,16 @@ export default function ArticleTabs() {
     }, [blogs, page]);
 
     const handleSearch = () => {
-        if (searchTerm.trim() === "") {
-            setActiveTab("all");
-            setSearchQuery("");
-        } else {
-            setActiveTab("search");
-            setSearchQuery(searchTerm);
-        }
+        setSearchQuery(searchTerm.trim());
         setPage(0);
     }
+
+    const handleTabChange = (tab: string) => {
+        setSearchQuery("");
+        setSearchTerm("");
+        setPage(0);
+        setActiveTab(tab);
+    };
 
     if (!isBlogSuccess) {
         return (
@@ -102,7 +97,7 @@ export default function ArticleTabs() {
     }
     return (
         <div className="w-full pt-12">
-            <Tabs defaultValue="all" className="w-full gap-0" value={activeTab} onValueChange={tab => { setActiveTab(tab); }}>
+            <Tabs defaultValue="all" className="w-full gap-0" value={activeTab} onValueChange={handleTabChange}>
                 <div className="max-w-[1440px] mx-auto w-full flex flex-col-reverse md:flex-row items-start justify-between px-4 overflow-x-hidden">
                     <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto bg-gray-900">
                         <TabsTrigger
@@ -120,25 +115,12 @@ export default function ArticleTabs() {
                                 {t(`tabs.${category?.title?.toLowerCase()}`)}
                             </TabsTrigger>
                         ))}
-                        <TabsTrigger
-                            value="search"
-                            className="hidden"
-                        />
                     </TabsList>
                     <SearchBar searchTerm={searchTerm} onChange={e => setSearchTerm(e.target.value)} onSearch={handleSearch} />
                 </div>
                 <TabsContent value="all" className="w-full">
                     {isBlogSuccess &&
                         <CardList blogs={blogs}
-                            onLoadMore={() => setPage(page + 1)}
-                            hasMore={blogs.length < totalCount}
-                        />
-                    }
-                </TabsContent>
-                <TabsContent value="search" className="w-full">
-                    {isBlogSuccess &&
-                        <CardList
-                            blogs={blogs}
                             onLoadMore={() => setPage(page + 1)}
                             hasMore={blogs.length < totalCount}
                         />
