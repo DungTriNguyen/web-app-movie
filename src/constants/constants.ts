@@ -1,17 +1,20 @@
-import { DefaultParams } from "@/types/common"
+import { DefaultParams } from "@/types/common";
 
 export const PATHS = {
-    BLOG_CATEGORY: {
-        GET_ALL: "/BlogCategory",
-        GET_SINGLE: "/BlogCategory/:id",
-    },
-    BLOG: {
-        GET_ALL: "/Blog",
-        GET_SINGLE: "/Blog/:id",
-    },
-}
+  BLOG_CATEGORY: {
+    GET_ALL: "/BlogCategory",
+    GET_SINGLE: "/BlogCategory/:id",
+  },
+  BLOG: {
+    GET_ALL: "/Blog",
+    GET_SINGLE: "/Blog/:id",
+  },
+};
 
 export const DEFAULT_PARAMS: DefaultParams = {
-    PageNumber: 0,
-    PageSize: 10,
-}
+  pagination: {
+    currentPage: 0,
+    totalItems: 0,
+    totalItemsPerPage: 24,
+  },
+};

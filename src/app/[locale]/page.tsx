@@ -1,10 +1,54 @@
+"use client";
 import Hero from "@/components/Home/hero";
 import Feature from "@/components/Home/feature";
 import FAQ from "@/components/Home/faq";
 import Ready from "@/components/Home/ready";
 import Advance from "@/components/Home/advance";
+import useGetHome from "@/hooks/home/use-get-home";
+import useGetCategories from "@/hooks/categories/use-get-categories";
+import useGetMoviesCategory from "@/hooks/categories/use-get-movies-category";
+import useGetCountries from "@/hooks/countries/use-get-countries";
+import useGetMoviesCountry from "@/hooks/countries/use-get-movies-country";
+import useGetYears from "@/hooks/years/use-get-years";
+import useGetMoviesYear from "@/hooks/years/use-get-movies-year";
+import useGetMoviesSearch from "@/hooks/searchs/use-get-movies-search";
+import useGetActorsMovie from "@/hooks/movies/use-get-actors-movie";
+import useGetImgMovie from "@/hooks/movies/use-get-img-movie";
+import useGetMovieInfo from "@/hooks/movies/use-get-movie-info";
+import useGetListMovie from "@/hooks/movies/use-get-movies";
 
 export default function Home() {
+  // const { data: homeData } = useGetHome({});
+  // const { data: categoriesData } = useGetCategories({});
+  // const { data: moviesCategoryData } = useGetMoviesCategory({
+  //   slug: "hanh-dong",
+  // });
+  // const { data: countriesData } = useGetCountries({});
+  // const { data: moviesCountryData } = useGetMoviesCountry({
+  //   slug: "han-quoc",
+  // });
+  // const { data: yearsData } = useGetYears({
+  //   year: 2025,
+  // });
+  // const { data: moviesYearData } = useGetMoviesYear({
+  //   year: 2025,
+  // });
+  // const { data: moviesSearchData } = useGetMoviesSearch({
+  //   keywords: "batman",
+  // });
+  // const { data: actorsMovieData } = useGetActorsMovie({
+  //   slug: "batman",
+  // });
+  // const { data: imgMovieData } = useGetImgMovie({
+  //   slug: "tro-choi-con-muc",
+  // });
+  // const { data: movieInfoData } = useGetMovieInfo({
+  //   slug: "tro-choi-con-muc",
+  // });
+  // const { data: moviesData } = useGetListMovie({
+  //   slug: "phim-bo",
+  // });
+  // console.log("dataa home page:", moviesData);
   return (
     <div className="min-h-screen overflow-x-hidden">
       <div className="relative z-10">
