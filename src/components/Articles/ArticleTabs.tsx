@@ -102,7 +102,7 @@ export default function ArticleTabs() {
                     <TabsList className="flex gap-4 rounded-none justify-start overflow-x-auto whitespace-nowrap scrollbar-hide w-full md:w-auto bg-gray-900">
                         <TabsTrigger
                             value="all"
-                            className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none"
+                            className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none hover:cursor-pointer hover:text-white/70"
                         >
                             {t("tabs.all")}
                         </TabsTrigger>
@@ -110,7 +110,7 @@ export default function ArticleTabs() {
                             <TabsTrigger
                                 key={category.id}
                                 value={category.id}
-                                className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none"
+                                className="text-base font-medium border-b-2 data-[state=active]:border-b-white data-[state=active]:text-white  data-[state=active]:bg-gray-900 transition-colors rounded-none hover:cursor-pointer hover:text-white/70"
                             >
                                 {t(`tabs.${category?.title?.toLowerCase()}`)}
                             </TabsTrigger>
