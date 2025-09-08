@@ -3,7 +3,8 @@ import { DefaultParamsSchema, ImageSchema, SEOAboutSchema, SEOAdditionalTypeSche
 
 
 export const GetBlogRequestSchema = z.object({
-    id: z.string(),
+    customId: z.string(),
+    LanguageCode: z.string().optional(),
 })
 
 export const GetBlogResponseSchema = z.object({
@@ -41,7 +42,7 @@ export const GetBlogResponseSchema = z.object({
     targetKeyword: z.string().optional().nullable(),
     lsiKeywords: z.string().optional().nullable(),
     outline: z.string().optional().nullable(),
-    languageCode: z.string().optional(),
+    LanguageCode: z.string().optional(),
     supportedLanguages: z.array(z.string()).optional(),
 })
 
@@ -49,11 +50,22 @@ export const GetBlogsRequestSchema = DefaultParamsSchema.extend({
     BlogCategoryId: z.string().optional(),
     IsPublish: z.boolean().optional().nullable(),
     BlogIds: z.array(z.string()).optional().nullable(),
-    languageCode: z.string().optional(),
+    LanguageCode: z.string().optional(),
     IncludeLanguageCode: z.string().optional(),
+    SearchTerm: z.string().optional().nullable(),
+    ExcludeBlogId: z.string().optional(),
 })
 
 export const GetBlogsResponseSchema = z.object({
     totalCount: z.number().int().min(0),
     items: z.array(GetBlogResponseSchema),
+})
+
+export const GetBlogContentRequestSchema = z.object({
+    customId: z.string(),
+    LanguageCode: z.string().optional(),
+})
+
+export const GetBlogContentResponseSchema = z.object({
+    content: z.string().nullable().optional(),
 })

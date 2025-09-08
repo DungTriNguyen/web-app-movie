@@ -3,7 +3,7 @@ import { DefaultParamsSchema, ImageSchema, SEOAboutSchema, SEOAdditionalTypeSche
 
 export const GetBlogCategoryRequestSchema = z.object({
     id: z.string(),
-    languageCode: z.string().optional(),
+    LanguageCode: z.string().optional(),
 })
 export const GetBlogCategoryResponseSchema = z.object({
     title: z.string().optional(),

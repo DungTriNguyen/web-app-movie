@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Common/header';
 import Footer from '@/components/Common/footer';
+import { Toaster } from 'sonner';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const locales = ['en', 'vi', 'de', 'es', 'fr', 'jp', 'kr', 'ru', 'zh']
+const locales = ['en', 'vi', 'de', 'es', 'fr', 'ja', 'ko', 'ru', 'zh']
 
 type LayoutProps = {
   children: ReactNode
@@ -49,16 +50,17 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${inter.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${inter.variable} antialiased overflow-x-hidden scrollbar-hide`}
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         <NextIntlClientProvider>
           <Providers>
             <Header />
-            <main className="min-h-screen w-full">
+            <main className="w-full">
               {children}
             </main>
             <Footer />
+            <Toaster position='top-center' />
           </Providers>
         </NextIntlClientProvider>
       </body>
