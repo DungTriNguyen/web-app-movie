@@ -58,7 +58,7 @@ export default function ArticleDetail({ params }: Props) {
                                 </BreadcrumbItem>
                             </BreadcrumbList>
                         </Breadcrumb>
-                        <h1 className="text-white text-3xl md:text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px]">{blog?.title || "Academy Title"}</h1>
+                        <h1 className="text-white text-3xl md:!text-4xl font-semibold font-['Inter'] uppercase leading-10 md:leading-[56px]">{blog?.title || "Academy Title"}</h1>
                         <div className="flex gap-2 pb-1">
                             <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">
                                 {blog?.createdDate ? formatDate(new Date(blog.createdDate), "dd MMM · HH:mm 'UTC'") : "dd MMM · HH:mm UTC"}
@@ -71,11 +71,11 @@ export default function ArticleDetail({ params }: Props) {
                             )}
 
                         </div>
-                        {/* <div className="flex gap-2 pt-1">
-                            <Tag text="Featured" />
-                            <Tag text="Featured" />
-                            <Tag text="Featured" />
-                        </div> */}
+                        <div className="flex gap-2 pt-1">
+                            {blog?.sameAs?.map((tag: string, tagIdx: number) => (
+                                <Tag key={tagIdx} text={tag} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

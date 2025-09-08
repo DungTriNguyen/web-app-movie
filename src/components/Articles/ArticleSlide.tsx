@@ -24,7 +24,6 @@ export default function ArticleSlide() {
                 new Date(a?.createdDate ?? 0).getTime()
         )
         ?.slice(0, 5);
-
     if (isLoading) {
         return (
             <div className="w-full featured-swiper !pt-6 animate-pulse">
@@ -92,12 +91,12 @@ export default function ArticleSlide() {
                                 <p className="text-slate-400 text-sm md:text-xl font-medium font-['Inter'] leading-[32px] line-clamp-2">
                                     {slide.description}
                                 </p>
-                                {/* <div className="flex gap-x-2">
+                                <div className="flex gap-x-2">
 
-                                    {[0, 1, 2].map((tagIdx) => (
-                                        <Tag key={tagIdx} text="New" />
+                                    {slide?.sameAs?.map((tag, tagIdx) => (
+                                        <Tag key={tagIdx} text={tag} />
                                     ))}
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </Link>

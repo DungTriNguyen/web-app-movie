@@ -30,9 +30,9 @@ export default function ArticleContent({ blog, content }: Props) {
                             {isLoading ? <Skeleton className="h-6 w-2/3 rounded-xl bg-slate-700" /> : blog?.description}
                         </div>
                     </div>
-                    <div className="max-w-3xl mx-auto text-sm md:text-xl text-white prose prose-lg font-normal font-['Inter'] leading-relaxed">
+                    <article className="container prose prose-invert space-y-5 text-xs lg:text-sm ">
                         {isLoading ? <Skeleton className="w-full h-32 rounded-xl bg-slate-700" /> : <div dangerouslySetInnerHTML={{ __html: content?.content || '' }} />}
-                    </div>
+                    </article>
                     <div className="px-3 py-12">
                         <InteractionBar />
                     </div>

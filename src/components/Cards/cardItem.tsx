@@ -27,11 +27,11 @@ export default function CardItem({ blogs }: CardItemProps) {
                         <h3 className="text-white text-xl font-bold font-['Inter'] uppercase leading-loose line-clamp-2">{blogs?.[0]?.title}</h3>
                     </span>
                     <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug line-clamp-2">{blogs?.[0]?.description}</p>
-                    {/* <div className="flex gap-2">
-                        {[1, 2, 3].map((tag) => (
-                            <Tag key={tag} text="New" />
+                    <div className="flex gap-2">
+                        {blogs?.[0]?.sameAs?.map((tag: string, tagIdx: number) => (
+                            <Tag key={tagIdx} text={tag} />
                         ))}
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </Link>
