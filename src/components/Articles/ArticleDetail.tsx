@@ -25,9 +25,9 @@ export default function ArticleDetail({ params }: Props) {
 
     return (
         <>
-            <div className="w-full bg-gray-900 px-4">
+            <div className="w-full bg-gray-900">
                 <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center pt-[100px] md:pt-30">
-                    <div className="w-full md:w-[720px] py-4 px-0 md:px-4">
+                    <div className="w-full md:w-[720px] py-4 px-4 md:px-0">
                         <Breadcrumb >
                             <BreadcrumbList>
                                 <BreadcrumbItem>
@@ -63,12 +63,8 @@ export default function ArticleDetail({ params }: Props) {
                             <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">
                                 {blog?.createdDate ? formatDate(new Date(blog.createdDate), "dd MMM · HH:mm 'UTC'") : "dd MMM · HH:mm UTC"}
                             </p>
-                            {blog?.author && (
-                                <>
-                                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">/</p>
-                                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">By: {blog.author}</p>
-                                </>
-                            )}
+                            <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">/</p>
+                            <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug">By: {blog?.author || "DexSpace"} </p>
 
                         </div>
                         <div className="flex gap-2 pt-1">

@@ -21,12 +21,12 @@ export default function CardItem({ blogs }: CardItemProps) {
 
                 <div className="flex flex-col gap-3">
                     <span>
-                        <p className="text-slate-400 text-xs font-medium font-['Inter'] leading-tight">
+                        <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-tight">
                             {blogs?.[0]?.createdDate ? formatDate(new Date(blogs[0].createdDate), "dd MMM · HH:mm 'UTC'") : ""}
                         </p>
-                        <h3 className="text-white text-xl font-bold font-['Inter'] uppercase leading-loose line-clamp-2">{blogs?.[0]?.title}</h3>
+                        <h3 className="text-white text-xl font-bold font-['Inter'] leading-snug line-clamp-2 min-h-[3.2rem]">{blogs?.[0]?.title}</h3>
                     </span>
-                    <p className="text-slate-400 text-sm font-medium font-['Inter'] leading-snug line-clamp-2">{blogs?.[0]?.description}</p>
+                    <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-snug line-clamp-2 min-h-[2.5rem]">{blogs?.[0]?.description}</p>
                     <div className="flex gap-2">
                         {blogs?.[0]?.sameAs?.map((tag: string, tagIdx: number) => (
                             <Tag key={tagIdx} text={tag} />

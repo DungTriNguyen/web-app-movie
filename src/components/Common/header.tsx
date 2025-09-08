@@ -88,7 +88,7 @@ const Header = () => {
                                     key={link.href}
                                     className={`min-h-9 px-1 inline-flex text-sm justify-center items-center gap-2.5 cursor-pointer ${isActive ? 'border-b-2 border-white' : ''}`}
                                 >
-                                    <span className="text-right justify-center text-white text-sm font-medium font-['Inter'] leading-snug">{link.label}</span>
+                                    <span className="text-right justify-center text-white text-sm font-medium font-['Inter'] leading-snug hover:text-white/70">{link.label}</span>
                                 </a>
                             );
                         })}

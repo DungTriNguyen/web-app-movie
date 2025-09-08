@@ -81,14 +81,14 @@ export default function ArticleSlide() {
 
                             <div className="w-full md:w-1/2 flex flex-col justify-center gap-3 md:gap-4 md:px-12">
                                 <span>
-                                    <p className="text-slate-400 text-xs font-medium leading-tight">
+                                    <p className="text-slate-400 text-xs font-normal leading-tight">
                                         {slide?.createdDate ? formatDate(new Date(slide.createdDate), "dd MMM · HH:mm 'UTC'") : ""}
                                     </p>
                                     <h2 className="text-white text-3xl md:text-4xl font-semibold font-['Inter'] md:uppercase leading-10 md:leading-[56px] line-clamp-2">
                                         {slide.title}
                                     </h2>
                                 </span>
-                                <p className="text-slate-400 text-sm md:text-xl font-medium font-['Inter'] leading-[32px] line-clamp-2">
+                                <p className="text-slate-400 text-sm md:text-xl font-normal font-['Inter'] leading-[32px] line-clamp-2">
                                     {slide.description}
                                 </p>
                                 <div className="flex gap-x-2">
