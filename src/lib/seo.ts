@@ -1,6 +1,6 @@
 import { getBlog } from '@/services/blog'
 import type { ResolvingMetadata, Metadata } from 'next'
-import { NEXT_PUBLIC_BASE_URL } from '@/configs/env'
+import { NEXT_PUBLIC_SITE_URL } from '@/configs/env'
 import { SeoData } from '@/types/seo'
 export async function generateSeoMetadata(id: string, parent: ResolvingMetadata, locale: string): Promise<Metadata> {
     const parentMetadata = await parent
@@ -17,7 +17,7 @@ export async function generateSeoMetadata(id: string, parent: ResolvingMetadata,
         keywords: seoData?.metaKeywords || parentMetadata.keywords || undefined,
         alternates: {
             canonical: seoData?.metaCanonical
-                ? `${NEXT_PUBLIC_BASE_URL}/${locale}${seoData?.metaCanonical.replace(/^\/bai-viet/, "/academy")}`
+                ? `${NEXT_PUBLIC_SITE_URL}/${locale}${seoData?.metaCanonical.replace(/^\/bai-viet/, "/academy")}`
                 : parentMetadata?.alternates?.canonical,
 
         },
