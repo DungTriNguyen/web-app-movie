@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BreadCrumbSchema, PaginationSchema } from "@/schemas/common";
-import { MovieDetailItemSchema } from "@/schemas/movie";
+import { MovieDetailItemSchema } from "@/schemas/common";
 /**
  * Year item
  */

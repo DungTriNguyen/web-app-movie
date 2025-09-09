@@ -22,6 +22,8 @@ export const ParamsSchema = z.object({
 export const SeoOnPageSchema = z.object({
   titleHead: z.string(),
   descriptionHead: z.string(),
+  og_Type: z.string().optional(),
+  og_Image: z.array(z.string()).optional(),
 });
 
 /**

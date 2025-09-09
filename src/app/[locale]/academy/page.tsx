@@ -22,10 +22,24 @@
 //   }
 // };
 // export default function ArticlesPage() {
-
 //   return (
 //     <section className="min-h-screen bg-accent w-full pt-30">
 //       <ArticleSection />
 //     </section>
 //   );
 // }
+import React from "react";
+
+const page = () => {
+  return (
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
+};
+
+export default page;

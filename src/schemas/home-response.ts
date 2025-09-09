@@ -2,7 +2,7 @@
 import { z } from "zod";
 
 import { ParamsSchema, SeoOnPageSchema } from "@/schemas/common";
-import { MovieDetailItemSchema } from "@/schemas/movie";
+import { MovieDetailItemSchema } from "@/schemas/common";
 
 /**
  * Schema đầy đủ cho object data (trong field "data")OF

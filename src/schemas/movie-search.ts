@@ -4,7 +4,7 @@ import {
   BreadCrumbSchema,
   PaginationSchema,
 } from "@/schemas/common";
-import { MovieDetailItemSchema } from "@/schemas/movie";
+import { MovieDetailItemSchema } from "@/schemas/common";
 // Search API response
 export const SearchMoviesResponseSchema = z.object({
   status: z.string(), // "success"
