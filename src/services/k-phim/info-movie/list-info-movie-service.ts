@@ -1,7 +1,7 @@
 import { BaseServiceResponse } from "@/types/common";
 import { axiosInstance } from "@/api/axios";
 import { NEXT_PUBLIC_API_URL_OP2 } from "@/configs/env";
-interface GetListInfoMovieServiceKphimOptions {
+export interface GetListInfoMovieServiceKphimOptions {
   type_list:
     | "phim-bo"
     | "phim-le"

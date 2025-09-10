@@ -8,10 +8,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronDown, Loader2 } from "lucide-react";
 import Image from "next/image";
-import useGetHome from "@/hooks/home/use-get-home";
+import useGetHome from "@/hooks/o-phim/home/use-get-home";
 import { HomeApiResponse } from "@/types/home-response";
 import { formatImageUrl } from "@/lib/utils";
-import useGetListMovieKphim from "@/hooks/k-phim/use-get-movies-kphim";
+import useGetListMovieKphim from "@/hooks/k-phim/list-movie-new-update/use-get-movies-service";
 
 export default function Hero() {
   const t = useTranslations("home.hero");
@@ -19,7 +19,7 @@ export default function Hero() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollOpacity, setScrollOpacity] = useState(1);
   const { data: homeData } = useGetHome({});
-  const { data: moviesData } = useGetListMovieKphim({});
+  const { data: moviesData } = useGetListMovieKphim({ version: "v3" });
   const dataImage = homeData as HomeApiResponse;
   // console.log("dataa home data imggggggg:", homeData);
   const handleClick = async () => {

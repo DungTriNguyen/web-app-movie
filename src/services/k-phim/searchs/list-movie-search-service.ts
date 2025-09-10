@@ -1,7 +1,7 @@
 import { BaseServiceResponse } from "@/types/common";
 import { axiosInstance } from "@/api/axios";
 import { NEXT_PUBLIC_API_URL_OP2 } from "@/configs/env";
-interface GetListMovieSearchServiceKphimOptions {
+export interface GetListMovieSearchServiceKphimOptions {
   keyword: string;
   page: number;
   sort_field: "modified.time" | "_id" | "year";

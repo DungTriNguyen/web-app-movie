@@ -4,19 +4,19 @@ import Feature from "@/components/Home/feature";
 import FAQ from "@/components/Home/faq";
 import Ready from "@/components/Home/ready";
 import Advance from "@/components/Home/advance";
-import useGetHome from "@/hooks/home/use-get-home";
-import useGetCategories from "@/hooks/categories/use-get-categories";
-import useGetMoviesCategory from "@/hooks/categories/use-get-movies-category";
-import useGetCountries from "@/hooks/countries/use-get-countries";
-import useGetMoviesCountry from "@/hooks/countries/use-get-movies-country";
-import useGetYears from "@/hooks/years/use-get-years";
-import useGetMoviesYear from "@/hooks/years/use-get-movies-year";
-import useGetMoviesSearch from "@/hooks/searchs/use-get-movies-search";
-import useGetActorsMovie from "@/hooks/movies/use-get-actors-movie";
-import useGetImgMovie from "@/hooks/movies/use-get-img-movie";
-import useGetMovieInfo from "@/hooks/movies/use-get-movie-info";
-import useGetListMovie from "@/hooks/movies/use-get-movies";
-import useGetListMovieKphim from "@/hooks/k-phim/use-get-movies-kphim";
+import useGetHome from "@/hooks/o-phim/home/use-get-home";
+import useGetCategories from "@/hooks/o-phim/categories/use-get-categories";
+import useGetMoviesCategory from "@/hooks/o-phim/categories/use-get-movies-category";
+import useGetCountries from "@/hooks/o-phim/countries/use-get-countries";
+import useGetMoviesCountry from "@/hooks/o-phim/countries/use-get-movies-country";
+import useGetYears from "@/hooks/o-phim/years/use-get-years";
+import useGetMoviesYear from "@/hooks/o-phim/years/use-get-movies-year";
+import useGetMoviesSearch from "@/hooks/o-phim/searchs/use-get-movies-search";
+import useGetActorsMovie from "@/hooks/o-phim/movies/use-get-actors-movie";
+import useGetImgMovie from "@/hooks/o-phim/movies/use-get-img-movie";
+import useGetMovieInfo from "@/hooks/o-phim/movies/use-get-movie-info";
+import useGetListMovie from "@/hooks/o-phim/movies/use-get-movies";
+import useGetListMovieKphim from "@/hooks/k-phim/list-movie-new-update/use-get-movies-service";
 
 export default function Home() {
   // const { data: homeData } = useGetHome({});
@@ -49,7 +49,7 @@ export default function Home() {
   // const { data: moviesData } = useGetListMovie({
   //   slug: "phim-bo",
   // });
-  const { data: moviesData } = useGetListMovieKphim({});
+  const { data: moviesData } = useGetListMovieKphim({ version: "v3" });
   console.log("dataa home page:", moviesCountryData);
   return (
     <div className="min-h-screen overflow-x-hidden">
