@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
 import { GetImageResponse } from "@/types/movie-img";
-import { getImgMovieService } from "@/services/movies/img-movie-service";
+import { getImgMovieService } from "@/services/o-phim/movies/img-movie-service";
 export default function useGetImgMovie(
   params: {
     slug: string;

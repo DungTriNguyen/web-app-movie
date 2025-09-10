@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListYearService } from "@/services/years/list-year-service";
+import { getListYearService } from "@/services/o-phim/years/list-year-service";
 import { YearApiResponse } from "@/types/movie-year";
 import { RequestYear } from "@/types/movie-year";
 export default function useGetYears(

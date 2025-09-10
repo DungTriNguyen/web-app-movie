@@ -25,9 +25,9 @@ export default function Home() {
   //   slug: "hanh-dong",
   // });
   // const { data: countriesData } = useGetCountries({});
-  // const { data: moviesCountryData } = useGetMoviesCountry({
-  //   slug: "han-quoc",
-  // });
+  const { data: moviesCountryData } = useGetMoviesCountry({
+    slug: "han-quoc",
+  });
   // const { data: yearsData } = useGetYears({
   //   year: 2025,
   // });
@@ -50,7 +50,7 @@ export default function Home() {
   //   slug: "phim-bo",
   // });
   const { data: moviesData } = useGetListMovieKphim({});
-  console.log("dataa home page:", moviesData);
+  console.log("dataa home page:", moviesCountryData);
   return (
     <div className="min-h-screen overflow-x-hidden">
       <div className="relative z-10">

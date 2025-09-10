@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
 import { HomeApiResponse } from "@/types/home-response";
-import { getMovieHomeService } from "@/services/home/home-service";
+import { getMovieHomeService } from "@/services/o-phim/home/home-service";
 export default function useGetHome(
   params: any,
   queryOptions?: ReactQueryOptions<HomeApiResponse>

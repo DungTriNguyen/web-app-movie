@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListMovieCategoryService } from "@/services/categories/list-movie-category-service";
+import { getListMovieCategoryService } from "@/services/o-phim/categories/list-movie-category-service";
 import { listMovieCategoryResponse } from "@/types/movie-category";
 import { Request } from "@/types/common";
 export default function useGetMoviesCategory(

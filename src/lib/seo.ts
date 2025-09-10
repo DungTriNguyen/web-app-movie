@@ -1,5 +1,5 @@
 import { SeoOnPage } from "@/types/common";
-import { getMovieHomeService } from "@/services/home/home-service";
+import { getMovieHomeService } from "@/services/o-phim/home/home-service";
 import type { ResolvingMetadata, Metadata } from "next";
 import { NEXT_PUBLIC_BASE_URL } from "@/configs/env";
 export async function generateSeoMetadata(

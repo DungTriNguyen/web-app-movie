@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
 import { MovieDetailResponse } from "@/types/movie";
-import { getMovieInfoService } from "@/services/movies/movie-info-service";
+import { getMovieInfoService } from "@/services/o-phim/movies/movie-info-service";
 export default function useGetMovieInfo(
   params: {
     slug: string;

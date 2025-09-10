@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getMovieSearchService } from "@/services/searchs/search-service";
+import { getMovieSearchService } from "@/services/o-phim/searchs/search-service";
 import {
   GetMovieKeywordsRequest,
   GetMovieKeywordsResponse,

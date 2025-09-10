@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListCountryService } from "@/services/countries/list-country-service";
+import { getListCountryService } from "@/services/o-phim/countries/list-country-service";
 import { CountryApiResponse } from "@/types/movie-country";
 export default function useGetCountries(
   params: any,

@@ -1,7 +1,7 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListCategoryService } from "@/services/categories/list-category-service";
+import { getListCategoryService } from "@/services/o-phim/categories/list-category-service";
 import { CategoryApiResponse } from "@/types/movie-category";
 export default function useGetCategories(
   params: any,

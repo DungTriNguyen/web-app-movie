@@ -6,7 +6,7 @@ import {
   GetMovieKeywordsRequest,
   GetMovieKeywordsResponse,
 } from "@/types/movie-keyword";
-import { getKeywordMovieService } from "@/services/movies/keyword-movie-service";
+import { getKeywordMovieService } from "@/services/o-phim/movies/keyword-movie-service";
 export default function useGetMoviesKeywords(
   params: GetMovieKeywordsRequest,
   queryOptions?: ReactQueryOptions<GetMovieKeywordsResponse>

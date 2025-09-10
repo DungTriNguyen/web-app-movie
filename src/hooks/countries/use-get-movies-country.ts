@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListMovieCountryService } from "@/services/countries/list-movie-country-service";
+import { getListMovieCountryService } from "@/services/o-phim/countries/list-movie-country-service";
 import { listMovieCountryResponse } from "@/types/movie-country";
 import { Request } from "@/types/common";
 export default function useGetMoviesCountry(

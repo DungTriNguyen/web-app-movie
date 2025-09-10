@@ -10,6 +10,7 @@ export async function getMovieHomeService(
       `${NEXT_PUBLIC_API_URL}/home`,
       options
     );
+    console.log("url home page:", `${NEXT_PUBLIC_API_URL}/home`);
     const { data } = response;
     return {
       data,

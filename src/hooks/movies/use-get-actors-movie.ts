@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
 import { GetPeopleResponse } from "@/types/movie-actor";
-import { getActorMovieService } from "@/services/movies/actor-movie-service";
+import { getActorMovieService } from "@/services/o-phim/movies/actor-movie-service";
 export default function useGetActorsMovie(
   params: {
     slug: string;

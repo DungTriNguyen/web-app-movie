@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
 import { GetListMoviesResponse } from "@/types/movie";
-import { getListMovieServiceOp2 } from "@/services/k-phim/list-movie-service";
+import { getListMovieServiceOp2 } from "@/services/k-phim/list-movie-new-update/list-movie-service";
 export default function useGetListMovieKphim(
   params: any,
   queryOptions?: ReactQueryOptions<GetListMoviesResponse>
