@@ -4,13 +4,13 @@ import { NEXT_PUBLIC_API_URL_OP2 } from "@/configs/env";
 
 export interface GetListCountriesMovieServiceKphimOptions {
   type_list: string;
-  page: number;
-  sort_field: string;
-  sort_type: string;
-  sort_lang: string;
-  category: string;
-  year: number;
-  limit: number;
+  page?: number;
+  sort_field?: string;
+  sort_type?: string;
+  sort_lang?: string;
+  category?: string;
+  year?: number;
+  limit?: number;
 }
 
 export async function getListCountriesMovieServiceKphim(

@@ -1,4 +1,7 @@
-import { NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE } from "@/configs/env";
+import {
+  NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE,
+  NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE_KPHIM,
+} from "@/configs/env";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -20,6 +23,10 @@ export const formatNumber = (
 
 export const formatImageUrl = (url: string) => {
   return `${NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE}/uploads/movies/${url}`;
+};
+
+export const formatImageUrlKphim = (url: string) => {
+  return `${NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE_KPHIM}/${url}`;
 };
 
 export const IS_BROWSER = typeof window !== "undefined";

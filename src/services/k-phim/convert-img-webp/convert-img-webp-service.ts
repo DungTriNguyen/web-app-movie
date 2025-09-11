@@ -1,14 +1,16 @@
 import { BaseServiceResponse } from "@/types/common";
 import { axiosInstance } from "@/api/axios";
 import { NEXT_PUBLIC_API_URL_OP2 } from "@/configs/env";
+import { NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE_KPHIM } from "@/configs/env";
 
 export async function getConvertImgWebpServiceKphim(options: {
   url: string;
 }): Promise<BaseServiceResponse<any>> {
   try {
     const response = await axiosInstance.get<any>(
-      `${NEXT_PUBLIC_API_URL_OP2}/image.php?url=${options.url}`
+      `${NEXT_PUBLIC_API_URL_OP2}/image.php?url=${NEXT_PUBLIC_APP_DOMAIN_CDN_IMAGE_KPHIM}/${options.url}`
     );
+
     const { data } = response;
     return {
       data,

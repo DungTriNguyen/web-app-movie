@@ -3,14 +3,14 @@ import { axiosInstance } from "@/api/axios";
 import { NEXT_PUBLIC_API_URL_OP2 } from "@/configs/env";
 
 export interface GetListYearsMovieServiceKphimOptions {
-  type_list: string;
-  page: number;
-  sort_field: string;
-  sort_type: string;
-  sort_lang: string;
-  category: string;
-  country: string;
-  limit: number;
+  type_list: string; //1970-now
+  page?: number;
+  sort_field?: string;
+  sort_type?: string;
+  sort_lang?: string;
+  category?: string;
+  country?: string;
+  limit?: number;
 }
 
 export async function getListYearsMovieServiceKphim(

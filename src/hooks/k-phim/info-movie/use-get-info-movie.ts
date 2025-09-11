@@ -2,17 +2,17 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import {
-  getListInfoMovieServiceKphim,
-  GetListInfoMovieServiceKphimOptions,
-} from "@/services/k-phim/info-movie/list-info-movie-service";
+import { getInfoMovieServiceKphim } from "@/services/k-phim/info-movie/info-movie-service";
 export default function useGetInfoMovieKphim(
-  params: GetListInfoMovieServiceKphimOptions,
+  params: {
+    slug: string;
+    options?: any;
+  },
   queryOptions?: ReactQueryOptions<any>
 ) {
   const query = useQuery({
     queryKey: ["get-info-movie-kphim", JSON.stringify(params)],
-    queryFn: () => getListInfoMovieServiceKphim({ ...params }),
+    queryFn: () => getInfoMovieServiceKphim({ ...params }),
     ...queryOptions,
     refetchOnWindowFocus: false,
   });

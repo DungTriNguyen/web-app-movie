@@ -1,7 +1,7 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
 import { ReactQueryOptions } from "@/types/common";
-import { getListCategoryService } from "@/services/o-phim/categories/list-category-service";
+import { getListCategoriesServiceKphim } from "@/services/k-phim/categories/list-categories-service";
 import { CategoryApiResponse } from "@/types/movie-category";
 export default function useGetCategories(
   params: any,
@@ -9,7 +9,7 @@ export default function useGetCategories(
 ) {
   const query = useQuery({
     queryKey: ["get-categories", params],
-    queryFn: () => getListCategoryService({ ...params }),
+    queryFn: () => getListCategoriesServiceKphim({ ...params }),
     ...queryOptions,
     refetchOnWindowFocus: false,
   });
