@@ -14,7 +14,7 @@
       "de": "German",
       "ru": "Russian",
       "vi": "Vietnamese"
-  }
+    }
   },
   "home": {
     "hero": {
@@ -208,12 +208,18 @@
     "search placeholder": "Suche nach Token, Tag oder Stichwort...",
     "load more": "Mehr laden",
     "related articles": "Verwandte Artikel",
-    "no articles": "Keine Artikel"
+    "no articles": "Keine Artikel",
+    "not supported": "Der Artikel unterstützt Ihre Sprache nicht, bitte wechseln Sie zu einer anderen Sprache."
   },
   "interaction": {
     "like": "Gefällt mir",
     "comment": "Kommentar",
-    "share": "Teilen"
+    "share": "Teilen",
+    "dialog": {
+      "title": "Teilen",
+      "copy": "Seitenlink kopieren",
+      "copied": "Link kopiert!"
+    }
   },
   "chart": {
     "price": "Preis",

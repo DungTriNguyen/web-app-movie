@@ -208,12 +208,18 @@
         "search placeholder": "Search by token, tag or keyword...",
         "load more": "Load More",
         "related articles": "Related Articles",
-        "no articles": "No articles"
+        "no articles": "No articles",
+        "not supported": "The article does not support your language, please switch to another language."
     },
     "interaction": {
         "like": "Like",
         "comment": "Comment",
-        "share": "Share"
+        "share": "Share",
+        "dialog": {
+            "title": "Share",
+            "copy": "Copy page link",
+            "copied": "Link copied!"
+        }
     },
     "chart": {
         "price": "Price",

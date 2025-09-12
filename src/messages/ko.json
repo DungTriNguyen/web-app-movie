@@ -208,12 +208,18 @@
         "search placeholder": "토큰, 태그 또는 키워드로 검색...",
         "load more": "더 보기",
         "related articles": "관련 기사",
-        "no articles": "게시물이 없습니다"
+        "no articles": "게시물이 없습니다",
+        "not supported": "이 기사는 귀하의 언어를 지원하지 않습니다. 다른 언어로 전환하십시오."
     },
     "interaction": {
         "like": "좋아요",
         "comment": "댓글",
-        "share": "공유"
+        "share": "공유",
+        "dialog": {
+            "title": "공유",
+            "copy": "페이지 링크 복사",
+            "copied": "링크가 복사되었습니다!"
+        }
     },
     "chart": {
         "price": "가격",
