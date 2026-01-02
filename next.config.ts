@@ -7,30 +7,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "static-web.jjdsn.vip",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "ipfs.io",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "assets.storims.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "assets.dexspace.io",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
         hostname: "img.ophim.live",
         port: "",
         pathname: "/**",
